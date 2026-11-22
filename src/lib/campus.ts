@@ -26,6 +26,8 @@ export type CampusBuilding = {
   /** Full name, like "Gregorio L. Escario Building", if it has one. */
   fullName?: string;
   coords: LngLat;
+  /** How to get to the building, if anyone wrote it down. */
+  directions?: string;
 };
 
 export const CAMPUS: Campus = {
@@ -37,6 +39,7 @@ export const BUILDINGS: CampusBuilding[] = buildingData.map((building) => ({
   name: building.name,
   fullName: building.fullName,
   coords: toLngLat(building),
+  directions: building.directions,
 }));
 
 /** All the names a building can be searched by. */
@@ -64,6 +67,8 @@ export type CampusRoom = {
   code: string;
   /** Short name of the building the room is in, like "GLE". */
   building: string;
+  /** How to find the room once inside the building, if anyone wrote it down. */
+  directions?: string;
 };
 
 /**
@@ -75,6 +80,11 @@ export const CAMPUS_ROOMS: CampusRoom[] = campusRoomData;
 /** Finds a room by its exact code, like "GLE 201". */
 export function findRoom(code: string) {
   return CAMPUS_ROOMS.find((room) => room.code === code);
+}
+
+/** The building a room is in, or undefined if its building isn't in the data. */
+export function findBuildingOfRoom(room: CampusRoom) {
+  return findBuilding(room.building);
 }
 
 /** The rooms inside a building, in the order they appear in the data. */

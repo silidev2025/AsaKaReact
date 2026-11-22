@@ -45,7 +45,8 @@
     "name": "GLE",
     "fullName": "Gregorio L. Escario Building",
     "lng": 123.8811285,
-    "lat": 10.2953116
+    "lat": 10.2953116,
+    "directions": "Walk toward the GLE entrance, then use the left stairs toward the second floor."
   },
   { "name": "G-PHYSLAB", "lng": 123.8809178, "lat": 10.2951686 }
 ]

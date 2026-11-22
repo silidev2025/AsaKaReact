@@ -4,12 +4,13 @@
 //
 // Which panel appears depends on the kind of result (its "category"). The
 // RESULT_PANELS table below lists them; a kind that isn't in the table yet
-// simply shows no panel. Later features add their own entries (RoomDetails
-// adds "room").
+// simply shows no panel. Each feature that adds a kind of panel adds one
+// line to the table (RoomDetails added "room").
 
 import type { ComponentType } from "react";
 import type { SearchCategory } from "../../lib/search";
 import { useQueryStore } from "../../store/queryStore";
+import RoomDetails from "../room-details/RoomDetails";
 import BuildingResult from "./BuildingResult";
 import s from "./SidePanel.module.css";
 
@@ -23,6 +24,7 @@ const RESULT_PANELS: Partial<
   Record<SearchCategory, ComponentType<{ value: string }>>
 > = {
   building: BuildingResult,
+  room: RoomDetails,
 };
 
 export default function SidePanel() {

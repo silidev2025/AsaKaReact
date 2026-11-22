@@ -17,6 +17,8 @@
   --color-primary-tint: hsl(5, 53%, 90%);
   /* Almost white, behind a room row the pointer is over */
   --color-primary-faint: hsl(5, 53%, 98%);
+  /* See-through pink behind notes, like "How to get to ..." */
+  --color-note: hsla(5, 53%, 89%, 0.5);
 
   /* Deep brand red: big buttons, the welcome banner, progress bars */
   --color-brand: #7b1113;

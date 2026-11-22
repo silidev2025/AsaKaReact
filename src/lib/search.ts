@@ -13,6 +13,7 @@ import {
   BUILDINGS,
   CAMPUS_ROOMS,
   findBuilding,
+  findBuildingOfRoom,
   findRoom,
   getBuildingDisplayName,
   getBuildingSearchValues,
@@ -93,7 +94,7 @@ export function findResultBuilding(item: SearchItem): CampusBuilding | undefined
   if (item.category === "building") return findBuilding(item.value);
   if (item.category === "room") {
     const room = findRoom(item.value);
-    return room ? findBuilding(room.building) : undefined;
+    return room ? findBuildingOfRoom(room) : undefined;
   }
   return undefined;
 }

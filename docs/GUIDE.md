@@ -56,6 +56,9 @@ The rule: **no hardcoded values inside components.** A number, color, text or ad
 | Show more or fewer rooms per page in a building's list | `roomsPerPage` in `src/config/search.ts` |
 | Make the fly-to after a search faster or slower | `resultFlyDurationMs` in `src/config/map.ts` |
 | Make the phone bottom sheet taller or shorter | `phoneSheetHeightPercent` in `src/config/layout.ts` |
+| Write directions for a room | add `"directions": "..."` to the room in `src/data/campus-rooms.json` |
+| Write directions to a building | add `"directions": "..."` to the building in `src/data/buildings.json` |
+| Change the Contribute form link | `contributeUrl` in `src/data/app-info.json` |
 | Change the trending searches | `trending` in `src/data/search.json` |
 | Change the search box hint text | `placeholder` in `src/data/search.json` |
 | Show more or fewer suggestions or recent searches | `src/config/search.ts` |
@@ -95,6 +98,8 @@ Each one is explained in a comment where it first appears in the code.
 | A table of components | Picking which component to show from an object, by a value | `SidePanel.tsx` |
 | `key` to start fresh | A new `key` makes React throw away a component's state and build it again | `SidePanel.tsx` |
 | Effect that follows state | `useEffect` that moves the map whenever the picked result changes | `useFlyToResult.ts` |
+| Returning early | Showing something simpler (like "Room not found.") before the main JSX | `RoomDetails.tsx` |
+| Reusing a small component | One `Directions` component used twice with different text | `Directions.tsx` |
 
 ## Features
 
@@ -173,6 +178,22 @@ Where the data comes from:
 - **Class counts:** the database. `npm run data:export` counts the classes in each room and saves the count on the room (`classCount` in `src/data/catalog/rooms.json`), so the app doesn't have to load all 4,351 classes just to count them.
 
 To add a panel for another kind of result, write its component and add it to `RESULT_PANELS` in `SidePanel.tsx`.
+
+### RoomDetails (`src/features/room-details/`)
+
+The side panel for a picked room. `SidePanel.tsx` shows it through the `room` entry in its `RESULT_PANELS` table.
+
+| File | Job |
+| --- | --- |
+| `RoomDetails.tsx` | Room code, its building, the room's directions, "How to get to (building)", Open in Google Maps |
+| `Directions.tsx` | A paragraph of directions, or "No directions? Contribute to YourRoute" when there are none |
+| `RoomDetails.module.css` | Styles for both |
+
+Where the data comes from:
+
+- **The room and the building it's in:** `src/data/campus-rooms.json`
+- **The building's full name, position and directions:** `src/data/buildings.json`
+- **The Google Maps link:** made by `googleMapsUrl()` in `src/lib/links.ts` from the building's position (base address in `src/config/links.ts`)
 
 ### App prompts (`src/features/pwa/`)
 
