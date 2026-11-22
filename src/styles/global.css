@@ -1,0 +1,76 @@
+/*
+  Styles for the whole page. Styles for one component live next to it in a
+  .module.css file instead (see the comment at the top of CampusMap.tsx).
+*/
+
+@import "./theme.css";
+
+@font-face {
+  font-family: "Inter";
+  src:
+    url("/InterVariable.ttf") format("truetype"),
+    url("/InterVariable-Italic.ttf") format("truetype");
+}
+
+* {
+  font-family: var(--font-family);
+  margin: unset;
+  box-sizing: border-box;
+}
+
+/* Buttons start with no browser styling; each component styles its own. */
+button {
+  all: unset;
+}
+
+button,
+a,
+input {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+/* Keyboard users see a maroon outline on whatever has focus. */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+  outline-color: var(--color-primary);
+}
+
+html {
+  min-height: 100%;
+  background-color: var(--color-page);
+}
+
+html,
+body {
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  overscroll-behavior: none;
+  touch-action: manipulation;
+}
+
+hr {
+  margin: 1rem 0;
+  border: 2px solid var(--color-divider);
+}
+
+mark {
+  background-color: var(--color-primary-tint);
+}
+
+/* Expanding ring used by location pins. */
+@keyframes pulsate {
+  0% {
+    transform: scale(0.5);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}

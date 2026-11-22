@@ -1,0 +1,36 @@
+<!doctype html>
+<!--
+  The page the browser loads first. Text like %VITE_APP_NAME% is filled in
+  from the .env file when the app runs or builds.
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+    <meta name="theme-color" content="%VITE_THEME_COLOR%" />
+    <title>%VITE_APP_NAME%</title>
+    <meta name="description" content="%VITE_APP_DESCRIPTION%" />
+
+    <!-- Link previews on Facebook, Messenger and others -->
+    <meta property="og:url" content="/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="%VITE_APP_NAME%" />
+    <meta property="og:description" content="%VITE_APP_DESCRIPTION%" />
+    <meta property="og:image" content="/socmed.png" />
+
+    <!-- Link previews on X (Twitter) -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="%VITE_APP_SHARE_TITLE%" />
+    <meta name="twitter:description" content="%VITE_APP_DESCRIPTION%" />
+    <meta name="twitter:image" content="/socmed.png" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

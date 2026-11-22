@@ -1,0 +1,21 @@
+{
+  "roads": [
+    { "path": "M -4 88 C 18 86 42 88 104 84", "major": true },
+    { "path": "M 28 10 C 32 30 37 52 48 94", "major": false },
+    { "path": "M 68 8 C 61 28 59 49 67 92", "major": false }
+  ],
+  "walkways": [
+    "M 18 61 C 35 58 52 56 83 58",
+    "M 18 47 C 38 45 58 45 84 43"
+  ],
+  "greenAreas": [
+    { "x": 24, "y": 35, "width": 18, "height": 15 },
+    { "x": 48, "y": 51, "width": 12, "height": 19 }
+  ],
+  "buildingShapes": [
+    { "x": 31, "y": 61, "width": 22, "height": 7 },
+    { "x": 48, "y": 38, "width": 20, "height": 8 },
+    { "x": 56, "y": 66, "width": 17, "height": 7 },
+    { "x": 70, "y": 43, "width": 13, "height": 8 }
+  ]
+}

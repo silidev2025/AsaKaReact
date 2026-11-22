@@ -1,0 +1,151 @@
+/*
+  Styles for CampusMap and BuildingLabel. Class names here are written with
+  dashes (.label-anchor) and used in code in camelCase (s.labelAnchor);
+  vite.config.ts sets up that conversion.
+*/
+
+/* The map fills the whole screen, behind everything else. */
+.map-container {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+}
+
+/* ---------- Campus pin ---------- */
+
+.pin {
+  position: relative;
+  line-height: 0;
+  padding: 0.25rem;
+  color: var(--color-surface);
+  background-color: var(--color-primary);
+  border: 2px solid var(--color-surface);
+  border-radius: var(--radius-round);
+  box-shadow: var(--shadow-pin);
+  cursor: pointer;
+  transition:
+    transform 0.2s,
+    scale 1.5s;
+}
+
+.pin:hover {
+  background-color: var(--color-primary-light);
+}
+
+.pin.active {
+  z-index: 60;
+}
+
+/* A thin ring around the active pin. */
+.pin.active::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius-round);
+  outline: 0.125rem solid var(--color-primary-light);
+  outline-offset: 0.125rem;
+}
+
+/* The name tag above the pin; hidden until hover unless the pin is active. */
+.pin-label {
+  position: absolute;
+  bottom: calc(100% + 0.5rem);
+  left: 50%;
+  translate: -50% 0;
+  width: max-content;
+  padding: 0.25rem 0.75rem;
+  line-height: initial;
+  color: var(--color-text);
+  background-color: var(--color-surface);
+  border-radius: var(--radius-label);
+  opacity: 0;
+  transition: opacity 0.2s;
+  pointer-events: none;
+}
+
+.pin:hover .pin-label {
+  opacity: 1;
+}
+
+.pin.active .pin-label {
+  color: var(--color-surface);
+  background-color: var(--color-primary);
+  opacity: 1;
+}
+
+/* ---------- Building labels ---------- */
+
+/* A zero-size point exactly on the coordinate; the pin sits on top of it. */
+.label-anchor {
+  position: relative;
+  width: 0;
+  height: 0;
+  z-index: 80;
+}
+
+.building-pin {
+  all: unset;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  translate: -50% 0;
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  color: var(--color-surface);
+  background-color: var(--color-primary);
+  border: 2px solid var(--color-surface);
+  border-radius: var(--radius-round);
+  box-shadow: var(--shadow-pin);
+  cursor: pointer;
+  pointer-events: auto;
+  transition:
+    background-color 0.2s,
+    transform 0.2s;
+}
+
+.building-pin.active::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius-round);
+  outline: 0.125rem solid var(--color-primary-light);
+  outline-offset: 0.125rem;
+  pointer-events: none;
+}
+
+.building-icon {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  color: var(--color-surface);
+}
+
+.building-name {
+  position: absolute;
+  bottom: calc(100% + 0.45rem);
+  left: 50%;
+  translate: -50% 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: max-content;
+  max-width: 8.25rem;
+  padding: 0.25rem 0.55rem;
+  color: var(--color-surface);
+  background-color: var(--color-primary);
+  border-radius: var(--radius-label);
+  box-shadow: var(--shadow-label);
+  line-height: 1.05;
+  text-align: center;
+  white-space: normal;
+  pointer-events: none;
+}
+
+.building-name strong {
+  font-size: 0.78rem;
+  font-weight: 900;
+  line-height: 1.05;
+}

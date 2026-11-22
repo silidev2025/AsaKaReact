@@ -1,0 +1,17 @@
+{
+  "name": "Cebu Institute of Technology - University",
+  "shortName": "CIT-U",
+  "center": { "lng": 123.88047, "lat": 10.29578 },
+  "mapBounds": {
+    "west": 123.8755,
+    "south": 10.2907,
+    "east": 123.8855,
+    "north": 10.3005
+  },
+  "locationBounds": {
+    "west": 123.8789,
+    "south": 10.2937,
+    "east": 123.882,
+    "north": 10.2979
+  }
+}

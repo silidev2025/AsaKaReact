@@ -1,0 +1,51 @@
+[
+  {
+    "name": "RTL",
+    "fullName": "Don Rodolfo T. Lizares Building",
+    "lng": 123.8805369,
+    "lat": 10.2947275
+  },
+  {
+    "name": "RTL 101-108",
+    "fullName": "Smart Classroom",
+    "lng": 123.88025,
+    "lat": 10.2949
+  },
+  {
+    "name": "ALLIED",
+    "fullName": "Allied Engineering Building",
+    "lng": 123.8796881,
+    "lat": 10.2952557
+  },
+  {
+    "name": "NGE",
+    "fullName": "Nicolas G. Escario Building",
+    "lng": 123.8811381,
+    "lat": 10.2943038
+  },
+  { "name": "LINK", "lng": 123.8804013, "lat": 10.2952641 },
+  { "name": "G-LECROOM", "lng": 123.8793966, "lat": 10.2960048 },
+  { "name": "Canteen", "lng": 123.8804742, "lat": 10.2961022 },
+  { "name": "Elementary Rooms", "lng": 123.880825, "lat": 10.29648 },
+  {
+    "name": "SAL",
+    "fullName": "Don Simplicio A. Lizares Building",
+    "lng": 123.8798881,
+    "lat": 10.2954529
+  },
+  { "name": "GYM", "lng": 123.8795075, "lat": 10.2963173 },
+  { "name": "P.E AREA", "lng": 123.8799354, "lat": 10.2960535 },
+  {
+    "name": "ACAD",
+    "fullName": "Academic Building",
+    "lng": 123.8812557,
+    "lat": 10.2958206
+  },
+  {
+    "name": "GLE",
+    "fullName": "Gregorio L. Escario Building",
+    "lng": 123.8811285,
+    "lat": 10.2953116
+  },
+  { "name": "G-PHYSLAB", "lng": 123.8809178, "lat": 10.2951686 }
+]
