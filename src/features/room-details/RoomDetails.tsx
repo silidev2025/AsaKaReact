@@ -5,6 +5,8 @@
 //   directions inside the building           (or a Contribute link)
 //   ┃ How to get to the building             (or a Contribute link)
 //   [Open in Google Maps]
+//   ──────────────
+//   Classes in this room      [Open schedule]   (from the Schedule feature)
 //
 // The room comes from src/data/campus-rooms.json and its building from
 // src/data/buildings.json. Directions are optional "directions" fields in
@@ -15,6 +17,7 @@
 
 import { findBuildingOfRoom, findRoom, getBuildingDisplayName } from "../../lib/campus";
 import { googleMapsUrl } from "../../lib/links";
+import ClassesSection from "../schedule/ClassesSection";
 import Directions from "./Directions";
 import s from "./RoomDetails.module.css";
 
@@ -66,6 +69,9 @@ export default function RoomDetails({ value }: RoomDetailsProps) {
           </div>
         </>
       )}
+
+      <hr className={s.divider} />
+      <ClassesSection roomCode={room.code} />
     </div>
   );
 }

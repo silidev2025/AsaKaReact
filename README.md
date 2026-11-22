@@ -13,6 +13,7 @@ New to the code? Start with [docs/GUIDE.md](docs/GUIDE.md). It explains where ev
 - [x] Search: search box with suggestions for buildings and rooms, trending and recent searches
 - [x] SearchResults: side panel for the picked building with its rooms, and the map flying to the result
 - [x] RoomDetails: room panel with its building, directions, Contribute links and Open in Google Maps
+- [x] Schedule: classes held in a room, and a weekly timetable window
 
 ## Room data
 

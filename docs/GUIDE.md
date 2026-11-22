@@ -59,6 +59,8 @@ The rule: **no hardcoded values inside components.** A number, color, text or ad
 | Write directions for a room | add `"directions": "..."` to the room in `src/data/campus-rooms.json` |
 | Write directions to a building | add `"directions": "..."` to the building in `src/data/buildings.json` |
 | Change the Contribute form link | `contributeUrl` in `src/data/app-info.json` |
+| Change the timetable's hours, days or class colors | `src/config/schedule.ts` |
+| Change the timetable's header, time column or line colors | `--color-timetable-...` in `src/styles/theme.css` |
 | Change the trending searches | `trending` in `src/data/search.json` |
 | Change the search box hint text | `placeholder` in `src/data/search.json` |
 | Show more or fewer suggestions or recent searches | `src/config/search.ts` |
@@ -100,6 +102,12 @@ Each one is explained in a comment where it first appears in the code.
 | Effect that follows state | `useEffect` that moves the map whenever the picked result changes | `useFlyToResult.ts` |
 | Returning early | Showing something simpler (like "Room not found.") before the main JSX | `RoomDetails.tsx` |
 | Reusing a small component | One `Directions` component used twice with different text | `Directions.tsx` |
+| Loading data in an effect | Start loading in `useEffect`, store the result in state, ignore answers that arrive too late | `useRoomClasses.ts` |
+| Loading a file only when needed | `import("...")` written like a function, which Vite turns into a separate download | `src/lib/catalog.ts` |
+| Promise, `async` and `await` | A value that arrives later, and waiting for it | `src/lib/catalog.ts` |
+| Rules of hooks | Hooks run on every render in the same order, never inside an `if` | `ScheduleWindow.tsx` |
+| `disabled` button | A button that is greyed out and ignores clicks | `ClassesSection.tsx` |
+| Inline style from data | `style={{ top: ..., height: ... }}` worked out per item | `Timetable.tsx` |
 
 ## Features
 
@@ -194,6 +202,33 @@ Where the data comes from:
 - **The room and the building it's in:** `src/data/campus-rooms.json`
 - **The building's full name, position and directions:** `src/data/buildings.json`
 - **The Google Maps link:** made by `googleMapsUrl()` in `src/lib/links.ts` from the building's position (base address in `src/config/links.ts`)
+
+### Schedule (`src/features/schedule/`)
+
+"Classes in this room" at the bottom of the room panel, and the weekly timetable window.
+
+| File | Job |
+| --- | --- |
+| `ClassesSection.tsx` | The heading, the Open schedule button, and the class list (or "No classes added yet.") |
+| `ClassList.tsx` | One card per class: code and type, title, section, meeting times |
+| `ScheduleWindow.tsx` | The schedule window's content, for the room picked in the search |
+| `Timetable.tsx` | The weekly grid: days across, hours down, one colored block per meeting |
+| `useRoomClasses.ts` | Loads a room's classes and gives `null` while they are still loading |
+| `*.module.css` | Styles |
+
+Shared pieces it uses:
+
+| File | Job |
+| --- | --- |
+| `src/lib/schedule.ts` | Reads schedules like `TTh 01:00PM-02:30PM` into days and hours, picks each course's color, makes the timetable blocks |
+| `loadClassesForRoom` in `src/lib/catalog.ts` | Downloads the classes file the first time a room with classes is opened, then filters it |
+| `src/config/schedule.ts` | Hours, days and class colors of the timetable |
+
+How the timetable places a block: hours are numbers on a 24-hour clock (1:30 PM is 13.5). A block's `top` is how far its start is from the first hour, and its `height` is how long it lasts, both as a percentage of the whole day. For example, 8:00 to 9:30 on a 7:00 to 20:00 grid is `top: 7.7%`, `height: 11.5%`.
+
+Why the classes load separately: the classes file is about 730 KB. Rooms without classes never download it, and the app opens faster without it.
+
+The window is the "schedule" entry in `src/store/modalStore.ts` and `src/features/home/ModalHost.tsx`.
 
 ### App prompts (`src/features/pwa/`)
 

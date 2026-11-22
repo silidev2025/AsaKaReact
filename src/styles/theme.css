@@ -45,6 +45,13 @@
   --color-row-hover: hsl(0, 0%, 95%);
   /* Grey hint text inside an empty text box */
   --color-placeholder: #6b6b6b;
+  /* Light grey cards, like each class in "Classes in this room" */
+  --color-card-muted: hsl(0, 0%, 95%);
+  /* The weekly timetable in the schedule window */
+  --color-timetable-header: #1a1a1a;
+  --color-timetable-time: #333333;
+  --color-timetable-grid: #dadada;
+  --color-timetable-half-hour: #dfdfdf;
   /* Thin scrollbars in lists and panels */
   --color-scrollbar: hsl(6, 63%, 48%);
   --color-scrollbar-track: hsl(0, 0%, 98%);

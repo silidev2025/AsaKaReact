@@ -1,0 +1,133 @@
+/* Styles for Timetable.tsx. --day-count comes from the number of days in
+   src/config/schedule.ts. */
+
+.scroller {
+  overflow-x: auto;
+  border-radius: 0.5rem;
+}
+
+/* Two columns (times, days) and two rows (day names, hours). */
+.timetable {
+  display: grid;
+  grid-template-columns: 3.4375rem 1fr;
+  grid-template-rows: 2rem 1fr;
+  min-width: 36rem;
+  aspect-ratio: 10 / 6;
+  overflow: hidden;
+  background-color: var(--color-surface);
+  border-radius: 0.5rem;
+}
+
+.corner {
+  background-color: var(--color-timetable-header);
+}
+
+/* M  T  W  Th  F  S */
+.day-header {
+  display: grid;
+  grid-template-columns: repeat(var(--day-count), 1fr);
+  align-items: center;
+  background-color: var(--color-timetable-header);
+  color: var(--color-surface);
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* 7:00, 8:00, ... each in the middle of its hour row. */
+.time-column {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-timetable-time);
+  color: var(--color-surface);
+  font-size: 12px;
+}
+
+.time-label {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+/* The area with the lines and the blocks. */
+.grid {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-bottom: 1px solid var(--color-timetable-grid);
+}
+
+/* One hour: a line on top, and a lighter line through the middle for the
+   half hour (the ::after part). */
+.hour-row {
+  position: relative;
+  flex: 1;
+  border-top: 1px solid var(--color-timetable-grid);
+}
+
+.hour-row::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  border-top: 0.5px solid var(--color-timetable-half-hour);
+}
+
+/* The day columns cover the lines exactly ("inset: 0" means top, right,
+   bottom and left are all 0). */
+.day-columns {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: repeat(var(--day-count), 1fr);
+}
+
+.day-column {
+  position: relative;
+  border-left: 1px solid var(--color-timetable-grid);
+}
+
+.day-column:last-child {
+  border-right: 1px solid var(--color-timetable-grid);
+}
+
+/* One class meeting. Its top, height and color come from Timetable.tsx. */
+.block {
+  position: absolute;
+  right: 1px;
+  left: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3px;
+  overflow: hidden;
+  /* See-through top and bottom edges leave a 2px gap between back-to-back
+     classes, so two sessions of the same course don't merge into one.
+     background-clip keeps the color off the edges. */
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  background-clip: padding-box;
+  border-radius: 2px;
+  color: var(--color-surface);
+  text-align: center;
+}
+
+.block-label,
+.block-section {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.block-label {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.block-section {
+  font-size: 10px;
+}

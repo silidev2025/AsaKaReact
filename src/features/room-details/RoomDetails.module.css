@@ -123,6 +123,12 @@
   color: var(--color-surface);
 }
 
+/* The grey line above "Classes in this room". */
+.divider {
+  margin: 0;
+  border: 2px solid var(--color-divider);
+}
+
 /* ---------- Small phones ---------- */
 
 @media screen and (max-width: 30rem) {

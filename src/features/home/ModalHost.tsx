@@ -6,6 +6,7 @@
 import type { ReactNode } from "react";
 import Modal from "../../components/Modal";
 import { useModalStore, type ModalType } from "../../store/modalStore";
+import ScheduleWindow from "../schedule/ScheduleWindow";
 import WelcomeModal from "./WelcomeModal";
 
 /** What each window shows, how it looks, and its name for screen readers. */
@@ -14,6 +15,11 @@ const CONTENT: Record<
   { label: string; variant: "standard" | "banner"; render: () => ReactNode }
 > = {
   welcome: { label: "Welcome", variant: "banner", render: () => <WelcomeModal /> },
+  schedule: {
+    label: "Room schedule",
+    variant: "standard",
+    render: () => <ScheduleWindow />,
+  },
 };
 
 export default function ModalHost() {

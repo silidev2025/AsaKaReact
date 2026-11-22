@@ -8,7 +8,8 @@
 
 import { create } from "zustand";
 
-export type ModalType = "welcome";
+/** "welcome": the welcome window. "schedule": the picked room's timetable. */
+export type ModalType = "welcome" | "schedule";
 
 type ModalState = {
   /** The window to show. It stays set while the window animates closed. */
