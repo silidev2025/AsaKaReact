@@ -29,7 +29,10 @@ export default defineConfig(({ mode }) => {
       // that answers requests from saved copies when there's no internet.
       VitePWA({
         registerType: "autoUpdate",
-        injectRegister: "auto",
+        // The app registers the service worker itself, in
+        // src/features/pwa/UpdatePrompt.tsx, so it can show the
+        // "ready to work offline" and "new content" messages.
+        injectRegister: false,
         includeAssets: ["favicon.ico", "apple-touch-icon.png"],
         workbox: {
           // Files saved when the app is first opened.

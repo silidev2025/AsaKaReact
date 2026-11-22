@@ -9,6 +9,15 @@ New to the code? Start with [docs/GUIDE.md](docs/GUIDE.md). It explains where ev
 ## Features
 
 - [x] CampusMap: 3D campus map with the CIT-U building labels, fly-to and slow circling on tap, offline caching, and a drawn sketch when offline
+- [x] Home: welcome window, status bar, install and update prompts, changelog page
+
+## Room data
+
+Rooms and classes live in `data/info.db` (SQLite). The app reads JSON copies of it in `src/data/catalog/`. After changing the database, run:
+
+```sh
+npm run data:export
+```
 
 ## Running it
 

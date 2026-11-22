@@ -1,0 +1,34 @@
+/* The see-through layer over the map. Padding keeps panels clear of phone
+   notches and rounded corners (the --safe-* values in theme.css). */
+.interface-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  height: 100dvh;
+  padding: calc(0.5rem + var(--safe-top)) calc(0.5rem + var(--safe-right))
+    calc(0.5rem + var(--safe-bottom)) calc(0.5rem + var(--safe-left));
+  pointer-events: none;
+}
+
+/* Takes all the space above the status bar. */
+.panel-area {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.75rem;
+  flex: 1;
+  min-height: 0;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 48rem) {
+  .interface-layer {
+    gap: 0.625rem;
+    padding: calc(0.625rem + var(--safe-top)) calc(0.625rem + var(--safe-right))
+      calc(0.625rem + var(--safe-bottom)) calc(0.625rem + var(--safe-left));
+  }
+}

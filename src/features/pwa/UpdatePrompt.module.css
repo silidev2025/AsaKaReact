@@ -1,0 +1,40 @@
+.update-prompt {
+  position: fixed;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  z-index: 30;
+  width: min(20rem, calc(100% - 1rem));
+  padding: 1rem;
+  text-align: left;
+  background-color: var(--color-surface);
+  border-radius: var(--radius-panel);
+  box-shadow: var(--shadow-panel);
+}
+
+.message {
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.buttons {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.primary,
+.plain {
+  padding: 0.25rem 1rem;
+  border: 1px solid #88888855;
+  border-radius: var(--radius-label);
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.primary {
+  color: var(--color-surface);
+  background-color: var(--color-primary);
+}
+
+.plain:active {
+  background-color: hsl(0, 0%, 95%);
+}

@@ -14,6 +14,7 @@ import { MAP_CONFIG, OFFLINE_CACHE_CONFIG } from "../config/map";
 import { CAMPUS } from "./campus";
 import { tilesCovering } from "./geo";
 import { withMapTilerKey } from "./mapTiler";
+import { readStorage, removeStorage, writeStorage } from "./storage";
 
 async function fetchJson<T>(url: string): Promise<T> {
   const response = await fetch(url);
@@ -87,20 +88,12 @@ async function getMapAssetUrls() {
 }
 
 function isAlreadyCached() {
-  try {
-    return localStorage.getItem(OFFLINE_CACHE_CONFIG.readyFlagKey) === "ready";
-  } catch {
-    return false; // storage can be blocked, for example in private browsing
-  }
+  return readStorage(OFFLINE_CACHE_CONFIG.readyFlagKey) === "ready";
 }
 
 function setCachedFlag(ready: boolean) {
-  try {
-    if (ready) localStorage.setItem(OFFLINE_CACHE_CONFIG.readyFlagKey, "ready");
-    else localStorage.removeItem(OFFLINE_CACHE_CONFIG.readyFlagKey);
-  } catch {
-    // Without storage the download just runs again next time.
-  }
+  if (ready) writeStorage(OFFLINE_CACHE_CONFIG.readyFlagKey, "ready");
+  else removeStorage(OFFLINE_CACHE_CONFIG.readyFlagKey);
 }
 
 export async function preloadOfflineMapAssets() {

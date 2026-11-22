@@ -5,6 +5,7 @@
 // Facts about the campus itself (names, coordinates) live in src/data/.
 
 import { CACHE_NAMES } from "./cacheNames";
+import { STORAGE_KEYS } from "./storageKeys";
 
 export const MAP_CONFIG = {
   /** Map style file in public/: colors, fonts and layers (based on OSM Liberty). */
@@ -60,7 +61,7 @@ export const MAP_CONFIG = {
 export const OFFLINE_CACHE_CONFIG = {
   cacheName: CACHE_NAMES.mapAssets,
   /** Saved in localStorage once every map file is cached, to skip redoing it. */
-  readyFlagKey: "yourroute:citu-map-cache:v1",
+  readyFlagKey: STORAGE_KEYS.mapCacheReady,
   /** Tile zoom levels to save. Tiles stop at 14; closer zooms enlarge those. */
   tileZooms: [12, 13, 14],
   /** Character ranges of the map fonts to save (0-511 covers English text). */

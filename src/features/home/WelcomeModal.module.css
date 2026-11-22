@@ -1,0 +1,256 @@
+.welcome {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-height: inherit;
+  overflow: auto;
+  background-color: var(--color-surface);
+  border-radius: inherit;
+}
+
+/* Campus photo with a red tint over it. --banner-image is set in WelcomeModal.tsx. */
+.banner {
+  display: flex;
+  min-height: 16rem;
+  background-image: var(--banner-image);
+  background-size: cover;
+  background-position: center;
+}
+
+.banner-overlay {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 2rem;
+  color: var(--color-surface);
+  background-color: var(--color-brand-banner);
+  text-align: center;
+}
+
+.banner-overlay h2 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.banner-overlay p {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem 2rem 2rem;
+  text-align: center;
+}
+
+.description {
+  max-width: 28rem;
+  margin: 0;
+  color: var(--color-text-soft);
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+
+/* ---------- Developers ---------- */
+
+.developers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.developers h3 {
+  margin: 0 0 0.75rem;
+  color: #333333;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.developer-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  max-width: 30rem;
+}
+
+.developer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  color: inherit;
+  text-decoration: none;
+  outline: unset;
+}
+
+.developer img {
+  width: 2.25rem;
+  height: 2.25rem;
+  object-fit: cover;
+  background-color: #f5f5f5;
+  border: 1px solid #cccccc;
+  border-radius: var(--radius-round);
+}
+
+/* Names show under the photos on small phones only; elsewhere as a tooltip. */
+.developer-name {
+  display: none;
+  max-width: 3.5rem;
+  font-size: 0.65rem;
+  font-weight: 500;
+  line-height: 1.1;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+/* Tooltip bubble and its little arrow, made from the data-tooltip text. */
+.developer::before,
+.developer::after {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 50;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.125s;
+}
+
+.developer::before {
+  content: attr(data-tooltip);
+  width: max-content;
+  padding: 0.2rem 0.4rem;
+  color: var(--color-surface);
+  background-color: hsla(0, 0%, 10%, 0.8);
+  border-radius: 6px;
+  font-size: 0.75rem;
+  translate: -50% calc(-1 * (100% + 8px));
+}
+
+.developer::after {
+  content: "";
+  border: 4px solid transparent;
+  border-top-color: hsla(0, 0%, 10%, 0.8);
+  translate: -50% -100%;
+}
+
+.developer:is(:hover, :focus)::before,
+.developer:is(:hover, :focus)::after {
+  opacity: 1;
+}
+
+/* ---------- Button and checkbox ---------- */
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.primary-button {
+  min-height: 2.75rem;
+  padding: 0.75rem 2rem;
+  color: var(--color-surface);
+  background-color: var(--color-brand);
+  border-radius: var(--radius-label);
+  box-shadow: 0 2px 4px rgba(123, 17, 19, 0.2);
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition:
+    background-color 0.2s,
+    transform 0.1s;
+}
+
+.primary-button:hover {
+  background-color: var(--color-brand-hover);
+  box-shadow: 0 4px 6px rgba(123, 17, 19, 0.3);
+  transform: translateY(-1px);
+}
+
+.primary-button:active {
+  box-shadow: 0 1px 2px rgba(123, 17, 19, 0.2);
+  transform: translateY(1px);
+}
+
+.checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-text-soft);
+  font-size: 0.875rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkbox input {
+  width: 1rem;
+  height: 1rem;
+  accent-color: var(--color-brand);
+  cursor: pointer;
+}
+
+/* ---------- Smaller screens ---------- */
+
+@media screen and (max-width: 48rem) {
+  .banner {
+    min-height: 12rem;
+  }
+
+  .banner-overlay {
+    padding: 1.5rem 1rem;
+  }
+
+  .body {
+    gap: 1rem;
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 30rem) {
+  .banner {
+    min-height: 9rem;
+  }
+
+  .banner-overlay {
+    padding: 1.25rem 1rem;
+  }
+
+  .banner-overlay h2 {
+    font-size: 1.625rem;
+  }
+
+  .banner-overlay p,
+  .description {
+    font-size: 0.875rem;
+  }
+
+  .body {
+    align-items: stretch;
+    gap: 0.875rem;
+    padding: 0.875rem;
+  }
+
+  .developer-name {
+    display: block;
+  }
+
+  .developer::before,
+  .developer::after {
+    display: none;
+  }
+}

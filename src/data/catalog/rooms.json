@@ -1,0 +1,4218 @@
+[
+ {
+  "id": 1,
+  "roomCode": "237",
+  "directions": null,
+  "buildingId": 5,
+  "collegeId": 1,
+  "divisionId": null
+ },
+ {
+  "id": 2,
+  "roomCode": "212B",
+  "directions": null,
+  "buildingId": 5,
+  "collegeId": 3,
+  "divisionId": 24
+ },
+ {
+  "id": 3,
+  "roomCode": "A-102",
+  "directions": null,
+  "buildingId": 5,
+  "collegeId": 2,
+  "divisionId": 33
+ },
+ {
+  "id": 4,
+  "roomCode": "A-115",
+  "directions": null,
+  "buildingId": 5,
+  "collegeId": 1,
+  "divisionId": null
+ },
+ {
+  "id": 5,
+  "roomCode": "AAVLH",
+  "directions": null,
+  "buildingId": 5,
+  "collegeId": 6,
+  "divisionId": 17
+ },
+ {
+  "id": 6,
+  "roomCode": "ABC",
+  "directions": null,
+  "buildingId": 1,
+  "collegeId": 5,
+  "divisionId": 23
+ },
+ {
+  "id": 7,
+  "roomCode": "ABC 161",
+  "directions": null,
+  "buildingId": 1,
+  "collegeId": 5,
+  "divisionId": 30
+ },
+ {
+  "id": 8,
+  "roomCode": "ABC 162a",
+  "directions": null,
+  "buildingId": 1,
+  "collegeId": 5,
+  "divisionId": 30
+ },
+ {
+  "id": 9,
+  "roomCode": "ABC 162b",
+  "directions": null,
+  "buildingId": 1,
+  "collegeId": 5,
+  "divisionId": 23
+ },
+ {
+  "id": 10,
+  "roomCode": "ABC 163",
+  "directions": null,
+  "buildingId": 1,
+  "collegeId": 5,
+  "divisionId": 30
+ },
+ {
+  "id": 11,
+  "roomCode": "ABC 164",
+  "directions": null,
+  "buildingId": 1,
+  "collegeId": 5,
+  "divisionId": 30
+ },
+ {
+  "id": 12,
+  "roomCode": "ABC 165",
+  "directions": null,
+  "buildingId": 1,
+  "collegeId": 5,
+  "divisionId": 3
+ },
+ {
+  "id": 13,
+  "roomCode": "ABC 167",
+  "directions": null,
+  "buildingId": 1,
+  "collegeId": 5,
+  "divisionId": 30
+ },
+ {
+  "id": 14,
+  "roomCode": "ABC 261",
+  "directions": null,
+  "buildingId": 1,
+  "collegeId": 5,
+  "divisionId": 30
+ },
+ {
+  "id": 15,
+  "roomCode": "ABC162a",
+  "directions": null,
+  "buildingId": 1,
+  "collegeId": 5,
+  "divisionId": 23
+ },
+ {
+  "id": 16,
+  "roomCode": "ABCR",
+  "directions": null,
+  "buildingId": 1,
+  "collegeId": 1,
+  "divisionId": 31
+ },
+ {
+  "id": 17,
+  "roomCode": "ACL",
+  "directions": null,
+  "buildingId": 14,
+  "collegeId": 7,
+  "divisionId": 19
+ },
+ {
+  "id": 18,
+  "roomCode": "ADSC LH3 (IAS-CVM Building)",
+  "directions": null,
+  "buildingId": 16,
+  "collegeId": 1,
+  "divisionId": 37
+ },
+ {
+  "id": 19,
+  "roomCode": "AFBED LR1",
+  "directions": null,
+  "buildingId": 2,
+  "collegeId": 5,
+  "divisionId": 30
+ },
+ {
+  "id": 20,
+  "roomCode": "AFBED LR2",
+  "directions": null,
+  "buildingId": 2,
+  "collegeId": 5,
+  "divisionId": 30
+ },
+ {
+  "id": 21,
+  "roomCode": "AFBED LR3",
+  "directions": null,
+  "buildingId": 2,
+  "collegeId": 5,
+  "divisionId": 30
+ },
+ {
+  "id": 22,
+  "roomCode": "AFBED PHYSLAB",
+  "directions": null,
+  "buildingId": 2,
+  "collegeId": 5,
+  "divisionId": 5
+ },
+ {
+  "id": 23,
+  "roomCode": "AFBED Physlab",
+  "directions": null,
+  "buildingId": 2,
+  "collegeId": 5,
+  "divisionId": 30
+ },
+ {
+  "id": 24,
+  "roomCode": "AFBED_Conference Room",
+  "directions": null,
+  "buildingId": 2,
+  "collegeId": 5,
+  "divisionId": 30
+ },
+ {
+  "id": 25,
+  "roomCode": "AFBED_LR1",
+  "directions": null,
+  "buildingId": 2,
+  "collegeId": 5,
+  "divisionId": 30
+ },
+ {
+  "id": 26,
+  "roomCode": "AFBED_LR2",
+  "directions": null,
+  "buildingId": 2,
+  "collegeId": 5,
+  "divisionId": 30
+ },
+ {
+  "id": 27,
+  "roomCode": "AFBED_LR3",
+  "directions": null,
+  "buildingId": 2,
+  "collegeId": 5,
+  "divisionId": 30
+ },
+ {
+  "id": 28,
+  "roomCode": "ALH",
+  "directions": null,
+  "buildingId": 14,
+  "collegeId": 7,
+  "divisionId": 19
+ },
+ {
+  "id": 29,
+  "roomCode": "ANLR",
+  "directions": null,
+  "buildingId": null,
+  "collegeId": 1,
+  "divisionId": null
+ },
+ {
+  "id": 30,
+  "roomCode": "ANNEX",
+  "directions": null,
+  "buildingId": null,
+  "collegeId": 6,
+  "divisionId": 17
+ },
+ {
+  "id": 31,
+  "roomCode": "ANSC LH2",
+  "directions": "Located at the first building on the left side after passing the Animal Husbandry Arch.",
+  "buildingId": 5,
+  "collegeId": 1,
+  "divisionId": 36
+ },
+ {
+  "id": 32,
+  "roomCode": "ASI 231",
+  "directions": "Enter right hallway after reaching ICropS. It is found on the second floor.",
+  "buildingId": 3,
+  "collegeId": 1,
+  "divisionId": null
+ },
+ {
+  "id": 33,
+  "roomCode": "ASI 233",
+  "directions": "Enter right hallway after reaching ICropS. It is found on the second floor.",
+  "buildingId": 3,
+  "collegeId": 1,
+  "divisionId": 1
+ },
+ {
+  "id": 34,
+  "roomCode": "ASI 235",
+  "directions": "Enter right hallway after reaching ICropS. It is found on the second floor.",
+  "buildingId": 3,
+  "collegeId": 1,
+  "divisionId": 1
+ },
+ {
+  "id": 35,
+  "roomCode": "ASI 237",
+  "directions": "Enter right hallway after reaching ICropS. It is found on the second floor.",
+  "buildingId": 3,
+  "collegeId": 1,
+  "divisionId": 1
+ },
+ {
+  "id": 36,
+  "roomCode": "ASI 238A",
+  "directions": "Enter right hallway after reaching ICropS. It is found on the second floor.",
+  "buildingId": 3,
+  "collegeId": 1,
+  "divisionId": 1
+ },
+ {
+  "id": 37,
+  "roomCode": "ASI 238B",
+  "directions": "Enter right hallway after reaching ICropS. It is found on the second floor.",
+  "buildingId": 3,
+  "collegeId": 1,
+  "divisionId": 1
+ },
+ {
+  "id": 38,
+  "roomCode": "ASI 240",
+  "directions": "Enter right hallway after reaching ICropS. It is found on the second floor.",
+  "buildingId": 3,
+  "collegeId": 1,
+  "divisionId": 1
+ },
+ {
+  "id": 39,
+  "roomCode": "ASI 333",
+  "directions": "Enter right hallway after reaching ICropS. It is found on the third floor.",
+  "buildingId": 3,
+  "collegeId": 1,
+  "divisionId": 1
+ },
+ {
+  "id": 40,
+  "roomCode": "ASI 336",
+  "directions": "Enter right hallway after reaching ICropS. It is found on the third floor.",
+  "buildingId": 3,
+  "collegeId": 1,
+  "divisionId": 1
+ },
+ {
+  "id": 41,
+  "roomCode": "ASI A-104",
+  "directions": "Agriculture Systems Institute (ASI) building is found right across the CEAT building and beside ICropS. To reach wing A, walk straight past the garden walkway.",
+  "buildingId": 3,
+  "collegeId": 1,
+  "divisionId": 1
+ },
+ {
+  "id": 42,
+  "roomCode": "ASI A-119",
+  "directions": "Agriculture Systems Institute (ASI) building is found right across the CEAT building and beside ICropS. To reach wing A, walk straight past the garden walkway.",
+  "buildingId": 3,
+  "collegeId": 1,
+  "divisionId": 1
+ },
+ {
+  "id": 43,
+  "roomCode": "ASI B-126",
+  "directions": "Agriculture Systems Institute (ASI) building is found right across the CEAT building and beside ICropS. Wing B is the first corner when you enter ASI.",
+  "buildingId": 3,
+  "collegeId": 1,
+  "divisionId": 1
+ },
+ {
+  "id": 44,
+  "roomCode": "ASI B-126 / ASI 333",
+  "directions": "Agriculture Systems Institute (ASI) building is found right across the CEAT building and beside ICropS. Wing B is the first corner when you enter ASI.",
+  "buildingId": 3,
+  "collegeId": 1,
+  "divisionId": 1
+ },
+ {
+  "id": 45,
+  "roomCode": "ASI B-127",
+  "directions": "Agriculture Systems Institute (ASI) building is found right across the CEAT building and beside ICropS. Wing B is the first corner when you enter ASI.",
+  "buildingId": 3,
+  "collegeId": 1,
+  "divisionId": 1
+ },
+ {
+  "id": 46,
+  "roomCode": "ASI B-138",
+  "directions": "Agriculture Systems Institute (ASI) building is found right across the CEAT building and beside ICropS. Wing B is the first corner when you enter ASI.",
+  "buildingId": 3,
+  "collegeId": 1,
+  "divisionId": 1
+ },
+ {
+  "id": 47,
+  "roomCode": "ASI Training Room",
+  "directions": null,
+  "buildingId": 3,
+  "collegeId": 1,
+  "divisionId": 1
+ },
+ {
+  "id": 48,
+  "roomCode": "ASILH B125",
+  "directions": null,
+  "buildingId": 3,
+  "collegeId": 1,
+  "divisionId": 1
+ },
+ {
+  "id": 49,
+  "roomCode": "ASLH 1",
+  "directions": "Located at the first building on the left side after passing the Animal Husbandry Arch.",
+  "buildingId": 5,
+  "collegeId": 1,
+  "divisionId": 31
+ },
+ {
+  "id": 50,
+  "roomCode": "ASLH 2",
+  "directions": "Located at the first building on the left side after passing the Animal Husbandry Arch.",
+  "buildingId": 5,
+  "collegeId": 1,
+  "divisionId": 31
+ },
+ {
+  "id": 51,
+  "roomCode": "ASLH1",
+  "directions": null,
+  "buildingId": 5,
+  "collegeId": 1,
+  "divisionId": 1
+ },
+ {
+  "id": 52,
+  "roomCode": "ASLH2",
+  "directions": null,
+  "buildingId": 5,
+  "collegeId": 1,
+  "divisionId": 1
+ },
+ {
+  "id": 53,
+  "roomCode": "ASLH 3",
+  "directions": "After reaching the IAS-CVM communal building, walk straight and turn right.",
+  "buildingId": 5,
+  "collegeId": 1,
+  "divisionId": 1
+ },
+ {
+  "id": 54,
+  "roomCode": "ASR 1",
+  "directions": "Located at the first building on the left side after passing the Animal Husbandry Arch.",
+  "buildingId": 3,
+  "collegeId": 1,
+  "divisionId": 1
+ },
+ {
+  "id": 55,
+  "roomCode": "ASR 3",
+  "directions": "Located at the first building on the left side after passing the Animal Husbandry Arch.",
+  "buildingId": 3,
+  "collegeId": 1,
+  "divisionId": 1
+ },
+ {
+  "id": 56,
+  "roomCode": "AVR-ANNEX",
+  "directions": "Walk straight from main entrance. Turn right at the very end.",
+  "buildingId": 35,
+  "collegeId": 2,
+  "divisionId": 33
+ },
+ {
+  "id": 57,
+  "roomCode": "Animal Health Lab",
+  "directions": null,
+  "buildingId": 16,
+  "collegeId": 1,
+  "divisionId": 31
+ },
+ {
+  "id": 58,
+  "roomCode": "Animal Health Laboratory",
+  "directions": null,
+  "buildingId": 16,
+  "collegeId": 1,
+  "divisionId": 31
+ },
+ {
+  "id": 59,
+  "roomCode": "Animal Nutrition Lecture Room",
+  "directions": null,
+  "buildingId": 16,
+  "collegeId": 1,
+  "divisionId": 31
+ },
+ {
+  "id": 60,
+  "roomCode": "Animal Physiology Lecture Room",
+  "directions": null,
+  "buildingId": 16,
+  "collegeId": 1,
+  "divisionId": 31
+ },
+ {
+  "id": 61,
+  "roomCode": "Annex 04",
+  "directions": null,
+  "buildingId": null,
+  "collegeId": 2,
+  "divisionId": 20
+ },
+ {
+  "id": 62,
+  "roomCode": "Annex 3",
+  "directions": null,
+  "buildingId": null,
+  "collegeId": 2,
+  "divisionId": 20
+ },
+ {
+  "id": 63,
+  "roomCode": "Annex 4",
+  "directions": null,
+  "buildingId": null,
+  "collegeId": 2,
+  "divisionId": 20
+ },
+ {
+  "id": 64,
+  "roomCode": "B-100",
+  "directions": null,
+  "buildingId": 5,
+  "collegeId": 1,
+  "divisionId": null
+ },
+ {
+  "id": 65,
+  "roomCode": "B-201",
+  "directions": null,
+  "buildingId": 5,
+  "collegeId": 5,
+  "divisionId": 22
+ },
+ {
+  "id": 66,
+  "roomCode": "B101a",
+  "directions": null,
+  "buildingId": 5,
+  "collegeId": 5,
+  "divisionId": 15
+ },
+ {
+  "id": 67,
+  "roomCode": "B200",
+  "directions": null,
+  "buildingId": 5,
+  "collegeId": 2,
+  "divisionId": 33
+ },
+ {
+  "id": 68,
+  "roomCode": "BADMINTON COURT",
+  "directions": null,
+  "buildingId": 32,
+  "collegeId": 2,
+  "divisionId": 18
+ },
+ {
+  "id": 69,
+  "roomCode": "BAL LAB 1",
+  "directions": null,
+  "buildingId": 5,
+  "collegeId": 7,
+  "divisionId": 38
+ },
+ {
+  "id": 70,
+  "roomCode": "BAL LAB 2",
+  "directions": null,
+  "buildingId": 5,
+  "collegeId": 7,
+  "divisionId": 38
+ },
+ {
+  "id": 71,
+  "roomCode": "BALH 1",
+  "directions": null,
+  "buildingId": 5,
+  "collegeId": 7,
+  "divisionId": 38
+ },
+ {
+  "id": 72,
+  "roomCode": "BALH 2",
+  "directions": null,
+  "buildingId": 5,
+  "collegeId": 7,
+  "divisionId": 38
+ },
+ {
+  "id": 73,
+  "roomCode": "BALH1",
+  "directions": null,
+  "buildingId": 5,
+  "collegeId": 7,
+  "divisionId": 38
+ },
+ {
+  "id": 74,
+  "roomCode": "BALH2",
+  "directions": null,
+  "buildingId": 5,
+  "collegeId": 7,
+  "divisionId": 38
+ },
+ {
+  "id": 75,
+  "roomCode": "BALLET AREA",
+  "directions": null,
+  "buildingId": 32,
+  "collegeId": 2,
+  "divisionId": 18
+ },
+ {
+  "id": 76,
+  "roomCode": "BASKETBALL COURT",
+  "directions": null,
+  "buildingId": 32,
+  "collegeId": 2,
+  "divisionId": 18
+ },
+ {
+  "id": 77,
+  "roomCode": "BEACH VOLLEYBALL COURT",
+  "directions": null,
+  "buildingId": 32,
+  "collegeId": 2,
+  "divisionId": 18
+ },
+ {
+  "id": 78,
+  "roomCode": "BRIDGE ROOM",
+  "directions": null,
+  "buildingId": 32,
+  "collegeId": 2,
+  "divisionId": 18
+ },
+ {
+  "id": 79,
+  "roomCode": "BS A-109",
+  "directions": null,
+  "buildingId": 4,
+  "collegeId": 1,
+  "divisionId": 43
+ },
+ {
+  "id": 80,
+  "roomCode": "BS A-115",
+  "directions": null,
+  "buildingId": 4,
+  "collegeId": 1,
+  "divisionId": 43
+ },
+ {
+  "id": 81,
+  "roomCode": "BS A-121",
+  "directions": null,
+  "buildingId": 4,
+  "collegeId": 1,
+  "divisionId": 43
+ },
+ {
+  "id": 82,
+  "roomCode": "BS A-137",
+  "directions": null,
+  "buildingId": 4,
+  "collegeId": 2,
+  "divisionId": 32
+ },
+ {
+  "id": 83,
+  "roomCode": "BS A-215",
+  "directions": null,
+  "buildingId": 4,
+  "collegeId": 1,
+  "divisionId": 43
+ },
+ {
+  "id": 84,
+  "roomCode": "BS A-309",
+  "directions": null,
+  "buildingId": 4,
+  "collegeId": 1,
+  "divisionId": 43
+ },
+ {
+  "id": 85,
+  "roomCode": "BS A-315",
+  "directions": null,
+  "buildingId": 4,
+  "collegeId": 2,
+  "divisionId": 32
+ },
+ {
+  "id": 86,
+  "roomCode": "BS B-100",
+  "directions": null,
+  "buildingId": 4,
+  "collegeId": 1,
+  "divisionId": 43
+ },
+ {
+  "id": 87,
+  "roomCode": "BS B-101",
+  "directions": null,
+  "buildingId": 4,
+  "collegeId": 1,
+  "divisionId": 43
+ },
+ {
+  "id": 88,
+  "roomCode": "BS B-105",
+  "directions": null,
+  "buildingId": 4,
+  "collegeId": 2,
+  "divisionId": 32
+ },
+ {
+  "id": 89,
+  "roomCode": "BS B-109",
+  "directions": null,
+  "buildingId": 4,
+  "collegeId": 1,
+  "divisionId": 43
+ },
+ {
+  "id": 90,
+  "roomCode": "BS B-307",
+  "directions": null,
+  "buildingId": 4,
+  "collegeId": 2,
+  "divisionId": 32
+ },
+ {
+  "id": 91,
+  "roomCode": "BS C-105",
+  "directions": null,
+  "buildingId": 4,
+  "collegeId": 2,
+  "divisionId": 32
+ },
+ {
+  "id": 92,
+  "roomCode": "BS C-107",
+  "directions": null,
+  "buildingId": 4,
+  "collegeId": 2,
+  "divisionId": 32
+ },
+ {
+  "id": 93,
+  "roomCode": "BS C-112",
+  "directions": null,
+  "buildingId": 4,
+  "collegeId": 2,
+  "divisionId": 32
+ },
+ {
+  "id": 94,
+  "roomCode": "BS C-113",
+  "directions": null,
+  "buildingId": 4,
+  "collegeId": 2,
+  "divisionId": 32
+ },
+ {
+  "id": 95,
+  "roomCode": "BS C-116",
+  "directions": null,
+  "buildingId": 4,
+  "collegeId": 2,
+  "divisionId": 32
+ },
+ {
+  "id": 96,
+  "roomCode": "BS C-117",
+  "directions": null,
+  "buildingId": 4,
+  "collegeId": 2,
+  "divisionId": 32
+ },
+ {
+  "id": 97,
+  "roomCode": "BS C-125",
+  "directions": "Biological Sciences Building C, Room 125. BS buildings are in front of CAS A1, to the left of SEARCA.",
+  "buildingId": 4,
+  "collegeId": 2,
+  "divisionId": 32
+ },
+ {
+  "id": 98,
+  "roomCode": "BS C-127",
+  "directions": null,
+  "buildingId": 4,
+  "collegeId": 2,
+  "divisionId": 32
+ },
+ {
+  "id": 99,
+  "roomCode": "BS C-205",
+  "directions": null,
+  "buildingId": 4,
+  "collegeId": 2,
+  "divisionId": 32
+ },
+ {
+  "id": 100,
+  "roomCode": "BS C-227",
+  "directions": null,
+  "buildingId": 4,
+  "collegeId": 2,
+  "divisionId": 32
+ },
+ {
+  "id": 101,
+  "roomCode": "BS C-313",
+  "directions": null,
+  "buildingId": 4,
+  "collegeId": 2,
+  "divisionId": 32
+ },
+ {
+  "id": 102,
+  "roomCode": "BS C-321",
+  "directions": null,
+  "buildingId": 4,
+  "collegeId": 2,
+  "divisionId": 32
+ },
+ {
+  "id": 103,
+  "roomCode": "BS D-229",
+  "directions": null,
+  "buildingId": 4,
+  "collegeId": 2,
+  "divisionId": 32
+ },
+ {
+  "id": 104,
+  "roomCode": "BS E-103",
+  "directions": null,
+  "buildingId": 4,
+  "collegeId": 2,
+  "divisionId": 32
+ },
+ {
+  "id": 105,
+  "roomCode": "BS E-213",
+  "directions": null,
+  "buildingId": 4,
+  "collegeId": 2,
+  "divisionId": 32
+ },
+ {
+  "id": 106,
+  "roomCode": "Bal lab 2",
+  "directions": null,
+  "buildingId": 5,
+  "collegeId": 7,
+  "divisionId": 38
+ },
+ {
+  "id": 107,
+  "roomCode": "Balh1",
+  "directions": null,
+  "buildingId": 5,
+  "collegeId": 7,
+  "divisionId": 38
+ },
+ {
+  "id": 108,
+  "roomCode": "CAS 101",
+  "directions": "First floor of CAS Main Building.",
+  "buildingId": 6,
+  "collegeId": 2,
+  "divisionId": 27
+ },
+ {
+  "id": 109,
+  "roomCode": "CAS 102",
+  "directions": "First floor of CAS Main Building.",
+  "buildingId": 6,
+  "collegeId": 2,
+  "divisionId": 20
+ },
+ {
+  "id": 110,
+  "roomCode": "CAS 103",
+  "directions": "First floor of CAS Main Building.",
+  "buildingId": 6,
+  "collegeId": 2,
+  "divisionId": 20
+ },
+ {
+  "id": 111,
+  "roomCode": "CAS 104",
+  "directions": "First floor of CAS Main Building.",
+  "buildingId": 6,
+  "collegeId": 2,
+  "divisionId": 20
+ },
+ {
+  "id": 112,
+  "roomCode": "CAS 106",
+  "directions": "First floor of CAS Main Building.",
+  "buildingId": 6,
+  "collegeId": 2,
+  "divisionId": 20
+ },
+ {
+  "id": 113,
+  "roomCode": "CAS 107",
+  "directions": "First floor of CAS Main Building.",
+  "buildingId": 6,
+  "collegeId": 2,
+  "divisionId": 20
+ },
+ {
+  "id": 114,
+  "roomCode": "CAS 108",
+  "directions": "First floor of CAS Main Building.",
+  "buildingId": 6,
+  "collegeId": 2,
+  "divisionId": 20
+ },
+ {
+  "id": 115,
+  "roomCode": "CAS 109",
+  "directions": "First floor of CAS Main Building.",
+  "buildingId": 6,
+  "collegeId": 2,
+  "divisionId": 20
+ },
+ {
+  "id": 116,
+  "roomCode": "CAS 110",
+  "directions": "First floor of CAS Main Building.",
+  "buildingId": 6,
+  "collegeId": 2,
+  "divisionId": 20
+ },
+ {
+  "id": 117,
+  "roomCode": "CAS A1 - GAL 2",
+  "directions": null,
+  "buildingId": 7,
+  "collegeId": 2,
+  "divisionId": 20
+ },
+ {
+  "id": 118,
+  "roomCode": "CAS A1 301",
+  "directions": null,
+  "buildingId": 7,
+  "collegeId": 2,
+  "divisionId": 27
+ },
+ {
+  "id": 119,
+  "roomCode": "CAS A1 302",
+  "directions": null,
+  "buildingId": 7,
+  "collegeId": 2,
+  "divisionId": 27
+ },
+ {
+  "id": 120,
+  "roomCode": "CAS A1 303",
+  "directions": null,
+  "buildingId": 7,
+  "collegeId": 2,
+  "divisionId": 27
+ },
+ {
+  "id": 121,
+  "roomCode": "CAS A1 304",
+  "directions": null,
+  "buildingId": 7,
+  "collegeId": 2,
+  "divisionId": 27
+ },
+ {
+  "id": 122,
+  "roomCode": "CAS A1 305",
+  "directions": null,
+  "buildingId": 7,
+  "collegeId": 2,
+  "divisionId": 20
+ },
+ {
+  "id": 123,
+  "roomCode": "CAS A1 306",
+  "directions": "CAS Annex 1, 3rd Floor, Room 306. CAS Annex 1 is the tall building to the left of Oble, beside OUR.",
+  "buildingId": 7,
+  "collegeId": 2,
+  "divisionId": 20
+ },
+ {
+  "id": 124,
+  "roomCode": "CAS A1 402",
+  "directions": null,
+  "buildingId": 7,
+  "collegeId": 2,
+  "divisionId": 32
+ },
+ {
+  "id": 125,
+  "roomCode": "CAS A1 403",
+  "directions": null,
+  "buildingId": 7,
+  "collegeId": 2,
+  "divisionId": 32
+ },
+ {
+  "id": 126,
+  "roomCode": "CAS A1 404",
+  "directions": null,
+  "buildingId": 7,
+  "collegeId": 2,
+  "divisionId": 32
+ },
+ {
+  "id": 127,
+  "roomCode": "CAS A1 405",
+  "directions": null,
+  "buildingId": 7,
+  "collegeId": 2,
+  "divisionId": 32
+ },
+ {
+  "id": 128,
+  "roomCode": "CAS A1 406",
+  "directions": null,
+  "buildingId": 7,
+  "collegeId": 2,
+  "divisionId": 32
+ },
+ {
+  "id": 129,
+  "roomCode": "CAS A1 407",
+  "directions": null,
+  "buildingId": 7,
+  "collegeId": 2,
+  "divisionId": 20
+ },
+ {
+  "id": 130,
+  "roomCode": "CAS A1 408",
+  "directions": null,
+  "buildingId": 7,
+  "collegeId": 2,
+  "divisionId": 20
+ },
+ {
+  "id": 131,
+  "roomCode": "CAS A1 409",
+  "directions": null,
+  "buildingId": 7,
+  "collegeId": 2,
+  "divisionId": 27
+ },
+ {
+  "id": 132,
+  "roomCode": "CAS A1 410",
+  "directions": null,
+  "buildingId": 7,
+  "collegeId": 2,
+  "divisionId": 27
+ },
+ {
+  "id": 133,
+  "roomCode": "CAS A1 GAL 1",
+  "directions": null,
+  "buildingId": 7,
+  "collegeId": 2,
+  "divisionId": 27
+ },
+ {
+  "id": 134,
+  "roomCode": "CAS A1 GAL 2",
+  "directions": null,
+  "buildingId": 7,
+  "collegeId": 2,
+  "divisionId": 20
+ },
+ {
+  "id": 135,
+  "roomCode": "CAS A2 101",
+  "directions": null,
+  "buildingId": 8,
+  "collegeId": 2,
+  "divisionId": 27
+ },
+ {
+  "id": 136,
+  "roomCode": "CAS A2 102",
+  "directions": null,
+  "buildingId": 8,
+  "collegeId": 2,
+  "divisionId": 27
+ },
+ {
+  "id": 137,
+  "roomCode": "CAS A2 103",
+  "directions": null,
+  "buildingId": 8,
+  "collegeId": 2,
+  "divisionId": 27
+ },
+ {
+  "id": 138,
+  "roomCode": "CAS A2 200",
+  "directions": null,
+  "buildingId": 8,
+  "collegeId": 2,
+  "divisionId": 20
+ },
+ {
+  "id": 139,
+  "roomCode": "CAS A2 201",
+  "directions": null,
+  "buildingId": 8,
+  "collegeId": 2,
+  "divisionId": 20
+ },
+ {
+  "id": 140,
+  "roomCode": "CAS A2 202",
+  "directions": null,
+  "buildingId": 8,
+  "collegeId": 2,
+  "divisionId": 20
+ },
+ {
+  "id": 141,
+  "roomCode": "CAS A2 203",
+  "directions": null,
+  "buildingId": 8,
+  "collegeId": 2,
+  "divisionId": 20
+ },
+ {
+  "id": 142,
+  "roomCode": "CAS A2 MPH1",
+  "directions": null,
+  "buildingId": 8,
+  "collegeId": 2,
+  "divisionId": 42
+ },
+ {
+  "id": 143,
+  "roomCode": "CAS A2- 201",
+  "directions": null,
+  "buildingId": 8,
+  "collegeId": 2,
+  "divisionId": 20
+ },
+ {
+  "id": 144,
+  "roomCode": "CAS A2-201",
+  "directions": null,
+  "buildingId": 8,
+  "collegeId": 2,
+  "divisionId": 20
+ },
+ {
+  "id": 145,
+  "roomCode": "CAS A200",
+  "directions": null,
+  "buildingId": 8,
+  "collegeId": 2,
+  "divisionId": 20
+ },
+ {
+  "id": 146,
+  "roomCode": "CAS A2MPH2",
+  "directions": null,
+  "buildingId": 8,
+  "collegeId": 2,
+  "divisionId": 40
+ },
+ {
+  "id": 147,
+  "roomCode": "CAS B01",
+  "directions": "In the basement of CAS Main Building. Take the stairs in front of the OCS kiosks.",
+  "buildingId": 6,
+  "collegeId": 2,
+  "divisionId": 20
+ },
+ {
+  "id": 148,
+  "roomCode": "CAS B02",
+  "directions": "In the basement of CAS Main Building. Take the stairs in front of the OCS kiosks.",
+  "buildingId": 6,
+  "collegeId": 2,
+  "divisionId": 20
+ },
+ {
+  "id": 149,
+  "roomCode": "CAS B03",
+  "directions": "In the basement of CAS Main Building. Take the stairs in front of the OCS kiosks.",
+  "buildingId": 6,
+  "collegeId": 2,
+  "divisionId": 27
+ },
+ {
+  "id": 150,
+  "roomCode": "CAS B04",
+  "directions": "In the basement of CAS Main Building. Take the stairs in front of the OCS kiosks.",
+  "buildingId": 6,
+  "collegeId": 2,
+  "divisionId": 20
+ },
+ {
+  "id": 151,
+  "roomCode": "CAS B05",
+  "directions": "In the basement of CAS Main Building. Take the stairs in front of the OCS kiosks.",
+  "buildingId": 6,
+  "collegeId": 2,
+  "divisionId": 20
+ },
+ {
+  "id": 152,
+  "roomCode": "CAS B06",
+  "directions": "In the basement of CAS Main Building. Take the stairs in front of the OCS kiosks.",
+  "buildingId": 6,
+  "collegeId": 2,
+  "divisionId": 20
+ },
+ {
+  "id": 153,
+  "roomCode": "CAS B07",
+  "directions": "In the basement of CAS Main Building. Take the stairs in front of the OCS kiosks.",
+  "buildingId": 6,
+  "collegeId": 2,
+  "divisionId": 20
+ },
+ {
+  "id": 154,
+  "roomCode": "CAS B08",
+  "directions": "In the basement of CAS Main Building. Take the stairs in front of the OCS kiosks.",
+  "buildingId": 6,
+  "collegeId": 2,
+  "divisionId": 20
+ },
+ {
+  "id": 155,
+  "roomCode": "CAS B09",
+  "directions": "In the basement of CAS Main Building. Take the stairs in front of the OCS kiosks.",
+  "buildingId": 6,
+  "collegeId": 2,
+  "divisionId": 20
+ },
+ {
+  "id": 156,
+  "roomCode": "CAS B10",
+  "directions": null,
+  "buildingId": 6,
+  "collegeId": 2,
+  "divisionId": 20
+ },
+ {
+  "id": 157,
+  "roomCode": "CAS LITE 4",
+  "directions": "2nd floor of CAS Main Building.",
+  "buildingId": 6,
+  "collegeId": 2,
+  "divisionId": 20
+ },
+ {
+  "id": 158,
+  "roomCode": "CAS LITE 5",
+  "directions": "2nd floor of CAS Main Building.",
+  "buildingId": 6,
+  "collegeId": 2,
+  "divisionId": 20
+ },
+ {
+  "id": 159,
+  "roomCode": "CATL",
+  "directions": null,
+  "buildingId": 7,
+  "collegeId": 3,
+  "divisionId": 13
+ },
+ {
+  "id": 160,
+  "roomCode": "CDC 209A",
+  "directions": null,
+  "buildingId": 9,
+  "collegeId": 3,
+  "divisionId": 24
+ },
+ {
+  "id": 161,
+  "roomCode": "CDC 212B",
+  "directions": null,
+  "buildingId": 9,
+  "collegeId": 3,
+  "divisionId": 11
+ },
+ {
+  "id": 162,
+  "roomCode": "CDC ANNEX 04",
+  "directions": null,
+  "buildingId": 9,
+  "collegeId": 3,
+  "divisionId": 24
+ },
+ {
+  "id": 163,
+  "roomCode": "CDC ANNEX 2",
+  "directions": null,
+  "buildingId": 9,
+  "collegeId": 3,
+  "divisionId": 24
+ },
+ {
+  "id": 164,
+  "roomCode": "CDC ANNEX 3",
+  "directions": null,
+  "buildingId": 9,
+  "collegeId": 3,
+  "divisionId": 24
+ },
+ {
+  "id": 165,
+  "roomCode": "CDC ANNEX1",
+  "directions": null,
+  "buildingId": 9,
+  "collegeId": 3,
+  "divisionId": 11
+ },
+ {
+  "id": 166,
+  "roomCode": "CDC ANNEX2",
+  "directions": null,
+  "buildingId": 9,
+  "collegeId": 3,
+  "divisionId": 11
+ },
+ {
+  "id": 167,
+  "roomCode": "CDC ANNEX3",
+  "directions": null,
+  "buildingId": 9,
+  "collegeId": 3,
+  "divisionId": 11
+ },
+ {
+  "id": 168,
+  "roomCode": "CDC ANNEX4",
+  "directions": null,
+  "buildingId": 9,
+  "collegeId": 3,
+  "divisionId": 11
+ },
+ {
+  "id": 169,
+  "roomCode": "CDC Annex 01",
+  "directions": null,
+  "buildingId": 9,
+  "collegeId": 2,
+  "divisionId": 20
+ },
+ {
+  "id": 170,
+  "roomCode": "CDC Annex4",
+  "directions": null,
+  "buildingId": 9,
+  "collegeId": 3,
+  "divisionId": 11
+ },
+ {
+  "id": 171,
+  "roomCode": "CDC Conference Rm",
+  "directions": null,
+  "buildingId": 9,
+  "collegeId": 3,
+  "divisionId": 24
+ },
+ {
+  "id": 172,
+  "roomCode": "CDC DECIMU",
+  "directions": null,
+  "buildingId": 9,
+  "collegeId": 3,
+  "divisionId": 13
+ },
+ {
+  "id": 173,
+  "roomCode": "CDC GRAD",
+  "directions": null,
+  "buildingId": 9,
+  "collegeId": 3,
+  "divisionId": 13
+ },
+ {
+  "id": 174,
+  "roomCode": "CDC GRAD ROOM",
+  "directions": null,
+  "buildingId": 9,
+  "collegeId": 3,
+  "divisionId": 24
+ },
+ {
+  "id": 175,
+  "roomCode": "CDC IMU",
+  "directions": null,
+  "buildingId": 9,
+  "collegeId": 3,
+  "divisionId": 13
+ },
+ {
+  "id": 176,
+  "roomCode": "CDC LR1",
+  "directions": null,
+  "buildingId": 9,
+  "collegeId": 3,
+  "divisionId": 11
+ },
+ {
+  "id": 177,
+  "roomCode": "CDC LR2",
+  "directions": null,
+  "buildingId": 9,
+  "collegeId": 3,
+  "divisionId": 13
+ },
+ {
+  "id": 178,
+  "roomCode": "CDC RM 201B",
+  "directions": null,
+  "buildingId": 9,
+  "collegeId": 3,
+  "divisionId": 11
+ },
+ {
+  "id": 179,
+  "roomCode": "CDC RM 209A",
+  "directions": null,
+  "buildingId": 9,
+  "collegeId": 3,
+  "divisionId": 13
+ },
+ {
+  "id": 180,
+  "roomCode": "CDC RM201B",
+  "directions": null,
+  "buildingId": 9,
+  "collegeId": 3,
+  "divisionId": 11
+ },
+ {
+  "id": 181,
+  "roomCode": "CDC RM212B",
+  "directions": null,
+  "buildingId": 9,
+  "collegeId": 3,
+  "divisionId": 13
+ },
+ {
+  "id": 182,
+  "roomCode": "CDC Rm209A",
+  "directions": null,
+  "buildingId": 9,
+  "collegeId": 3,
+  "divisionId": 13
+ },
+ {
+  "id": 183,
+  "roomCode": "CDC Room 200A",
+  "directions": null,
+  "buildingId": 9,
+  "collegeId": 3,
+  "divisionId": 24
+ },
+ {
+  "id": 184,
+  "roomCode": "CDC Room 201B",
+  "directions": null,
+  "buildingId": 9,
+  "collegeId": 3,
+  "divisionId": 24
+ },
+ {
+  "id": 185,
+  "roomCode": "CE 101",
+  "directions": null,
+  "buildingId": 10,
+  "collegeId": 5,
+  "divisionId": 8
+ },
+ {
+  "id": 186,
+  "roomCode": "CE 101A",
+  "directions": null,
+  "buildingId": 10,
+  "collegeId": 5,
+  "divisionId": 8
+ },
+ {
+  "id": 187,
+  "roomCode": "CE 101B",
+  "directions": null,
+  "buildingId": 10,
+  "collegeId": 5,
+  "divisionId": 8
+ },
+ {
+  "id": 188,
+  "roomCode": "CE 102",
+  "directions": null,
+  "buildingId": 10,
+  "collegeId": 5,
+  "divisionId": 8
+ },
+ {
+  "id": 189,
+  "roomCode": "CE 103",
+  "directions": null,
+  "buildingId": 10,
+  "collegeId": 5,
+  "divisionId": 8
+ },
+ {
+  "id": 190,
+  "roomCode": "CE CONF RM",
+  "directions": null,
+  "buildingId": 10,
+  "collegeId": 5,
+  "divisionId": 8
+ },
+ {
+  "id": 191,
+  "roomCode": "CE LAB",
+  "directions": null,
+  "buildingId": 10,
+  "collegeId": 5,
+  "divisionId": 8
+ },
+ {
+  "id": 192,
+  "roomCode": "CEAT B-100",
+  "directions": null,
+  "buildingId": 11,
+  "collegeId": 2,
+  "divisionId": 33
+ },
+ {
+  "id": 193,
+  "roomCode": "CEAT B-100a",
+  "directions": null,
+  "buildingId": 11,
+  "collegeId": 2,
+  "divisionId": 33
+ },
+ {
+  "id": 194,
+  "roomCode": "CEAT B-101a",
+  "directions": null,
+  "buildingId": 11,
+  "collegeId": 5,
+  "divisionId": 15
+ },
+ {
+  "id": 195,
+  "roomCode": "CEAT B-101b",
+  "directions": null,
+  "buildingId": 11,
+  "collegeId": 5,
+  "divisionId": 15
+ },
+ {
+  "id": 196,
+  "roomCode": "CEAT B-103",
+  "directions": null,
+  "buildingId": 11,
+  "collegeId": 5,
+  "divisionId": 30
+ },
+ {
+  "id": 197,
+  "roomCode": "CEAT B-105",
+  "directions": null,
+  "buildingId": 11,
+  "collegeId": 5,
+  "divisionId": 30
+ },
+ {
+  "id": 198,
+  "roomCode": "CEAT B-108",
+  "directions": null,
+  "buildingId": 11,
+  "collegeId": 5,
+  "divisionId": 15
+ },
+ {
+  "id": 199,
+  "roomCode": "CEAT B-200a",
+  "directions": null,
+  "buildingId": 11,
+  "collegeId": 5,
+  "divisionId": 15
+ },
+ {
+  "id": 200,
+  "roomCode": "CEAT B-200b",
+  "directions": null,
+  "buildingId": 11,
+  "collegeId": 5,
+  "divisionId": 15
+ },
+ {
+  "id": 201,
+  "roomCode": "CEAT B-201",
+  "directions": null,
+  "buildingId": 11,
+  "collegeId": 5,
+  "divisionId": 30
+ },
+ {
+  "id": 202,
+  "roomCode": "CEAT B-202",
+  "directions": null,
+  "buildingId": 11,
+  "collegeId": 2,
+  "divisionId": 33
+ },
+ {
+  "id": 203,
+  "roomCode": "CEAT B-203",
+  "directions": null,
+  "buildingId": 11,
+  "collegeId": 5,
+  "divisionId": 15
+ },
+ {
+  "id": 204,
+  "roomCode": "CEAT B-205",
+  "directions": null,
+  "buildingId": 11,
+  "collegeId": 5,
+  "divisionId": 15
+ },
+ {
+  "id": 205,
+  "roomCode": "CEAT B100",
+  "directions": null,
+  "buildingId": 11,
+  "collegeId": 2,
+  "divisionId": 33
+ },
+ {
+  "id": 206,
+  "roomCode": "CEAT B100b",
+  "directions": null,
+  "buildingId": 11,
+  "collegeId": 2,
+  "divisionId": 33
+ },
+ {
+  "id": 207,
+  "roomCode": "CEAT SHOP",
+  "directions": null,
+  "buildingId": 11,
+  "collegeId": 5,
+  "divisionId": 30
+ },
+ {
+  "id": 208,
+  "roomCode": "CEAT SHOP RM",
+  "directions": null,
+  "buildingId": 11,
+  "collegeId": 5,
+  "divisionId": 3
+ },
+ {
+  "id": 209,
+  "roomCode": "CEM  202",
+  "directions": null,
+  "buildingId": 12,
+  "collegeId": null,
+  "divisionId": null
+ },
+ {
+  "id": 210,
+  "roomCode": "CEM 101",
+  "directions": null,
+  "buildingId": 12,
+  "collegeId": 4,
+  "divisionId": 2
+ },
+ {
+  "id": 211,
+  "roomCode": "CEM 102",
+  "directions": null,
+  "buildingId": 12,
+  "collegeId": 4,
+  "divisionId": 12
+ },
+ {
+  "id": 212,
+  "roomCode": "CEM 104",
+  "directions": null,
+  "buildingId": 12,
+  "collegeId": 4,
+  "divisionId": 4
+ },
+ {
+  "id": 213,
+  "roomCode": "CEM 105",
+  "directions": null,
+  "buildingId": 12,
+  "collegeId": 4,
+  "divisionId": 2
+ },
+ {
+  "id": 214,
+  "roomCode": "CEM 106",
+  "directions": null,
+  "buildingId": 12,
+  "collegeId": 4,
+  "divisionId": 2
+ },
+ {
+  "id": 215,
+  "roomCode": "CEM 107",
+  "directions": null,
+  "buildingId": 12,
+  "collegeId": 4,
+  "divisionId": 12
+ },
+ {
+  "id": 216,
+  "roomCode": "CEM 108",
+  "directions": null,
+  "buildingId": 12,
+  "collegeId": 4,
+  "divisionId": 2
+ },
+ {
+  "id": 217,
+  "roomCode": "CEM 109",
+  "directions": null,
+  "buildingId": 12,
+  "collegeId": 4,
+  "divisionId": 12
+ },
+ {
+  "id": 218,
+  "roomCode": "CEM 110",
+  "directions": null,
+  "buildingId": 12,
+  "collegeId": 4,
+  "divisionId": 2
+ },
+ {
+  "id": 219,
+  "roomCode": "CEM 111",
+  "directions": null,
+  "buildingId": 12,
+  "collegeId": 4,
+  "divisionId": 4
+ },
+ {
+  "id": 220,
+  "roomCode": "CEM 112",
+  "directions": null,
+  "buildingId": 12,
+  "collegeId": 4,
+  "divisionId": 2
+ },
+ {
+  "id": 221,
+  "roomCode": "CEM 113",
+  "directions": null,
+  "buildingId": 12,
+  "collegeId": 4,
+  "divisionId": 4
+ },
+ {
+  "id": 222,
+  "roomCode": "CEM 114",
+  "directions": null,
+  "buildingId": 12,
+  "collegeId": 4,
+  "divisionId": 2
+ },
+ {
+  "id": 223,
+  "roomCode": "CEM 115",
+  "directions": null,
+  "buildingId": 12,
+  "collegeId": 4,
+  "divisionId": 2
+ },
+ {
+  "id": 224,
+  "roomCode": "CEM 116",
+  "directions": null,
+  "buildingId": 12,
+  "collegeId": 4,
+  "divisionId": 2
+ },
+ {
+  "id": 225,
+  "roomCode": "CEM 117",
+  "directions": null,
+  "buildingId": 12,
+  "collegeId": 4,
+  "divisionId": 4
+ },
+ {
+  "id": 226,
+  "roomCode": "CEM 118",
+  "directions": null,
+  "buildingId": 12,
+  "collegeId": 4,
+  "divisionId": 2
+ },
+ {
+  "id": 227,
+  "roomCode": "CEM 118/ONLINE",
+  "directions": null,
+  "buildingId": 12,
+  "collegeId": 4,
+  "divisionId": 2
+ },
+ {
+  "id": 228,
+  "roomCode": "CEM 201",
+  "directions": null,
+  "buildingId": 12,
+  "collegeId": 4,
+  "divisionId": 2
+ },
+ {
+  "id": 229,
+  "roomCode": "CEM 202",
+  "directions": null,
+  "buildingId": 12,
+  "collegeId": 4,
+  "divisionId": 2
+ },
+ {
+  "id": 230,
+  "roomCode": "CEM 203",
+  "directions": null,
+  "buildingId": 12,
+  "collegeId": 4,
+  "divisionId": 4
+ },
+ {
+  "id": 231,
+  "roomCode": "CEM 204",
+  "directions": null,
+  "buildingId": 12,
+  "collegeId": 4,
+  "divisionId": 4
+ },
+ {
+  "id": 232,
+  "roomCode": "CEM 205",
+  "directions": null,
+  "buildingId": 12,
+  "collegeId": 4,
+  "divisionId": 2
+ },
+ {
+  "id": 233,
+  "roomCode": "CEM FH",
+  "directions": null,
+  "buildingId": 12,
+  "collegeId": 4,
+  "divisionId": 2
+ },
+ {
+  "id": 234,
+  "roomCode": "CEM Function Hall",
+  "directions": null,
+  "buildingId": 12,
+  "collegeId": 4,
+  "divisionId": 2
+ },
+ {
+  "id": 235,
+  "roomCode": "CEM102",
+  "directions": null,
+  "buildingId": 12,
+  "collegeId": 4,
+  "divisionId": 12
+ },
+ {
+  "id": 236,
+  "roomCode": "CEMFH",
+  "directions": null,
+  "buildingId": 12,
+  "collegeId": 4,
+  "divisionId": 2
+ },
+ {
+  "id": 237,
+  "roomCode": "CERP Conf Room",
+  "directions": null,
+  "buildingId": 14,
+  "collegeId": 7,
+  "divisionId": 9
+ },
+ {
+  "id": 238,
+  "roomCode": "CERP Conference Room",
+  "directions": null,
+  "buildingId": 14,
+  "collegeId": 7,
+  "divisionId": 9
+ },
+ {
+  "id": 239,
+  "roomCode": "CFNR Lansigan, Audi",
+  "directions": null,
+  "buildingId": 13,
+  "collegeId": 6,
+  "divisionId": 26
+ },
+ {
+  "id": 240,
+  "roomCode": "CFNR Varrons Room",
+  "directions": null,
+  "buildingId": 13,
+  "collegeId": 6,
+  "divisionId": 26
+ },
+ {
+  "id": 241,
+  "roomCode": "CFNR, Manza",
+  "directions": null,
+  "buildingId": 13,
+  "collegeId": 6,
+  "divisionId": 26
+ },
+ {
+  "id": 242,
+  "roomCode": "CHE  MPH",
+  "directions": null,
+  "buildingId": 14,
+  "collegeId": 7,
+  "divisionId": 9
+ },
+ {
+  "id": 243,
+  "roomCode": "CHE 1",
+  "directions": null,
+  "buildingId": 14,
+  "collegeId": 5,
+  "divisionId": 7
+ },
+ {
+  "id": 244,
+  "roomCode": "CHE 2",
+  "directions": null,
+  "buildingId": 14,
+  "collegeId": 5,
+  "divisionId": 7
+ },
+ {
+  "id": 245,
+  "roomCode": "CHE 4",
+  "directions": null,
+  "buildingId": 14,
+  "collegeId": 5,
+  "divisionId": 7
+ },
+ {
+  "id": 246,
+  "roomCode": "CHE 5",
+  "directions": null,
+  "buildingId": 14,
+  "collegeId": 5,
+  "divisionId": 7
+ },
+ {
+  "id": 247,
+  "roomCode": "CHE Conference Room",
+  "directions": null,
+  "buildingId": 14,
+  "collegeId": 7,
+  "divisionId": 25
+ },
+ {
+  "id": 248,
+  "roomCode": "CHE MPH",
+  "directions": null,
+  "buildingId": 14,
+  "collegeId": 7,
+  "divisionId": 38
+ },
+ {
+  "id": 249,
+  "roomCode": "CHE REC",
+  "directions": null,
+  "buildingId": 14,
+  "collegeId": 7,
+  "divisionId": 25
+ },
+ {
+  "id": 250,
+  "roomCode": "CHE Rec",
+  "directions": null,
+  "buildingId": 14,
+  "collegeId": 7,
+  "divisionId": 25
+ },
+ {
+  "id": 251,
+  "roomCode": "CHE SR",
+  "directions": null,
+  "buildingId": 14,
+  "collegeId": 5,
+  "divisionId": 7
+ },
+ {
+  "id": 252,
+  "roomCode": "CHE conference room",
+  "directions": null,
+  "buildingId": 14,
+  "collegeId": 7,
+  "divisionId": 25
+ },
+ {
+  "id": 253,
+  "roomCode": "CHE-MPH",
+  "directions": null,
+  "buildingId": 14,
+  "collegeId": null,
+  "divisionId": null
+ },
+ {
+  "id": 254,
+  "roomCode": "CLH",
+  "directions": null,
+  "buildingId": 14,
+  "collegeId": 7,
+  "divisionId": 9
+ },
+ {
+  "id": 255,
+  "roomCode": "CTL",
+  "directions": null,
+  "buildingId": 14,
+  "collegeId": 7,
+  "divisionId": 19
+ },
+ {
+  "id": 256,
+  "roomCode": "CVM LR1",
+  "directions": null,
+  "buildingId": 16,
+  "collegeId": 8,
+  "divisionId": 6
+ },
+ {
+  "id": 257,
+  "roomCode": "CVM LR2",
+  "directions": null,
+  "buildingId": 16,
+  "collegeId": 8,
+  "divisionId": 6
+ },
+ {
+  "id": 258,
+  "roomCode": "ChE 1",
+  "directions": null,
+  "buildingId": 15,
+  "collegeId": 5,
+  "divisionId": 7
+ },
+ {
+  "id": 259,
+  "roomCode": "ChE 2",
+  "directions": null,
+  "buildingId": 15,
+  "collegeId": 6,
+  "divisionId": 7
+ },
+ {
+  "id": 260,
+  "roomCode": "ChE 3",
+  "directions": null,
+  "buildingId": 15,
+  "collegeId": 5,
+  "divisionId": 7
+ },
+ {
+  "id": 261,
+  "roomCode": "ChE 4",
+  "directions": null,
+  "buildingId": 15,
+  "collegeId": 5,
+  "divisionId": 7
+ },
+ {
+  "id": 262,
+  "roomCode": "ChE 5",
+  "directions": null,
+  "buildingId": 15,
+  "collegeId": 5,
+  "divisionId": 7
+ },
+ {
+  "id": 263,
+  "roomCode": "ChE SR",
+  "directions": null,
+  "buildingId": 15,
+  "collegeId": 5,
+  "divisionId": 7
+ },
+ {
+  "id": 264,
+  "roomCode": "D407",
+  "directions": null,
+  "buildingId": 5,
+  "collegeId": 2,
+  "divisionId": 42
+ },
+ {
+  "id": 265,
+  "roomCode": "DAAE Conference Room 1",
+  "directions": null,
+  "buildingId": 17,
+  "collegeId": 4,
+  "divisionId": 4
+ },
+ {
+  "id": 266,
+  "roomCode": "DAAE Conference Room 2",
+  "directions": null,
+  "buildingId": 17,
+  "collegeId": 4,
+  "divisionId": 4
+ },
+ {
+  "id": 267,
+  "roomCode": "DANCE AREA 1",
+  "directions": null,
+  "buildingId": 32,
+  "collegeId": 2,
+  "divisionId": 18
+ },
+ {
+  "id": 268,
+  "roomCode": "DANCE AREA 2",
+  "directions": null,
+  "buildingId": 32,
+  "collegeId": 2,
+  "divisionId": 18
+ },
+ {
+  "id": 269,
+  "roomCode": "DBVS Graduate Student Lecture Room",
+  "directions": null,
+  "buildingId": 16,
+  "collegeId": 8,
+  "divisionId": 6
+ },
+ {
+  "id": 270,
+  "roomCode": "DBVS LR",
+  "directions": null,
+  "buildingId": 16,
+  "collegeId": 8,
+  "divisionId": 6
+ },
+ {
+  "id": 271,
+  "roomCode": "DBVS Lecture Room",
+  "directions": null,
+  "buildingId": 16,
+  "collegeId": 8,
+  "divisionId": 28
+ },
+ {
+  "id": 272,
+  "roomCode": "DCERP  AVR",
+  "directions": null,
+  "buildingId": 14,
+  "collegeId": 7,
+  "divisionId": 9
+ },
+ {
+  "id": 273,
+  "roomCode": "DCERP AVR",
+  "directions": null,
+  "buildingId": 14,
+  "collegeId": 7,
+  "divisionId": 9
+ },
+ {
+  "id": 274,
+  "roomCode": "DEC-IMU",
+  "directions": null,
+  "buildingId": 9,
+  "collegeId": 2,
+  "divisionId": 20
+ },
+ {
+  "id": 275,
+  "roomCode": "DHFDS",
+  "directions": null,
+  "buildingId": 14,
+  "collegeId": 7,
+  "divisionId": 19
+ },
+ {
+  "id": 276,
+  "roomCode": "DHFDS GRAD",
+  "directions": null,
+  "buildingId": 14,
+  "collegeId": 7,
+  "divisionId": 19
+ },
+ {
+  "id": 277,
+  "roomCode": "DSDS MLH",
+  "directions": null,
+  "buildingId": 16,
+  "collegeId": 7,
+  "divisionId": 25
+ },
+ {
+  "id": 278,
+  "roomCode": "DSDS MLH (Main Lecture Hall)",
+  "directions": null,
+  "buildingId": 16,
+  "collegeId": 7,
+  "divisionId": 25
+ },
+ {
+  "id": 279,
+  "roomCode": "DSDS Main Lecture Hall",
+  "directions": null,
+  "buildingId": 16,
+  "collegeId": 7,
+  "divisionId": 25
+ },
+ {
+  "id": 280,
+  "roomCode": "DSDS Main Lecture Hall (MLH)",
+  "directions": null,
+  "buildingId": 16,
+  "collegeId": 7,
+  "divisionId": 25
+ },
+ {
+  "id": 281,
+  "roomCode": "DSDS SDS Lab",
+  "directions": null,
+  "buildingId": 16,
+  "collegeId": 7,
+  "divisionId": 25
+ },
+ {
+  "id": 282,
+  "roomCode": "DVCS L.A. SURGERY RM",
+  "directions": null,
+  "buildingId": 16,
+  "collegeId": 8,
+  "divisionId": 28
+ },
+ {
+  "id": 283,
+  "roomCode": "DVCS LR1",
+  "directions": null,
+  "buildingId": 16,
+  "collegeId": 8,
+  "divisionId": 28
+ },
+ {
+  "id": 284,
+  "roomCode": "DVCS S.A. SURGERY RM",
+  "directions": null,
+  "buildingId": 16,
+  "collegeId": 8,
+  "divisionId": 28
+ },
+ {
+  "id": 285,
+  "roomCode": "DVCS SURGERY THEATRE",
+  "directions": null,
+  "buildingId": 16,
+  "collegeId": 8,
+  "divisionId": 28
+ },
+ {
+  "id": 286,
+  "roomCode": "DVCS Small Animal Surgery Room",
+  "directions": null,
+  "buildingId": 16,
+  "collegeId": 8,
+  "divisionId": 28
+ },
+ {
+  "id": 287,
+  "roomCode": "DVCS THERIO LAB",
+  "directions": null,
+  "buildingId": 16,
+  "collegeId": 8,
+  "divisionId": 28
+ },
+ {
+  "id": 288,
+  "roomCode": "DVCS ZOTC Rm - Gregorio San Agustin Hall",
+  "directions": null,
+  "buildingId": 16,
+  "collegeId": 8,
+  "divisionId": 28
+ },
+ {
+  "id": 289,
+  "roomCode": "Dean's Office Conference Room DECL Hall",
+  "directions": null,
+  "buildingId": 14,
+  "collegeId": 2,
+  "divisionId": 20
+ },
+ {
+  "id": 290,
+  "roomCode": "Dean's Office Conference Room, DECL Hall",
+  "directions": null,
+  "buildingId": 14,
+  "collegeId": 2,
+  "divisionId": 20
+ },
+ {
+  "id": 291,
+  "roomCode": "EAA LH",
+  "directions": "2nd floor of Physical Sciences Building, across the PC labs.",
+  "buildingId": 35,
+  "collegeId": 2,
+  "divisionId": 34
+ },
+ {
+  "id": 292,
+  "roomCode": "EE 100",
+  "directions": "Main entrance - head straight.",
+  "buildingId": 18,
+  "collegeId": 5,
+  "divisionId": 14
+ },
+ {
+  "id": 293,
+  "roomCode": "EE 103",
+  "directions": "Main entrance - left side after CEAT OCS.",
+  "buildingId": 18,
+  "collegeId": 5,
+  "divisionId": 14
+ },
+ {
+  "id": 294,
+  "roomCode": "EE 104",
+  "directions": "Main entrance - left side after CEAT OCS.",
+  "buildingId": 18,
+  "collegeId": 5,
+  "divisionId": 14
+ },
+ {
+  "id": 295,
+  "roomCode": "EE 202",
+  "directions": "Main entrance - stairs - right hallway.",
+  "buildingId": 18,
+  "collegeId": 5,
+  "divisionId": 14
+ },
+ {
+  "id": 296,
+  "roomCode": "EE 203",
+  "directions": "Main entrance - stairs - right hallway.",
+  "buildingId": 18,
+  "collegeId": 5,
+  "divisionId": 14
+ },
+ {
+  "id": 297,
+  "roomCode": "EE 302",
+  "directions": "Main entrance - stairs - right hallway.",
+  "buildingId": 18,
+  "collegeId": 5,
+  "divisionId": 14
+ },
+ {
+  "id": 298,
+  "roomCode": "EE 303",
+  "directions": "Main entrance - stairs - right hallway.",
+  "buildingId": 18,
+  "collegeId": 5,
+  "divisionId": 14
+ },
+ {
+  "id": 299,
+  "roomCode": "EE 304",
+  "directions": "Main entrance - stairs - right hallway.",
+  "buildingId": 18,
+  "collegeId": 5,
+  "divisionId": 14
+ },
+ {
+  "id": 300,
+  "roomCode": "EE AUDI",
+  "directions": "Main entrance - second floor left hallway.",
+  "buildingId": 18,
+  "collegeId": 5,
+  "divisionId": 14
+ },
+ {
+  "id": 301,
+  "roomCode": "EM/HIS LAB",
+  "directions": null,
+  "buildingId": 16,
+  "collegeId": 8,
+  "divisionId": 6
+ },
+ {
+  "id": 302,
+  "roomCode": "ERSG LAB",
+  "directions": null,
+  "buildingId": 13,
+  "collegeId": 6,
+  "divisionId": 41
+ },
+ {
+  "id": 303,
+  "roomCode": "FBS 051",
+  "directions": null,
+  "buildingId": 19,
+  "collegeId": 6,
+  "divisionId": 16
+ },
+ {
+  "id": 304,
+  "roomCode": "FBS 055",
+  "directions": null,
+  "buildingId": 19,
+  "collegeId": 6,
+  "divisionId": 16
+ },
+ {
+  "id": 305,
+  "roomCode": "FBS 060",
+  "directions": null,
+  "buildingId": 19,
+  "collegeId": 6,
+  "divisionId": 16
+ },
+ {
+  "id": 306,
+  "roomCode": "FBS 151",
+  "directions": null,
+  "buildingId": 19,
+  "collegeId": 6,
+  "divisionId": 16
+ },
+ {
+  "id": 307,
+  "roomCode": "FBS 155",
+  "directions": null,
+  "buildingId": 19,
+  "collegeId": 6,
+  "divisionId": 16
+ },
+ {
+  "id": 308,
+  "roomCode": "FBS 155/ FBS 051",
+  "directions": null,
+  "buildingId": 19,
+  "collegeId": 6,
+  "divisionId": 16
+ },
+ {
+  "id": 309,
+  "roomCode": "FBS 155/FBS 051",
+  "directions": null,
+  "buildingId": 19,
+  "collegeId": 6,
+  "divisionId": 16
+ },
+ {
+  "id": 310,
+  "roomCode": "FBS 157",
+  "directions": null,
+  "buildingId": 19,
+  "collegeId": 6,
+  "divisionId": 16
+ },
+ {
+  "id": 311,
+  "roomCode": "FBS 161",
+  "directions": null,
+  "buildingId": 19,
+  "collegeId": 6,
+  "divisionId": 16
+ },
+ {
+  "id": 312,
+  "roomCode": "FBS 169",
+  "directions": null,
+  "buildingId": 19,
+  "collegeId": 6,
+  "divisionId": 16
+ },
+ {
+  "id": 313,
+  "roomCode": "FBS 171",
+  "directions": null,
+  "buildingId": 19,
+  "collegeId": 6,
+  "divisionId": 16
+ },
+ {
+  "id": 314,
+  "roomCode": "FBS 175",
+  "directions": null,
+  "buildingId": 19,
+  "collegeId": 6,
+  "divisionId": 16
+ },
+ {
+  "id": 315,
+  "roomCode": "FCN",
+  "directions": "FCN or Fruit Crops Nursery is found across the Senior Social Garden, past PHTRC/CEAT.",
+  "buildingId": 5,
+  "collegeId": 1,
+  "divisionId": 36
+ },
+ {
+  "id": 316,
+  "roomCode": "FL",
+  "directions": null,
+  "buildingId": 27,
+  "collegeId": 7,
+  "divisionId": 38
+ },
+ {
+  "id": 317,
+  "roomCode": "FPPS ANNEX",
+  "directions": null,
+  "buildingId": 5,
+  "collegeId": 6,
+  "divisionId": 17
+ },
+ {
+  "id": 318,
+  "roomCode": "FRONDA HALL - ROOM 26",
+  "directions": null,
+  "buildingId": 16,
+  "collegeId": 1,
+  "divisionId": 31
+ },
+ {
+  "id": 319,
+  "roomCode": "Field",
+  "directions": null,
+  "buildingId": 13,
+  "collegeId": 6,
+  "divisionId": null
+ },
+ {
+  "id": 320,
+  "roomCode": "Follosco",
+  "directions": null,
+  "buildingId": 13,
+  "collegeId": 5,
+  "divisionId": 22
+ },
+ {
+  "id": 321,
+  "roomCode": "Food Hygiene Laboratory Room",
+  "directions": null,
+  "buildingId": 16,
+  "collegeId": 8,
+  "divisionId": 29
+ },
+ {
+  "id": 322,
+  "roomCode": "Fronda GSR",
+  "directions": null,
+  "buildingId": 16,
+  "collegeId": 1,
+  "divisionId": 31
+ },
+ {
+  "id": 323,
+  "roomCode": "Fronda Hall -  Graduate Student Room (GSR)",
+  "directions": null,
+  "buildingId": 16,
+  "collegeId": 1,
+  "divisionId": 31
+ },
+ {
+  "id": 324,
+  "roomCode": "Fronda Hall -  Poultry Lab B",
+  "directions": null,
+  "buildingId": 16,
+  "collegeId": 1,
+  "divisionId": 31
+ },
+ {
+  "id": 325,
+  "roomCode": "Fronda Hall - Graduate Student Room (GSR)",
+  "directions": null,
+  "buildingId": 16,
+  "collegeId": 1,
+  "divisionId": 31
+ },
+ {
+  "id": 326,
+  "roomCode": "Fronda Hall RM. 24",
+  "directions": null,
+  "buildingId": 16,
+  "collegeId": 1,
+  "divisionId": 31
+ },
+ {
+  "id": 327,
+  "roomCode": "Fronda RM. 24",
+  "directions": null,
+  "buildingId": 16,
+  "collegeId": 1,
+  "divisionId": 31
+ },
+ {
+  "id": 328,
+  "roomCode": "GEOMATICS",
+  "directions": null,
+  "buildingId": 13,
+  "collegeId": 7,
+  "divisionId": 9
+ },
+ {
+  "id": 329,
+  "roomCode": "GEOMATICS ROOM",
+  "directions": null,
+  "buildingId": 13,
+  "collegeId": 7,
+  "divisionId": 9
+ },
+ {
+  "id": 330,
+  "roomCode": "GRAD ROOM",
+  "directions": null,
+  "buildingId": 20,
+  "collegeId": 3,
+  "divisionId": 24
+ },
+ {
+  "id": 331,
+  "roomCode": "GS 201",
+  "directions": null,
+  "buildingId": 20,
+  "collegeId": 2,
+  "divisionId": 27
+ },
+ {
+  "id": 332,
+  "roomCode": "GS Room 202",
+  "directions": null,
+  "buildingId": 20,
+  "collegeId": 2,
+  "divisionId": 32
+ },
+ {
+  "id": 333,
+  "roomCode": "GTOCHLOA",
+  "directions": null,
+  "buildingId": 13,
+  "collegeId": 6,
+  "divisionId": 17
+ },
+ {
+  "id": 334,
+  "roomCode": "General Physio Lab (Rm. 100)",
+  "directions": null,
+  "buildingId": 16,
+  "collegeId": 1,
+  "divisionId": 31
+ },
+ {
+  "id": 335,
+  "roomCode": "General Physiology Lab (Rm. 100)",
+  "directions": null,
+  "buildingId": 16,
+  "collegeId": 1,
+  "divisionId": 31
+ },
+ {
+  "id": 336,
+  "roomCode": "Graduate Room",
+  "directions": null,
+  "buildingId": 20,
+  "collegeId": 3,
+  "divisionId": 24
+ },
+ {
+  "id": 337,
+  "roomCode": "Graduate Room 120",
+  "directions": null,
+  "buildingId": 20,
+  "collegeId": 4,
+  "divisionId": 4
+ },
+ {
+  "id": 338,
+  "roomCode": "Graduate School",
+  "directions": null,
+  "buildingId": 20,
+  "collegeId": 3,
+  "divisionId": 24
+ },
+ {
+  "id": 339,
+  "roomCode": "Gross Anat Lab",
+  "directions": null,
+  "buildingId": 16,
+  "collegeId": 8,
+  "divisionId": 6
+ },
+ {
+  "id": 340,
+  "roomCode": "HL CONRM 2",
+  "directions": null,
+  "buildingId": 21,
+  "collegeId": 5,
+  "divisionId": 22
+ },
+ {
+  "id": 341,
+  "roomCode": "HL ConfRm2",
+  "directions": null,
+  "buildingId": 21,
+  "collegeId": 5,
+  "divisionId": 22
+ },
+ {
+  "id": 342,
+  "roomCode": "HL-100",
+  "directions": null,
+  "buildingId": 21,
+  "collegeId": 5,
+  "divisionId": 30
+ },
+ {
+  "id": 343,
+  "roomCode": "HL-201",
+  "directions": null,
+  "buildingId": 21,
+  "collegeId": 5,
+  "divisionId": 30
+ },
+ {
+  "id": 344,
+  "roomCode": "Human Dimensions Lab",
+  "directions": null,
+  "buildingId": 13,
+  "collegeId": 2,
+  "divisionId": 27
+ },
+ {
+  "id": 345,
+  "roomCode": "IABE CONFR",
+  "directions": null,
+  "buildingId": 22,
+  "collegeId": 5,
+  "divisionId": 30
+ },
+ {
+  "id": 346,
+  "roomCode": "IABE DO Meeting Room",
+  "directions": null,
+  "buildingId": 22,
+  "collegeId": 5,
+  "divisionId": 30
+ },
+ {
+  "id": 347,
+  "roomCode": "IABE LH",
+  "directions": null,
+  "buildingId": 22,
+  "collegeId": 5,
+  "divisionId": 30
+ },
+ {
+  "id": 348,
+  "roomCode": "IABE Meeting Room",
+  "directions": null,
+  "buildingId": 22,
+  "collegeId": 5,
+  "divisionId": 30
+ },
+ {
+  "id": 349,
+  "roomCode": "IAF",
+  "directions": null,
+  "buildingId": 5,
+  "collegeId": 6,
+  "divisionId": 41
+ },
+ {
+  "id": 350,
+  "roomCode": "IAS Graduate Room (AND)",
+  "directions": null,
+  "buildingId": 16,
+  "collegeId": 1,
+  "divisionId": 31
+ },
+ {
+  "id": 351,
+  "roomCode": "IAS RM. 1",
+  "directions": "After reaching the IAS-CVM communal building, walk straight and turn right.",
+  "buildingId": 16,
+  "collegeId": 1,
+  "divisionId": 31
+ },
+ {
+  "id": 352,
+  "roomCode": "IAS RM. 2",
+  "directions": "After reaching the IAS-CVM communal building, walk straight and turn right.",
+  "buildingId": 16,
+  "collegeId": 1,
+  "divisionId": 31
+ },
+ {
+  "id": 353,
+  "roomCode": "IAS Room 1",
+  "directions": null,
+  "buildingId": 16,
+  "collegeId": 1,
+  "divisionId": 37
+ },
+ {
+  "id": 354,
+  "roomCode": "IAS-LGIL",
+  "directions": null,
+  "buildingId": 16,
+  "collegeId": 1,
+  "divisionId": null
+ },
+ {
+  "id": 355,
+  "roomCode": "IBS Bioinformatics Laboratory",
+  "directions": null,
+  "buildingId": 4,
+  "collegeId": 2,
+  "divisionId": 32
+ },
+ {
+  "id": 356,
+  "roomCode": "IBS Bioinformatics Room",
+  "directions": null,
+  "buildingId": 4,
+  "collegeId": 2,
+  "divisionId": 32
+ },
+ {
+  "id": 357,
+  "roomCode": "IBS MBB Teaching Laboratory",
+  "directions": null,
+  "buildingId": 4,
+  "collegeId": 2,
+  "divisionId": 32
+ },
+ {
+  "id": 358,
+  "roomCode": "IBS Symbiosis-Bioinformatics Laboratory",
+  "directions": null,
+  "buildingId": 4,
+  "collegeId": 2,
+  "divisionId": 32
+ },
+ {
+  "id": 359,
+  "roomCode": "IBSLH 3",
+  "directions": null,
+  "buildingId": 4,
+  "collegeId": 2,
+  "divisionId": 32
+ },
+ {
+  "id": 360,
+  "roomCode": "IBSLH MAIN",
+  "directions": "Institute of Biological Sciences Lecture Hall (Main). In the BS building cluster, in front of CAS A1.",
+  "buildingId": 4,
+  "collegeId": 2,
+  "divisionId": 32
+ },
+ {
+  "id": 361,
+  "roomCode": "IBSLH2",
+  "directions": null,
+  "buildingId": 4,
+  "collegeId": 2,
+  "divisionId": 32
+ },
+ {
+  "id": 362,
+  "roomCode": "IBSLH3",
+  "directions": null,
+  "buildingId": 4,
+  "collegeId": 2,
+  "divisionId": 32
+ },
+ {
+  "id": 363,
+  "roomCode": "ICOPED 26",
+  "directions": null,
+  "buildingId": 23,
+  "collegeId": 4,
+  "divisionId": 2
+ },
+ {
+  "id": 364,
+  "roomCode": "ICOPED 28",
+  "directions": null,
+  "buildingId": 23,
+  "collegeId": 4,
+  "divisionId": 2
+ },
+ {
+  "id": 365,
+  "roomCode": "ICOPED 30",
+  "directions": null,
+  "buildingId": 23,
+  "collegeId": 4,
+  "divisionId": 35
+ },
+ {
+  "id": 366,
+  "roomCode": "ICROPS 100",
+  "directions": null,
+  "buildingId": 24,
+  "collegeId": 1,
+  "divisionId": 36
+ },
+ {
+  "id": 367,
+  "roomCode": "ICROPS 101",
+  "directions": null,
+  "buildingId": 24,
+  "collegeId": 1,
+  "divisionId": 36
+ },
+ {
+  "id": 368,
+  "roomCode": "ICROPS 104",
+  "directions": null,
+  "buildingId": 24,
+  "collegeId": 1,
+  "divisionId": 36
+ },
+ {
+  "id": 369,
+  "roomCode": "ICROPS 106",
+  "directions": null,
+  "buildingId": 24,
+  "collegeId": 1,
+  "divisionId": 36
+ },
+ {
+  "id": 370,
+  "roomCode": "ICROPS 134",
+  "directions": null,
+  "buildingId": 24,
+  "collegeId": 1,
+  "divisionId": 36
+ },
+ {
+  "id": 371,
+  "roomCode": "ICROPS 137",
+  "directions": null,
+  "buildingId": 24,
+  "collegeId": 1,
+  "divisionId": 36
+ },
+ {
+  "id": 372,
+  "roomCode": "ICROPS 138",
+  "directions": null,
+  "buildingId": 24,
+  "collegeId": 1,
+  "divisionId": 36
+ },
+ {
+  "id": 373,
+  "roomCode": "ICROPS 200",
+  "directions": null,
+  "buildingId": 24,
+  "collegeId": 1,
+  "divisionId": null
+ },
+ {
+  "id": 374,
+  "roomCode": "ICROPS 201",
+  "directions": null,
+  "buildingId": 24,
+  "collegeId": 1,
+  "divisionId": 36
+ },
+ {
+  "id": 375,
+  "roomCode": "ICROPS 202",
+  "directions": null,
+  "buildingId": 24,
+  "collegeId": 1,
+  "divisionId": 36
+ },
+ {
+  "id": 376,
+  "roomCode": "ICROPS 302",
+  "directions": null,
+  "buildingId": 24,
+  "collegeId": 1,
+  "divisionId": 36
+ },
+ {
+  "id": 377,
+  "roomCode": "ICROPS 302 MORPH LAB",
+  "directions": null,
+  "buildingId": 24,
+  "collegeId": 1,
+  "divisionId": 36
+ },
+ {
+  "id": 378,
+  "roomCode": "ICS PC1",
+  "directions": "Physical Sciences Building, 2nd Floor. Small PC lab in front of Systems Research Group.",
+  "buildingId": 35,
+  "collegeId": 2,
+  "divisionId": 34
+ },
+ {
+  "id": 379,
+  "roomCode": "ICS PC2",
+  "directions": "Physical Sciences Building, 2nd Floor.",
+  "buildingId": 35,
+  "collegeId": 2,
+  "divisionId": 34
+ },
+ {
+  "id": 380,
+  "roomCode": "ICS PC3",
+  "directions": "Physical Sciences Building, 2nd Floor.",
+  "buildingId": 35,
+  "collegeId": 2,
+  "divisionId": 34
+ },
+ {
+  "id": 381,
+  "roomCode": "ICS PC4",
+  "directions": "Physical Sciences Building, 2nd Floor.",
+  "buildingId": 35,
+  "collegeId": 2,
+  "divisionId": 34
+ },
+ {
+  "id": 382,
+  "roomCode": "ICS PC5",
+  "directions": "Physical Sciences Building, 2nd Floor.",
+  "buildingId": 35,
+  "collegeId": 2,
+  "divisionId": 34
+ },
+ {
+  "id": 383,
+  "roomCode": "ICS PC6",
+  "directions": "Physical Sciences Building, 3rd Floor.",
+  "buildingId": 35,
+  "collegeId": 2,
+  "divisionId": 34
+ },
+ {
+  "id": 384,
+  "roomCode": "ICS PC7",
+  "directions": "Physical Sciences Building, 3rd Floor.",
+  "buildingId": 35,
+  "collegeId": 2,
+  "divisionId": 34
+ },
+ {
+  "id": 385,
+  "roomCode": "ICS PC8",
+  "directions": "Physical Sciences Building, 3rd Floor.",
+  "buildingId": 35,
+  "collegeId": 2,
+  "divisionId": 34
+ },
+ {
+  "id": 386,
+  "roomCode": "ICS PC9",
+  "directions": "Physical Sciences Building, 3rd Floor.",
+  "buildingId": 35,
+  "collegeId": 2,
+  "divisionId": 34
+ },
+ {
+  "id": 387,
+  "roomCode": "IE 100",
+  "directions": null,
+  "buildingId": 25,
+  "collegeId": 5,
+  "divisionId": 21
+ },
+ {
+  "id": 388,
+  "roomCode": "IE 101",
+  "directions": null,
+  "buildingId": 25,
+  "collegeId": 5,
+  "divisionId": 21
+ },
+ {
+  "id": 389,
+  "roomCode": "IE 102",
+  "directions": null,
+  "buildingId": 25,
+  "collegeId": 5,
+  "divisionId": 21
+ },
+ {
+  "id": 390,
+  "roomCode": "IE 103",
+  "directions": null,
+  "buildingId": 25,
+  "collegeId": 5,
+  "divisionId": 21
+ },
+ {
+  "id": 391,
+  "roomCode": "IE 104",
+  "directions": null,
+  "buildingId": 25,
+  "collegeId": 5,
+  "divisionId": 21
+ },
+ {
+  "id": 392,
+  "roomCode": "IFST 201",
+  "directions": null,
+  "buildingId": 26,
+  "collegeId": 1,
+  "divisionId": 37
+ },
+ {
+  "id": 393,
+  "roomCode": "IFST 202",
+  "directions": null,
+  "buildingId": 26,
+  "collegeId": 1,
+  "divisionId": 37
+ },
+ {
+  "id": 394,
+  "roomCode": "IFST ANNEX A",
+  "directions": null,
+  "buildingId": 26,
+  "collegeId": 1,
+  "divisionId": 37
+ },
+ {
+  "id": 395,
+  "roomCode": "IFST ANNEX B",
+  "directions": null,
+  "buildingId": 26,
+  "collegeId": 1,
+  "divisionId": null
+ },
+ {
+  "id": 396,
+  "roomCode": "IFST ANNEX C",
+  "directions": null,
+  "buildingId": 26,
+  "collegeId": 1,
+  "divisionId": 36
+ },
+ {
+  "id": 397,
+  "roomCode": "IFST ANNEX D",
+  "directions": null,
+  "buildingId": 26,
+  "collegeId": 1,
+  "divisionId": null
+ },
+ {
+  "id": 398,
+  "roomCode": "IFST L2/L3",
+  "directions": null,
+  "buildingId": 26,
+  "collegeId": 1,
+  "divisionId": 37
+ },
+ {
+  "id": 399,
+  "roomCode": "IFST Pilot Plant",
+  "directions": null,
+  "buildingId": 26,
+  "collegeId": 1,
+  "divisionId": 37
+ },
+ {
+  "id": 400,
+  "roomCode": "IFST STL",
+  "directions": null,
+  "buildingId": 26,
+  "collegeId": 1,
+  "divisionId": 37
+ },
+ {
+  "id": 401,
+  "roomCode": "IHNF Conference Room",
+  "directions": null,
+  "buildingId": 27,
+  "collegeId": 7,
+  "divisionId": 38
+ },
+ {
+  "id": 402,
+  "roomCode": "IMU",
+  "directions": null,
+  "buildingId": 9,
+  "collegeId": 3,
+  "divisionId": 10
+ },
+ {
+  "id": 403,
+  "roomCode": "INSTAT RA2",
+  "directions": null,
+  "buildingId": 8,
+  "collegeId": 2,
+  "divisionId": 42
+ },
+ {
+  "id": 404,
+  "roomCode": "INSTATLH",
+  "directions": "3rd floor of Physical Sciences, near the balcony overlooking Oblation Park.",
+  "buildingId": 35,
+  "collegeId": 2,
+  "divisionId": 42
+ },
+ {
+  "id": 405,
+  "roomCode": "IRNR 252",
+  "directions": null,
+  "buildingId": 28,
+  "collegeId": 6,
+  "divisionId": 41
+ },
+ {
+  "id": 406,
+  "roomCode": "IRNR 253",
+  "directions": null,
+  "buildingId": 28,
+  "collegeId": 6,
+  "divisionId": 41
+ },
+ {
+  "id": 407,
+  "roomCode": "IRNR 254",
+  "directions": null,
+  "buildingId": 28,
+  "collegeId": 6,
+  "divisionId": 41
+ },
+ {
+  "id": 408,
+  "roomCode": "IRNR 271A",
+  "directions": null,
+  "buildingId": 28,
+  "collegeId": 6,
+  "divisionId": 41
+ },
+ {
+  "id": 409,
+  "roomCode": "IRNR 273A",
+  "directions": null,
+  "buildingId": 28,
+  "collegeId": 6,
+  "divisionId": 41
+ },
+ {
+  "id": 410,
+  "roomCode": "IRNR 273B",
+  "directions": null,
+  "buildingId": 28,
+  "collegeId": 6,
+  "divisionId": 41
+ },
+ {
+  "id": 411,
+  "roomCode": "IRNR 290",
+  "directions": null,
+  "buildingId": 28,
+  "collegeId": 6,
+  "divisionId": 41
+ },
+ {
+  "id": 412,
+  "roomCode": "IRNR 291",
+  "directions": null,
+  "buildingId": 28,
+  "collegeId": 6,
+  "divisionId": 41
+ },
+ {
+  "id": 413,
+  "roomCode": "IRNR 292",
+  "directions": null,
+  "buildingId": 28,
+  "collegeId": 6,
+  "divisionId": 41
+ },
+ {
+  "id": 414,
+  "roomCode": "IRNR Conference Room",
+  "directions": null,
+  "buildingId": 28,
+  "collegeId": 6,
+  "divisionId": 41
+ },
+ {
+  "id": 415,
+  "roomCode": "IWEP AUDI",
+  "directions": null,
+  "buildingId": 29,
+  "collegeId": 2,
+  "divisionId": 27
+ },
+ {
+  "id": 416,
+  "roomCode": "IWEPLH",
+  "directions": null,
+  "buildingId": 29,
+  "collegeId": 2,
+  "divisionId": 27
+ },
+ {
+  "id": 417,
+  "roomCode": "LHKCB 101B",
+  "directions": null,
+  "buildingId": 30,
+  "collegeId": 1,
+  "divisionId": 36
+ },
+ {
+  "id": 418,
+  "roomCode": "LHKCB 204",
+  "directions": null,
+  "buildingId": 30,
+  "collegeId": 1,
+  "divisionId": 36
+ },
+ {
+  "id": 419,
+  "roomCode": "LR1",
+  "directions": null,
+  "buildingId": 9,
+  "collegeId": 3,
+  "divisionId": 24
+ },
+ {
+  "id": 420,
+  "roomCode": "LR2A",
+  "directions": "Copeland Gym, Wing B, 3rd Floor, Lecture Room. Wing B is towards the parking at the back of Copeland.",
+  "buildingId": 32,
+  "collegeId": 2,
+  "divisionId": 18
+ },
+ {
+  "id": 421,
+  "roomCode": "LR2B",
+  "directions": "Copeland Gym, Wing B area.",
+  "buildingId": 32,
+  "collegeId": 2,
+  "divisionId": 18
+ },
+ {
+  "id": 422,
+  "roomCode": "LR3A",
+  "directions": null,
+  "buildingId": null,
+  "collegeId": 2,
+  "divisionId": 18
+ },
+ {
+  "id": 423,
+  "roomCode": "LR3B",
+  "directions": "Copeland Gym, Wing B area.",
+  "buildingId": 32,
+  "collegeId": 2,
+  "divisionId": 18
+ },
+ {
+  "id": 424,
+  "roomCode": "MARTIAL ARTS AREA",
+  "directions": null,
+  "buildingId": 32,
+  "collegeId": 2,
+  "divisionId": 18
+ },
+ {
+  "id": 425,
+  "roomCode": "MB 100",
+  "directions": null,
+  "buildingId": 31,
+  "collegeId": 2,
+  "divisionId": 39
+ },
+ {
+  "id": 426,
+  "roomCode": "MB 101A",
+  "directions": null,
+  "buildingId": 31,
+  "collegeId": 2,
+  "divisionId": 39
+ },
+ {
+  "id": 427,
+  "roomCode": "MB 101B",
+  "directions": null,
+  "buildingId": 31,
+  "collegeId": 2,
+  "divisionId": 39
+ },
+ {
+  "id": 428,
+  "roomCode": "MB 102",
+  "directions": null,
+  "buildingId": 31,
+  "collegeId": 2,
+  "divisionId": 39
+ },
+ {
+  "id": 429,
+  "roomCode": "MB 103A",
+  "directions": null,
+  "buildingId": 31,
+  "collegeId": 2,
+  "divisionId": 39
+ },
+ {
+  "id": 430,
+  "roomCode": "MB 104",
+  "directions": null,
+  "buildingId": 31,
+  "collegeId": 2,
+  "divisionId": 39
+ },
+ {
+  "id": 431,
+  "roomCode": "MB 301",
+  "directions": null,
+  "buildingId": 31,
+  "collegeId": 2,
+  "divisionId": 39
+ },
+ {
+  "id": 432,
+  "roomCode": "MB 302",
+  "directions": null,
+  "buildingId": 31,
+  "collegeId": 2,
+  "divisionId": 39
+ },
+ {
+  "id": 433,
+  "roomCode": "MB 303",
+  "directions": null,
+  "buildingId": 31,
+  "collegeId": 2,
+  "divisionId": 39
+ },
+ {
+  "id": 434,
+  "roomCode": "MB 304",
+  "directions": null,
+  "buildingId": 31,
+  "collegeId": 2,
+  "divisionId": 39
+ },
+ {
+  "id": 435,
+  "roomCode": "MB 305",
+  "directions": null,
+  "buildingId": 31,
+  "collegeId": 2,
+  "divisionId": 39
+ },
+ {
+  "id": 436,
+  "roomCode": "MB 307",
+  "directions": null,
+  "buildingId": 31,
+  "collegeId": 2,
+  "divisionId": 39
+ },
+ {
+  "id": 437,
+  "roomCode": "MB 308",
+  "directions": null,
+  "buildingId": 31,
+  "collegeId": 2,
+  "divisionId": 39
+ },
+ {
+  "id": 438,
+  "roomCode": "MB 309",
+  "directions": null,
+  "buildingId": 31,
+  "collegeId": 2,
+  "divisionId": 39
+ },
+ {
+  "id": 439,
+  "roomCode": "MBBLH",
+  "directions": null,
+  "buildingId": 4,
+  "collegeId": 2,
+  "divisionId": 32
+ },
+ {
+  "id": 440,
+  "roomCode": "MLH",
+  "directions": null,
+  "buildingId": 16,
+  "collegeId": 7,
+  "divisionId": 25
+ },
+ {
+  "id": 441,
+  "roomCode": "MMM LH",
+  "directions": "3rd floor of Physical Sciences Building, second lecture hall when entering the ICS area.",
+  "buildingId": 35,
+  "collegeId": 2,
+  "divisionId": 34
+ },
+ {
+  "id": 442,
+  "roomCode": "MSLR 1",
+  "directions": null,
+  "buildingId": 4,
+  "collegeId": 1,
+  "divisionId": 31
+ },
+ {
+  "id": 443,
+  "roomCode": "MSLR 2",
+  "directions": null,
+  "buildingId": 4,
+  "collegeId": 1,
+  "divisionId": 31
+ },
+ {
+  "id": 444,
+  "roomCode": "Main Library",
+  "directions": null,
+  "buildingId": 38,
+  "collegeId": 2,
+  "divisionId": 33
+ },
+ {
+  "id": 445,
+  "roomCode": "Malacology Lab (Snail Room)",
+  "directions": null,
+  "buildingId": 4,
+  "collegeId": 2,
+  "divisionId": 32
+ },
+ {
+  "id": 446,
+  "roomCode": "Malacology Laboratory (BS Snail Room)",
+  "directions": null,
+  "buildingId": 4,
+  "collegeId": 2,
+  "divisionId": 32
+ },
+ {
+  "id": 447,
+  "roomCode": "NEW GS RM 2",
+  "directions": null,
+  "buildingId": 20,
+  "collegeId": 4,
+  "divisionId": 12
+ },
+ {
+  "id": 448,
+  "roomCode": "NL",
+  "directions": null,
+  "buildingId": 27,
+  "collegeId": 7,
+  "divisionId": 38
+ },
+ {
+  "id": 449,
+  "roomCode": "Nursery (FCN)",
+  "directions": "FCN or Fruit Crops Nursery is found across the Senior Social Garden, past PHTRC/CEAT.",
+  "buildingId": 5,
+  "collegeId": 1,
+  "divisionId": null
+ },
+ {
+  "id": 450,
+  "roomCode": "Old GS Conference Room",
+  "directions": null,
+  "buildingId": 20,
+  "collegeId": 2,
+  "divisionId": 32
+ },
+ {
+  "id": 451,
+  "roomCode": "Online",
+  "directions": null,
+  "buildingId": null,
+  "collegeId": 2,
+  "divisionId": 33
+ },
+ {
+  "id": 452,
+  "roomCode": "PHTRC",
+  "directions": null,
+  "buildingId": 34,
+  "collegeId": 1,
+  "divisionId": 36
+ },
+ {
+  "id": 453,
+  "roomCode": "PHTRC 106",
+  "directions": null,
+  "buildingId": 34,
+  "collegeId": 1,
+  "divisionId": 36
+ },
+ {
+  "id": 454,
+  "roomCode": "PHTRC ANNEX",
+  "directions": null,
+  "buildingId": 34,
+  "collegeId": 1,
+  "divisionId": null
+ },
+ {
+  "id": 455,
+  "roomCode": "PHYSIO LAB",
+  "directions": null,
+  "buildingId": 16,
+  "collegeId": 8,
+  "divisionId": 6
+ },
+ {
+  "id": 456,
+  "roomCode": "PS ANX-300",
+  "directions": null,
+  "buildingId": 35,
+  "collegeId": 2,
+  "divisionId": 33
+ },
+ {
+  "id": 457,
+  "roomCode": "PS ANX-306",
+  "directions": null,
+  "buildingId": 35,
+  "collegeId": 2,
+  "divisionId": 33
+ },
+ {
+  "id": 458,
+  "roomCode": "PS B-100",
+  "directions": "Walk straight from main entrance. Turn left at the very end.",
+  "buildingId": 35,
+  "collegeId": 2,
+  "divisionId": 33
+ },
+ {
+  "id": 459,
+  "roomCode": "PS B-101",
+  "directions": "Walk straight from main entrance. Turn left at the very end.",
+  "buildingId": 35,
+  "collegeId": 2,
+  "divisionId": 33
+ },
+ {
+  "id": 460,
+  "roomCode": "PS B-103",
+  "directions": "Walk straight from main entrance. Turn left at the very end.",
+  "buildingId": 35,
+  "collegeId": 2,
+  "divisionId": 33
+ },
+ {
+  "id": 461,
+  "roomCode": "PS B-105",
+  "directions": "Walk straight from main entrance. Turn left at the very end.",
+  "buildingId": 35,
+  "collegeId": 2,
+  "divisionId": 33
+ },
+ {
+  "id": 462,
+  "roomCode": "PS B-200",
+  "directions": "Walk straight from main entrance. Take stairs at the very end to second floor. Turn right.",
+  "buildingId": 35,
+  "collegeId": 2,
+  "divisionId": 33
+ },
+ {
+  "id": 463,
+  "roomCode": "PS B-201",
+  "directions": "Walk straight from main entrance. Take stairs at the very end to second floor. Turn right.",
+  "buildingId": 35,
+  "collegeId": 2,
+  "divisionId": 33
+ },
+ {
+  "id": 464,
+  "roomCode": "PS B-203",
+  "directions": "Walk straight from main entrance. Take stairs at the very end to second floor. Turn right.",
+  "buildingId": 35,
+  "collegeId": 2,
+  "divisionId": 33
+ },
+ {
+  "id": 465,
+  "roomCode": "PS B-205",
+  "directions": "Walk straight from main entrance. Take stairs at the very end to second floor. Turn right.",
+  "buildingId": 35,
+  "collegeId": 2,
+  "divisionId": 33
+ },
+ {
+  "id": 466,
+  "roomCode": "PS C-101",
+  "directions": null,
+  "buildingId": 35,
+  "collegeId": 2,
+  "divisionId": 40
+ },
+ {
+  "id": 467,
+  "roomCode": "PS C-200c",
+  "directions": null,
+  "buildingId": 35,
+  "collegeId": 2,
+  "divisionId": 40
+ },
+ {
+  "id": 468,
+  "roomCode": "PS C-203",
+  "directions": null,
+  "buildingId": 35,
+  "collegeId": 2,
+  "divisionId": 40
+ },
+ {
+  "id": 469,
+  "roomCode": "PS C-204",
+  "directions": null,
+  "buildingId": 35,
+  "collegeId": 2,
+  "divisionId": 40
+ },
+ {
+  "id": 470,
+  "roomCode": "PS C-206",
+  "directions": null,
+  "buildingId": 35,
+  "collegeId": 2,
+  "divisionId": 40
+ },
+ {
+  "id": 471,
+  "roomCode": "PS C-214",
+  "directions": null,
+  "buildingId": 35,
+  "collegeId": 2,
+  "divisionId": 40
+ },
+ {
+  "id": 472,
+  "roomCode": "PS C-304",
+  "directions": null,
+  "buildingId": 35,
+  "collegeId": 2,
+  "divisionId": 42
+ },
+ {
+  "id": 473,
+  "roomCode": "PS C-305",
+  "directions": null,
+  "buildingId": 35,
+  "collegeId": 2,
+  "divisionId": 42
+ },
+ {
+  "id": 474,
+  "roomCode": "PS C-306",
+  "directions": null,
+  "buildingId": 35,
+  "collegeId": 2,
+  "divisionId": 42
+ },
+ {
+  "id": 475,
+  "roomCode": "PS C-307",
+  "directions": null,
+  "buildingId": 35,
+  "collegeId": 2,
+  "divisionId": 42
+ },
+ {
+  "id": 476,
+  "roomCode": "PS C-309",
+  "directions": null,
+  "buildingId": 35,
+  "collegeId": 2,
+  "divisionId": 42
+ },
+ {
+  "id": 477,
+  "roomCode": "PS C-312",
+  "directions": null,
+  "buildingId": 35,
+  "collegeId": 2,
+  "divisionId": 42
+ },
+ {
+  "id": 478,
+  "roomCode": "PS C-320",
+  "directions": null,
+  "buildingId": 35,
+  "collegeId": 2,
+  "divisionId": 42
+ },
+ {
+  "id": 479,
+  "roomCode": "PS C100",
+  "directions": "Room just to the right of Physical Sciences first floor main entrance.",
+  "buildingId": 35,
+  "collegeId": 2,
+  "divisionId": 32
+ },
+ {
+  "id": 480,
+  "roomCode": "PSLH A",
+  "directions": "In the Physical Sciences Building (Francisco O. Santos Hall), to the right of Oble. Ground floor, easy to spot.",
+  "buildingId": 5,
+  "collegeId": 2,
+  "divisionId": 33
+ },
+ {
+  "id": 481,
+  "roomCode": "PSLH B",
+  "directions": "In the Physical Sciences Building, beside PSLH A.",
+  "buildingId": 5,
+  "collegeId": 2,
+  "divisionId": 40
+ },
+ {
+  "id": 482,
+  "roomCode": "PTCF Conf. Rm",
+  "directions": null,
+  "buildingId": 36,
+  "collegeId": 1,
+  "divisionId": 36
+ },
+ {
+  "id": 483,
+  "roomCode": "PTCF LAB",
+  "directions": null,
+  "buildingId": 36,
+  "collegeId": 1,
+  "divisionId": 36
+ },
+ {
+  "id": 484,
+  "roomCode": "PTCF Lec 1",
+  "directions": null,
+  "buildingId": 36,
+  "collegeId": 1,
+  "divisionId": 36
+ },
+ {
+  "id": 485,
+  "roomCode": "Pharma Lab",
+  "directions": null,
+  "buildingId": 16,
+  "collegeId": 8,
+  "divisionId": 6
+ },
+ {
+  "id": 486,
+  "roomCode": "PhysLab",
+  "directions": null,
+  "buildingId": 16,
+  "collegeId": 5,
+  "divisionId": 30
+ },
+ {
+  "id": 487,
+  "roomCode": "Poultry Lab B",
+  "directions": null,
+  "buildingId": 5,
+  "collegeId": 1,
+  "divisionId": 31
+ },
+ {
+  "id": 488,
+  "roomCode": "RGQ",
+  "directions": null,
+  "buildingId": 27,
+  "collegeId": 7,
+  "divisionId": 38
+ },
+ {
+  "id": 489,
+  "roomCode": "RM 209A",
+  "directions": null,
+  "buildingId": 9,
+  "collegeId": 3,
+  "divisionId": 11
+ },
+ {
+  "id": 490,
+  "roomCode": "Room 200A",
+  "directions": null,
+  "buildingId": 9,
+  "collegeId": 3,
+  "divisionId": 11
+ },
+ {
+  "id": 491,
+  "roomCode": "Room 212B",
+  "directions": null,
+  "buildingId": 9,
+  "collegeId": 3,
+  "divisionId": 24
+ },
+ {
+  "id": 492,
+  "roomCode": "Room 24 - Fronda Hall",
+  "directions": null,
+  "buildingId": 16,
+  "collegeId": 1,
+  "divisionId": 31
+ },
+ {
+  "id": 493,
+  "roomCode": "SDS Lab",
+  "directions": null,
+  "buildingId": 16,
+  "collegeId": 7,
+  "divisionId": 25
+ },
+ {
+  "id": 494,
+  "roomCode": "SDS lab",
+  "directions": null,
+  "buildingId": 16,
+  "collegeId": 7,
+  "divisionId": 25
+ },
+ {
+  "id": 495,
+  "roomCode": "SFFG 14",
+  "directions": null,
+  "buildingId": 13,
+  "collegeId": 6,
+  "divisionId": 26
+ },
+ {
+  "id": 496,
+  "roomCode": "SFFG 16",
+  "directions": null,
+  "buildingId": 13,
+  "collegeId": 6,
+  "divisionId": 26
+ },
+ {
+  "id": 497,
+  "roomCode": "SFFG 7",
+  "directions": null,
+  "buildingId": 13,
+  "collegeId": 6,
+  "divisionId": 26
+ },
+ {
+  "id": 498,
+  "roomCode": "SFFG 9",
+  "directions": null,
+  "buildingId": 13,
+  "collegeId": 6,
+  "divisionId": 26
+ },
+ {
+  "id": 499,
+  "roomCode": "SHOREA",
+  "directions": null,
+  "buildingId": 13,
+  "collegeId": 6,
+  "divisionId": 17
+ },
+ {
+  "id": 500,
+  "roomCode": "SMA LH",
+  "directions": "3rd floor of Physical Sciences Building, first lecture hall when entering the ICS area.",
+  "buildingId": 35,
+  "collegeId": 2,
+  "divisionId": 34
+ },
+ {
+  "id": 501,
+  "roomCode": "SOILS LAB",
+  "directions": null,
+  "buildingId": 5,
+  "collegeId": 6,
+  "divisionId": 41
+ },
+ {
+  "id": 502,
+  "roomCode": "SWIETENIA",
+  "directions": null,
+  "buildingId": 13,
+  "collegeId": 6,
+  "divisionId": 17
+ },
+ {
+  "id": 503,
+  "roomCode": "SWIMMING POOL",
+  "directions": null,
+  "buildingId": 33,
+  "collegeId": 2,
+  "divisionId": 18
+ },
+ {
+  "id": 504,
+  "roomCode": "Soils Lab",
+  "directions": null,
+  "buildingId": 5,
+  "collegeId": 6,
+  "divisionId": 41
+ },
+ {
+  "id": 505,
+  "roomCode": "TABLE TENNIS AREA",
+  "directions": null,
+  "buildingId": 32,
+  "collegeId": 2,
+  "divisionId": 18
+ },
+ {
+  "id": 506,
+  "roomCode": "TBA",
+  "directions": "⚠️ TBA means 'To Be Announced' - this is NOT a real room! The actual location will be announced later. Check your SAIS or ask your instructor for the updated room assignment.",
+  "buildingId": null,
+  "collegeId": 7,
+  "divisionId": 38
+ },
+ {
+  "id": 507,
+  "roomCode": "TCC 1",
+  "directions": null,
+  "buildingId": 37,
+  "collegeId": 7,
+  "divisionId": 25
+ },
+ {
+  "id": 508,
+  "roomCode": "TCC 11",
+  "directions": null,
+  "buildingId": 37,
+  "collegeId": 2,
+  "divisionId": 20
+ },
+ {
+  "id": 509,
+  "roomCode": "TCC 2",
+  "directions": null,
+  "buildingId": 37,
+  "collegeId": 7,
+  "divisionId": 9
+ },
+ {
+  "id": 510,
+  "roomCode": "TCC 22",
+  "directions": null,
+  "buildingId": 37,
+  "collegeId": 5,
+  "divisionId": 23
+ },
+ {
+  "id": 511,
+  "roomCode": "TCC 4",
+  "directions": null,
+  "buildingId": 37,
+  "collegeId": 7,
+  "divisionId": 38
+ },
+ {
+  "id": 512,
+  "roomCode": "TCC 5",
+  "directions": null,
+  "buildingId": 37,
+  "collegeId": 7,
+  "divisionId": 38
+ },
+ {
+  "id": 513,
+  "roomCode": "THERIOGENOLOGY LABORATORY ROOM",
+  "directions": null,
+  "buildingId": 16,
+  "collegeId": 8,
+  "divisionId": 28
+ },
+ {
+  "id": 514,
+  "roomCode": "UPPERFIELD",
+  "directions": null,
+  "buildingId": 32,
+  "collegeId": 2,
+  "divisionId": 18
+ },
+ {
+  "id": 515,
+  "roomCode": "UPRHS",
+  "directions": null,
+  "buildingId": 39,
+  "collegeId": 2,
+  "divisionId": 32
+ },
+ {
+  "id": 516,
+  "roomCode": "Unit Ops",
+  "directions": null,
+  "buildingId": 15,
+  "collegeId": 5,
+  "divisionId": 7
+ },
+ {
+  "id": 517,
+  "roomCode": "VITEX",
+  "directions": null,
+  "buildingId": 13,
+  "collegeId": 6,
+  "divisionId": 17
+ },
+ {
+  "id": 518,
+  "roomCode": "VOLLEYBALL AREA",
+  "directions": null,
+  "buildingId": 32,
+  "collegeId": 2,
+  "divisionId": 18
+ },
+ {
+  "id": 519,
+  "roomCode": "Varrons Room",
+  "directions": null,
+  "buildingId": 13,
+  "collegeId": 6,
+  "divisionId": 41
+ },
+ {
+  "id": 520,
+  "roomCode": "WEIGHT TRAINING AREA",
+  "directions": null,
+  "buildingId": 32,
+  "collegeId": 2,
+  "divisionId": 18
+ },
+ {
+  "id": 521,
+  "roomCode": "WOOD ANATOMY",
+  "directions": null,
+  "buildingId": 13,
+  "collegeId": 6,
+  "divisionId": 17
+ },
+ {
+  "id": 522,
+  "roomCode": "WOOD CHEM",
+  "directions": null,
+  "buildingId": 13,
+  "collegeId": 6,
+  "divisionId": 17
+ },
+ {
+  "id": 523,
+  "roomCode": "WPD Hall LR108",
+  "directions": null,
+  "buildingId": 29,
+  "collegeId": 5,
+  "divisionId": 30
+ },
+ {
+  "id": 524,
+  "roomCode": "YOGA ROOM",
+  "directions": null,
+  "buildingId": 32,
+  "collegeId": 2,
+  "divisionId": 18
+ },
+ {
+  "id": 525,
+  "roomCode": "ZOTCLAB BC",
+  "directions": null,
+  "buildingId": 16,
+  "collegeId": 8,
+  "divisionId": 6
+ },
+ {
+  "id": 526,
+  "roomCode": "ZOTCLAB-CL",
+  "directions": null,
+  "buildingId": 16,
+  "collegeId": 8,
+  "divisionId": 28
+ },
+ {
+  "id": 527,
+  "roomCode": "iLab",
+  "directions": "This is the Institute of Crop Science (ICropS) lab, NOT Institute of Computer Science (ICS)! After entering Villegas Hall in IAS, walk straight past the stairs.",
+  "buildingId": 1,
+  "collegeId": 1,
+  "divisionId": 31
+ }
+]

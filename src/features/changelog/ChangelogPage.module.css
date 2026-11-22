@@ -1,0 +1,80 @@
+.page {
+  max-width: 48rem;
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem;
+}
+
+.back-link {
+  display: inline-flex;
+  margin-bottom: 1.5rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
+  line-height: 1;
+}
+
+.hero p:last-child {
+  max-width: 38rem;
+  color: hsl(0, 0%, 30%);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.eyebrow {
+  color: hsl(0, 0%, 40%);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.entries {
+  display: grid;
+  gap: 1rem;
+}
+
+/* One card per version. The HTML inside comes from CHANGELOG.md, so it is
+   styled with plain tag names (h2, h3, ul) instead of classes. */
+.entry {
+  padding: 1.25rem;
+  background: var(--color-surface);
+  border: 1px solid hsl(0, 0%, 88%);
+  border-radius: 1.25rem;
+  box-shadow: 0 2px 0.5rem 0 hsla(0, 0%, 0%, 0.06);
+}
+
+.entry h2 {
+  margin-block: 1rem;
+  font-size: 1.5rem;
+}
+
+.entry h2:first-child {
+  margin-top: 0;
+}
+
+.entry h3 {
+  margin-block: 0.5rem;
+  font-size: 1rem;
+}
+
+.entry ul {
+  margin: 0 0 1rem;
+  padding-left: 1.25rem;
+  color: hsl(0, 0%, 25%);
+  line-height: 1.65;
+}
+
+.entry ul:last-child {
+  margin-bottom: 0;
+}

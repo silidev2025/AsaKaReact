@@ -16,11 +16,21 @@
   /* Very light, for highlighted search matches */
   --color-primary-tint: hsl(5, 53%, 90%);
 
+  /* Deep brand red: big buttons, the welcome banner, progress bars */
+  --color-brand: #7b1113;
+  --color-brand-hover: #5a0c0e;
+  --color-brand-banner: rgba(123, 17, 19, 0.85);
+
   /* Surfaces and text */
   --color-surface: white;
+  --color-surface-hover: hsla(0, 0%, 0%, 0.1);
   --color-page: hsl(0, 0%, 96%);
   --color-text: black;
+  --color-text-soft: #4a4a4a;
+  --color-text-muted: #555555;
   --color-divider: hsl(0, 0%, 90%);
+  --color-track: #dddddd;
+  --color-backdrop: hsla(0, 0%, 0%, 0.2);
 
   /* Font */
   --font-family:
@@ -30,8 +40,18 @@
   /* Shadows */
   --shadow-pin: 0 2px 0.25rem rgba(0, 0, 0, 0.3);
   --shadow-label: 0 2px 0.25rem rgba(0, 0, 0, 0.25);
+  --shadow-panel: 0 2px 0.5rem 0 hsla(0, 0%, 0%, 0.2);
+  --shadow-floating: 0 1rem 2.5rem rgba(0, 0, 0, 0.22);
 
   /* Rounded corners */
   --radius-label: 0.5rem;
+  --radius-panel: 1rem;
   --radius-round: 50%;
+  --radius-pill: 999px;
+
+  /* Space kept clear of phone notches and home bars */
+  --safe-top: env(safe-area-inset-top);
+  --safe-right: env(safe-area-inset-right);
+  --safe-bottom: env(safe-area-inset-bottom);
+  --safe-left: env(safe-area-inset-left);
 }

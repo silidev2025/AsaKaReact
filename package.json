@@ -1,7 +1,7 @@
 {
   "name": "asaka-react",
   "private": true,
-  "version": "0.1.0",
+  "version": "1.4.0",
   "type": "module",
   "license": "MIT",
   "scripts": {
@@ -10,11 +10,13 @@
     "build": "tsc -b && vite build",
     "preview": "vite preview",
     "preview:mobile": "vite preview --host 0.0.0.0",
-    "typecheck": "tsc -b"
+    "typecheck": "tsc -b",
+    "data:export": "node scripts/export-data.mjs"
   },
   "dependencies": {
     "lucide-react": "^1.77.0",
     "maplibre-gl": "^6.19.0",
+    "marked": "^18.2.1",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
     "react-map-gl": "^8.1.3",
