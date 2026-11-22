@@ -30,6 +30,7 @@ import { boundsToArray } from "../../lib/geo";
 import { withMapTilerKey } from "../../lib/mapTiler";
 import { preloadOfflineMapAssets } from "../../lib/offlineMapCache";
 import { useMapStore } from "../../store/mapStore";
+import { useFlyToResult } from "../search-results/useFlyToResult";
 import BuildingLabel from "./BuildingLabel";
 import OfflineMap from "./OfflineMap";
 import { useCameraOrbit } from "./useCameraOrbit";
@@ -83,7 +84,13 @@ export default function CampusMap() {
     MAP_CONFIG.startView.zoom >= MAP_CONFIG.buildingLabelsMinZoom,
   );
 
-  const { flyToAndOrbit } = useCameraOrbit(map, isMobile);
+  const { flyToAndOrbit, flyToStartView, stopOrbit } = useCameraOrbit(
+    map,
+    isMobile,
+  );
+
+  // Fly to whatever the user picks in the search (see that file).
+  useFlyToResult({ flyToAndOrbit, flyToStartView, stopOrbit });
 
   // Each time the app is online: save the campus map for offline use, and
   // clear an old error so the real map gets another try.

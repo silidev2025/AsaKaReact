@@ -15,11 +15,15 @@
   --color-primary-dark: hsl(5, 53%, 24%);
   /* Very light, for highlighted search matches */
   --color-primary-tint: hsl(5, 53%, 90%);
+  /* Almost white, behind a room row the pointer is over */
+  --color-primary-faint: hsl(5, 53%, 98%);
 
   /* Deep brand red: big buttons, the welcome banner, progress bars */
   --color-brand: #7b1113;
   --color-brand-hover: #5a0c0e;
   --color-brand-banner: rgba(123, 17, 19, 0.85);
+  /* Hover for small brand buttons, like Previous and Next */
+  --color-brand-light: #9a1517;
 
   /* Surfaces and text */
   --color-surface: white;
@@ -29,6 +33,10 @@
   --color-text-soft: #4a4a4a;
   --color-text-muted: #555555;
   --color-divider: hsl(0, 0%, 90%);
+  /* Thin borders around rows, and small grey badges */
+  --color-border-light: #ececec;
+  /* Very quiet text, like "0 classes" on a badge */
+  --color-text-faint: #969696;
   --color-track: #dddddd;
   --color-backdrop: hsla(0, 0%, 0%, 0.2);
   /* Lighter hover, for rows in a list like the search suggestions */
@@ -51,6 +59,8 @@
   --shadow-floating: 0 1rem 2.5rem rgba(0, 0, 0, 0.22);
   /* The search box, its suggestions and the side panel */
   --shadow-box: 0 2px 0.25rem 0 rgba(0, 0, 0, 0.25);
+  /* The side panel on phones, where it rises from the bottom like a sheet */
+  --shadow-sheet: 0 -0.5rem 1.25rem rgba(0, 0, 0, 0.16);
 
   /* Rounded corners */
   --radius-label: 0.5rem;

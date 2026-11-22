@@ -2,12 +2,14 @@
 // "orbit") until the user touches, clicks or scrolls the map.
 //
 // Usage inside a component:
-//   const { flyToAndOrbit } = useCameraOrbit(map, isMobile);
+//   const { flyToAndOrbit, flyToStartView } = useCameraOrbit(map, isMobile);
 //   flyToAndOrbit(building.coords, 18, 1200);
+//   flyToStartView(1500);   // back to the view the app opens with
 
 import { useCallback, useEffect, useRef } from "react";
 import type { Map as MapLibreMap } from "maplibre-gl";
 import { MAP_CONFIG } from "../../config/map";
+import { CAMPUS } from "../../lib/campus";
 import type { LngLat } from "../../lib/geo";
 import { getCameraPadding } from "./cameraPadding";
 
@@ -78,6 +80,21 @@ export function useCameraOrbit(map: MapLibreMap | null, isMobile: boolean) {
     [map, startOrbit, stopOrbit],
   );
 
+  /** Flies back to the campus view the app opens with, without orbiting. */
+  const flyToStartView = useCallback(
+    (durationMs: number) => {
+      if (!map) return;
+      stopOrbit();
+      map.off("moveend", startOrbit);
+      map.flyTo({
+        center: CAMPUS.center,
+        ...MAP_CONFIG.startView, // zoom, pitch and bearing
+        duration: durationMs,
+      });
+    },
+    [map, startOrbit, stopOrbit],
+  );
+
   // Stop orbiting as soon as the user takes over the map. The function
   // returned at the end is the "cleanup": React runs it when the component
   // goes away, so no listeners are left behind.
@@ -95,5 +112,5 @@ export function useCameraOrbit(map: MapLibreMap | null, isMobile: boolean) {
     };
   }, [map, startOrbit, stopOrbit]);
 
-  return { flyToAndOrbit, stopOrbit };
+  return { flyToAndOrbit, flyToStartView, stopOrbit };
 }

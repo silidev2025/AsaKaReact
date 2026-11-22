@@ -5,8 +5,8 @@
 //
 //   ┌──────────────────────────────┐
 //   │ search box                   │
-//   │ (the side panel goes here    │
-//   │ in a later feature)          │
+//   │ side panel (picked result)   │
+//   │                              │
 //   │ status bar                   │
 //   └──────────────────────────────┘
 //
@@ -18,13 +18,15 @@ import { STORAGE_KEYS } from "../../config/storageKeys";
 import { readStorage } from "../../lib/storage";
 import { useModalStore } from "../../store/modalStore";
 import Search from "../search/Search";
+import SidePanel from "../search-results/SidePanel";
 import ModalHost from "./ModalHost";
 import StatusBar from "./StatusBar";
 import s from "./Home.module.css";
 
-/** Hands the side panel width from src/config/layout.ts to the CSS files. */
+/** Hands the panel sizes from src/config/layout.ts to the CSS files. */
 const LAYOUT_STYLE = {
   "--side-panel-width": `${LAYOUT.sidePanelWidthRem}rem`,
+  "--phone-sheet-height": `${LAYOUT.phoneSheetHeightPercent}dvh`,
 } as CSSProperties;
 
 export default function Home() {
@@ -43,7 +45,7 @@ export default function Home() {
       <div className={s.interfaceLayer} style={LAYOUT_STYLE}>
         <div className={s.panelArea}>
           <Search />
-          {/* The side panel is added here by a later feature. */}
+          <SidePanel />
         </div>
         <StatusBar />
       </div>

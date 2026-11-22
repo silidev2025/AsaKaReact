@@ -17,7 +17,9 @@ function remToPixels(rem: number) {
 export function getCameraPadding(isMobile: boolean): PaddingOptions {
   if (isMobile) {
     // The bottom sheet covers the lower part of a phone screen.
-    return { top: 0, right: 0, left: 0, bottom: window.innerWidth / 2 };
+    const sheetHeight =
+      (window.innerHeight * LAYOUT.phoneSheetHeightPercent) / 100;
+    return { top: 0, right: 0, left: 0, bottom: sheetHeight };
   }
   // The side panel covers the left edge on bigger screens.
   return {

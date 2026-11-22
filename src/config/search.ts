@@ -8,4 +8,6 @@ export const SEARCH_CONFIG = {
   maxRecentSearches: 5,
   /** Matching letters are bolded only once at least this many are typed. */
   highlightMinLength: 2,
+  /** Rooms per page in a building's room list (Previous / Next pages). */
+  roomsPerPage: 12,
 };

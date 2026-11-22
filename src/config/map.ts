@@ -33,6 +33,12 @@ export const MAP_CONFIG = {
   /** How long the fly-to animation takes after tapping a building label. */
   buildingFlyDurationMs: 1200,
 
+  /**
+   * How long the map takes to fly to a picked search result, and back to
+   * the start view when the search is cleared.
+   */
+  resultFlyDurationMs: 1500,
+
   /** Seconds for one full slow turn around a building after flying to it. */
   orbitSecondsPerTurn: 54,
 

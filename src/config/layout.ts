@@ -12,6 +12,12 @@ export const LAYOUT = {
    * usually 16px). Home.tsx hands it to the CSS as --side-panel-width.
    */
   sidePanelWidthRem: 25.75,
+  /**
+   * How much of a phone screen's height the side panel (bottom sheet) may
+   * cover, in percent. The camera keeps buildings above it, and Home.tsx
+   * hands it to the CSS as --phone-sheet-height.
+   */
+  phoneSheetHeightPercent: 58,
 };
 
 /** Media query for the phone layout, for use with useMediaQuery(). */

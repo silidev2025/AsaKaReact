@@ -1,11 +1,13 @@
-// Loads the campus and building data from src/data/ and gives it proper
-// types. Everything else imports CAMPUS and BUILDINGS from here instead of
-// reading the JSON files directly.
+// Loads the campus, building and room data from src/data/ and gives it
+// proper types. Everything else imports CAMPUS, BUILDINGS and CAMPUS_ROOMS
+// from here instead of reading the JSON files directly.
 //
-// To add or move a building, edit src/data/buildings.json. No code changes.
+// To add or move a building, edit src/data/buildings.json.
+// To add a room, edit src/data/campus-rooms.json. No code changes.
 
 import campusData from "../data/campus.json";
 import buildingData from "../data/buildings.json";
+import campusRoomData from "../data/campus-rooms.json";
 import { toLngLat, type Bounds, type LngLat } from "./geo";
 
 export type Campus = {
@@ -55,4 +57,27 @@ export function findBuilding(name: string) {
       (value) => value.toLowerCase() === wanted,
     ),
   );
+}
+
+export type CampusRoom = {
+  /** The room code people use, like "GLE 201". */
+  code: string;
+  /** Short name of the building the room is in, like "GLE". */
+  building: string;
+};
+
+/**
+ * The CIT-U rooms the app knows about, from src/data/campus-rooms.json.
+ * These are what the search finds and what a building's room list shows.
+ */
+export const CAMPUS_ROOMS: CampusRoom[] = campusRoomData;
+
+/** Finds a room by its exact code, like "GLE 201". */
+export function findRoom(code: string) {
+  return CAMPUS_ROOMS.find((room) => room.code === code);
+}
+
+/** The rooms inside a building, in the order they appear in the data. */
+export function getRoomsInBuilding(building: CampusBuilding) {
+  return CAMPUS_ROOMS.filter((room) => room.building === building.name);
 }

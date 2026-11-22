@@ -5,15 +5,18 @@
 //
 // What can be found:
 //   buildings ...... src/data/buildings.json (by short or full name)
-//   rooms .......... "roomCodes" in src/data/search.json
+//   rooms .......... src/data/campus-rooms.json (by room code)
 
 import { SEARCH_CONFIG } from "../config/search";
 import searchData from "../data/search.json";
 import {
   BUILDINGS,
+  CAMPUS_ROOMS,
   findBuilding,
+  findRoom,
   getBuildingDisplayName,
   getBuildingSearchValues,
+  type CampusBuilding,
 } from "./campus";
 
 /** Every kind of thing a search result can be. */
@@ -36,9 +39,6 @@ export type SearchItem = {
   /** The text shown and searched for, like "GLE 201". */
   value: string;
 };
-
-/** Room codes the search knows about, from src/data/search.json. */
-export const ROOM_CODES: string[] = searchData.roomCodes;
 
 /** Suggestions shown before anything is typed, when there are no recent ones. */
 export const TRENDING_SEARCHES: SearchItem[] = searchData.trending.filter(isSearchItem);
@@ -65,9 +65,9 @@ export function getSuggestions(typedText: string): SearchItem[] {
     value: getBuildingDisplayName(building),
   }));
 
-  const roomMatches: SearchItem[] = ROOM_CODES.filter((roomCode) =>
-    roomCode.toLowerCase().includes(wanted),
-  ).map((roomCode) => ({ category: "room", value: roomCode }));
+  const roomMatches: SearchItem[] = CAMPUS_ROOMS.filter((room) =>
+    room.code.toLowerCase().includes(wanted),
+  ).map((room) => ({ category: "room", value: room.code }));
 
   return [...buildingMatches, ...roomMatches].slice(
     0,
@@ -81,8 +81,21 @@ export function getSuggestions(typedText: string): SearchItem[] {
  */
 export function isKnownSearchItem(item: SearchItem) {
   if (item.category === "building") return findBuilding(item.value) !== undefined;
-  if (item.category === "room") return ROOM_CODES.includes(item.value);
+  if (item.category === "room") return findRoom(item.value) !== undefined;
   return false; // colleges, divisions and classes aren't searchable yet
+}
+
+/**
+ * The building to show on the map for a picked result: the building itself,
+ * or the building a room is in. Undefined if there's no building to show.
+ */
+export function findResultBuilding(item: SearchItem): CampusBuilding | undefined {
+  if (item.category === "building") return findBuilding(item.value);
+  if (item.category === "room") {
+    const room = findRoom(item.value);
+    return room ? findBuilding(room.building) : undefined;
+  }
+  return undefined;
 }
 
 /**

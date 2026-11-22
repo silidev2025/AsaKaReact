@@ -52,7 +52,10 @@ The rule: **no hardcoded values inside components.** A number, color, text or ad
 | Make windows open or close faster | `MODAL_ANIMATION` in `src/config/ui.ts` |
 | Show the install prompt on your real site | add it to `showOnHosts` in `src/config/ui.ts` |
 | Add a new pop-up window | add its name in `src/store/modalStore.ts`, its content in `src/features/home/ModalHost.tsx` |
-| Make a room code searchable | add it to `roomCodes` in `src/data/search.json` |
+| Add a CIT-U room (searchable, listed under its building) | `src/data/campus-rooms.json`: its code and the short name of its building |
+| Show more or fewer rooms per page in a building's list | `roomsPerPage` in `src/config/search.ts` |
+| Make the fly-to after a search faster or slower | `resultFlyDurationMs` in `src/config/map.ts` |
+| Make the phone bottom sheet taller or shorter | `phoneSheetHeightPercent` in `src/config/layout.ts` |
 | Change the trending searches | `trending` in `src/data/search.json` |
 | Change the search box hint text | `placeholder` in `src/data/search.json` |
 | Show more or fewer suggestions or recent searches | `src/config/search.ts` |
@@ -89,6 +92,9 @@ Each one is explained in a comment where it first appears in the code.
 | Lookup table | An object that maps a value to what to use for it, instead of if/else | `SuggestionItem.tsx` |
 | Component in a variable | `const Icon = ...; <Icon />` (must start with a capital letter) | `SuggestionItem.tsx` |
 | Type guard | `value is SearchItem`, checking data that comes from outside the code | `src/lib/search.ts` |
+| A table of components | Picking which component to show from an object, by a value | `SidePanel.tsx` |
+| `key` to start fresh | A new `key` makes React throw away a component's state and build it again | `SidePanel.tsx` |
+| Effect that follows state | `useEffect` that moves the map whenever the picked result changes | `useFlyToResult.ts` |
 
 ## Features
 
@@ -135,7 +141,8 @@ Shared pieces it uses:
 | --- | --- |
 | `src/lib/search.ts` | The search logic as plain functions: finding matches, bolding, checking saved data |
 | `src/store/queryStore.ts` | What is typed, what was picked, and the recent searches (saved in the browser) |
-| `src/data/search.json` | Searchable room codes, trending searches, hint text |
+| `src/data/search.json` | Trending searches and the hint text |
+| `src/data/campus-rooms.json` | The CIT-U rooms the search can find, each with its building |
 | `src/config/search.ts` | How many suggestions and recent searches |
 
 How a search flows:
@@ -143,9 +150,29 @@ How a search flows:
 1. A key press in the box calls `setInputValue` in the query store.
 2. `Suggestions` re-renders and asks `getSuggestions(text)` for matches.
 3. Clicking a row calls `selectResult(item)`: the box shows the name, the type becomes `"result"`, and the item goes to the front of the recent searches.
-4. The side panel and the map react to the result. That comes in the SearchResults feature.
+4. The side panel and the map react to the result (see SearchResults below).
 
 Why the dropdown is sometimes visible without focus: when the box is empty it always shows recent or trending searches, as the original app does. While typing it only shows when the box has focus, and it hides once a result is picked.
+
+### SearchResults (`src/features/search-results/`)
+
+What happens after a result is picked: the side panel shows it, and the map flies to it.
+
+| File | Job |
+| --- | --- |
+| `SidePanel.tsx` | The panel under the search box (a bottom sheet on phones). Picks which result panel to show from the `RESULT_PANELS` table |
+| `BuildingResult.tsx` | The panel for a building: its name and the rooms inside it |
+| `RoomList.tsx` | A list of rooms, a page at a time, with Previous and Next |
+| `RoomRow.tsx` | One room: arrow, room code, number of classes. Tapping it picks that room |
+| `useFlyToResult.ts` | Flies the map to the picked building (or a room's building), and back to the start when the search is cleared. Called from `CampusMap.tsx` |
+| `*.module.css` | Styles for the above |
+
+Where the data comes from:
+
+- **Which rooms a building has:** `src/data/campus-rooms.json`. Each room names its building.
+- **Class counts:** the database. `npm run data:export` counts the classes in each room and saves the count on the room (`classCount` in `src/data/catalog/rooms.json`), so the app doesn't have to load all 4,351 classes just to count them.
+
+To add a panel for another kind of result, write its component and add it to `RESULT_PANELS` in `SidePanel.tsx`.
 
 ### App prompts (`src/features/pwa/`)
 

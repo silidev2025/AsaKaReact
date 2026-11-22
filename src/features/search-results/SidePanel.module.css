@@ -1,0 +1,68 @@
+/* The area under the search box. On computers the panel sits on the left
+   and anything after it (like a map button) is pushed to the right edge;
+   on phones everything stacks at the bottom.
+   --side-panel-width comes from src/config/layout.ts through Home.tsx. */
+.controls {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 0;
+}
+
+/* The white card holding the result. */
+.panel {
+  display: flex;
+  flex: 0 0 min(var(--side-panel-width), calc(50% - 4rem));
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+  padding: 1.125rem;
+  background-color: var(--color-surface);
+  border-radius: var(--radius-box);
+  box-shadow: var(--shadow-box);
+  pointer-events: auto;
+}
+
+/* Thin scrollbars on whatever scrolls inside the panel. */
+.panel > * {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-scrollbar) var(--color-scrollbar-track);
+}
+
+/* ---------- Phones (same width as LAYOUT.mobileBreakpoint) ---------- */
+
+@media screen and (max-width: 48rem) {
+  .controls {
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 0.75rem;
+  }
+
+  /* A sheet along the bottom that leaves the top of the map visible.
+     --phone-sheet-height comes from src/config/layout.ts; the camera uses
+     the same value to keep buildings above the sheet. */
+  .panel {
+    flex: 0 1 auto;
+    width: 100%;
+    max-height: min(var(--phone-sheet-height), 31rem);
+    min-height: min(17rem, 46dvh);
+    padding: 1rem;
+    border-radius: 1.25rem 1.25rem 0.875rem 0.875rem;
+    box-shadow: var(--shadow-sheet);
+  }
+}
+
+@media screen and (max-width: 30rem) {
+  .controls {
+    gap: 0.5rem;
+  }
+
+  .panel {
+    max-height: min(62dvh, 29rem);
+    min-height: min(16rem, 44dvh);
+    padding: 0.875rem;
+  }
+}
