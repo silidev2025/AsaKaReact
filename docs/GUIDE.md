@@ -52,6 +52,11 @@ The rule: **no hardcoded values inside components.** A number, color, text or ad
 | Make windows open or close faster | `MODAL_ANIMATION` in `src/config/ui.ts` |
 | Show the install prompt on your real site | add it to `showOnHosts` in `src/config/ui.ts` |
 | Add a new pop-up window | add its name in `src/store/modalStore.ts`, its content in `src/features/home/ModalHost.tsx` |
+| Make a room code searchable | add it to `roomCodes` in `src/data/search.json` |
+| Change the trending searches | `trending` in `src/data/search.json` |
+| Change the search box hint text | `placeholder` in `src/data/search.json` |
+| Show more or fewer suggestions or recent searches | `src/config/search.ts` |
+| Change the search box width on computers | `sidePanelWidthRem` in `src/config/layout.ts` |
 
 ## React ideas used so far
 
@@ -77,6 +82,13 @@ Each one is explained in a comment where it first appears in the code.
 | Updater function | `setValue((current) => ...)` when the new value depends on the old | `useInstallPrompt.ts` |
 | Animating out | Keeping something on screen until its closing animation ends | `usePresence.ts` |
 | Raw HTML | `dangerouslySetInnerHTML`, only for trusted text | `ChangelogPage.tsx` |
+| Ref to an element | `useRef` pointing at a page element, to call `.focus()` on it | `Search.tsx` |
+| Listening to the keyboard | `window.addEventListener` in a `useEffect`, removed in the cleanup | `Search.tsx` |
+| Reading a store outside rendering | `useQueryStore.getState()` inside an event listener | `Search.tsx` |
+| Derived values | Values worked out from state on each render instead of kept in their own state | `Suggestions.tsx` |
+| Lookup table | An object that maps a value to what to use for it, instead of if/else | `SuggestionItem.tsx` |
+| Component in a variable | `const Icon = ...; <Icon />` (must start with a capital letter) | `SuggestionItem.tsx` |
+| Type guard | `value is SearchItem`, checking data that comes from outside the code | `src/lib/search.ts` |
 
 ## Features
 
@@ -105,6 +117,35 @@ The interface over the map, plus the pop-up windows.
 | `ModalHost.tsx` | Shows whichever window `src/store/modalStore.ts` says is open |
 
 Shared pieces it uses: `src/components/Modal.tsx` (the window frame), `src/hooks/usePresence.ts` (closing animation), `src/lib/catalog.ts` (room counts), `src/lib/storage.ts` (remembering "Don't show again").
+
+### Search (`src/features/search/`)
+
+The search box at the top of the home screen and its dropdown.
+
+| File | Job |
+| --- | --- |
+| `Search.tsx` | The box itself: typing, the X button, Escape to empty it |
+| `Suggestions.tsx` | Picks what the dropdown shows: recent, trending, matches, or "no match" |
+| `SuggestionItem.tsx` | One row: icon, name with the typed letters in bold, arrow |
+| `Search.module.css` | Styles, including when the dropdown is visible |
+
+Shared pieces it uses:
+
+| File | Job |
+| --- | --- |
+| `src/lib/search.ts` | The search logic as plain functions: finding matches, bolding, checking saved data |
+| `src/store/queryStore.ts` | What is typed, what was picked, and the recent searches (saved in the browser) |
+| `src/data/search.json` | Searchable room codes, trending searches, hint text |
+| `src/config/search.ts` | How many suggestions and recent searches |
+
+How a search flows:
+
+1. A key press in the box calls `setInputValue` in the query store.
+2. `Suggestions` re-renders and asks `getSuggestions(text)` for matches.
+3. Clicking a row calls `selectResult(item)`: the box shows the name, the type becomes `"result"`, and the item goes to the front of the recent searches.
+4. The side panel and the map react to the result. That comes in the SearchResults feature.
+
+Why the dropdown is sometimes visible without focus: when the box is empty it always shows recent or trending searches, as the original app does. While typing it only shows when the box has focus, and it hides once a result is picked.
 
 ### App prompts (`src/features/pwa/`)
 

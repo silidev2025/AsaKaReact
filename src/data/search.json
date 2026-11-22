@@ -1,0 +1,9 @@
+{
+  "placeholder": "Search room code, building, division...",
+  "roomCodes": ["GLE 201", "RTL 302", "ALLIED 102"],
+  "trending": [
+    { "category": "room", "value": "GLE 201" },
+    { "category": "room", "value": "RTL 302" },
+    { "category": "room", "value": "ALLIED 102" }
+  ]
+}

@@ -10,6 +10,7 @@ New to the code? Start with [docs/GUIDE.md](docs/GUIDE.md). It explains where ev
 
 - [x] CampusMap: 3D campus map with the CIT-U building labels, fly-to and slow circling on tap, offline caching, and a drawn sketch when offline
 - [x] Home: welcome window, status bar, install and update prompts, changelog page
+- [x] Search: search box with suggestions for buildings and rooms, trending and recent searches
 
 ## Room data
 

@@ -4,21 +4,28 @@
 // (pointer-events: none in the CSS); only the panels themselves catch taps.
 //
 //   ┌──────────────────────────────┐
-//   │ panel area (Search and the   │
-//   │ side panel go here next)     │
-//   │                              │
+//   │ search box                   │
+//   │ (the side panel goes here    │
+//   │ in a later feature)          │
 //   │ status bar                   │
 //   └──────────────────────────────┘
 //
 // It also opens the welcome window on a first visit.
 
-import { useEffect } from "react";
+import { useEffect, type CSSProperties } from "react";
+import { LAYOUT } from "../../config/layout";
 import { STORAGE_KEYS } from "../../config/storageKeys";
 import { readStorage } from "../../lib/storage";
 import { useModalStore } from "../../store/modalStore";
+import Search from "../search/Search";
 import ModalHost from "./ModalHost";
 import StatusBar from "./StatusBar";
 import s from "./Home.module.css";
+
+/** Hands the side panel width from src/config/layout.ts to the CSS files. */
+const LAYOUT_STYLE = {
+  "--side-panel-width": `${LAYOUT.sidePanelWidthRem}rem`,
+} as CSSProperties;
 
 export default function Home() {
   const openModal = useModalStore((state) => state.openModal);
@@ -33,9 +40,10 @@ export default function Home() {
   return (
     <>
       {/* <> and </> group elements without adding an extra box to the page. */}
-      <div className={s.interfaceLayer}>
+      <div className={s.interfaceLayer} style={LAYOUT_STYLE}>
         <div className={s.panelArea}>
-          {/* Search and the side panel are added here by later features. */}
+          <Search />
+          {/* The side panel is added here by a later feature. */}
         </div>
         <StatusBar />
       </div>

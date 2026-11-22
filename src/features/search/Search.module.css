@@ -1,0 +1,191 @@
+/* Styles for the search box (Search.tsx) and its dropdown (Suggestions.tsx,
+   SuggestionItem.tsx).
+
+   --side-panel-width comes from LAYOUT.sidePanelWidthRem in
+   src/config/layout.ts; Home.tsx hands it to the CSS. */
+
+/* The box and the dropdown together. */
+.search-area {
+  position: relative;
+  z-index: 12;
+  width: min(var(--side-panel-width), calc(50% - 4rem));
+  max-width: 100%;
+  pointer-events: auto;
+}
+
+/* ---------- The search box ---------- */
+
+.search-box {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 3rem;
+  padding: 0.875rem 1rem;
+  background-color: var(--color-surface);
+  border-radius: var(--radius-box);
+  box-shadow: var(--shadow-box);
+}
+
+.search-icon {
+  flex-shrink: 0;
+  color: var(--color-text);
+}
+
+.input {
+  flex: 1;
+  min-width: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: var(--color-text);
+  font: inherit;
+  font-size: 0.875rem;
+  line-height: 1.35;
+  text-overflow: ellipsis;
+}
+
+.input::placeholder {
+  color: var(--color-placeholder);
+}
+
+.clear-button {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  border: none;
+  border-radius: var(--radius-pill);
+  background: none;
+  color: var(--color-text);
+  cursor: pointer;
+  transition: background-color 0.125s;
+}
+
+.clear-button:hover {
+  background-color: var(--color-row-hover);
+}
+
+/* ---------- The dropdown ---------- */
+
+/* Hidden (see-through and not clickable) unless one of the rules below
+   turns it on. */
+.suggestions {
+  position: absolute;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-height: min(22rem, calc(100dvh - 7rem));
+  margin-top: 0.5rem;
+  padding: 1rem;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  background-color: var(--color-surface);
+  border-radius: var(--radius-panel);
+  box-shadow: var(--shadow-box);
+  opacity: 0;
+  pointer-events: none;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-scrollbar) var(--color-scrollbar-track);
+}
+
+/* Shown while typing and the box has focus. ":focus-within" means "this
+   element, or anything inside it, has the keyboard focus". */
+.is-typing:focus-within .suggestions,
+/* Shown whenever the box is empty (recent or trending searches). */
+.suggestions.always-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.heading {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+}
+
+.no-match {
+  margin: 0;
+  padding: 0.5rem 0.75rem;
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+  line-height: 1.35;
+}
+
+/* One suggestion row. */
+.suggestion {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 2.75rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.75rem;
+  background: none;
+  color: var(--color-text);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.suggestion:hover {
+  background-color: var(--color-row-hover);
+}
+
+.icon {
+  flex-shrink: 0;
+}
+
+.suggestion-text {
+  overflow: hidden;
+  font-size: 0.875rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* margin-left: auto pushes the arrow to the far right. */
+.arrow {
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+/* ---------- Phones (same width as LAYOUT.mobileBreakpoint) ---------- */
+
+@media screen and (max-width: 48rem) {
+  .search-area {
+    width: 100%;
+  }
+
+  /* A rounder, slightly taller pill on phones. */
+  .search-box {
+    min-height: 3.25rem;
+    padding: 0.75rem 0.875rem;
+    border-radius: var(--radius-pill);
+  }
+
+  /* 16px text stops iPhones from zooming in when the box is tapped. */
+  .input {
+    font-size: 1rem;
+  }
+}
+
+/* Small phones: tighter spacing, and the list can't cover the whole map. */
+@media (max-width: 425px) {
+  .suggestions {
+    max-height: min(45dvh, 22rem);
+    padding: 0.75rem;
+  }
+
+  .heading {
+    margin-bottom: 0.25rem;
+  }
+
+  .suggestion {
+    padding: 0.5rem;
+  }
+}

@@ -7,7 +7,10 @@ export const LAYOUT = {
    * 48rem. If you change it here, search the .css files for 48rem too.
    */
   mobileBreakpoint: "48rem",
-  /** Width of the side panel on computers, in rem (1rem is usually 16px). */
+  /**
+   * Width of the search box and side panel on computers, in rem (1rem is
+   * usually 16px). Home.tsx hands it to the CSS as --side-panel-width.
+   */
   sidePanelWidthRem: 25.75,
 };
 

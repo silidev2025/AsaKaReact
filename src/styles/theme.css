@@ -31,6 +31,13 @@
   --color-divider: hsl(0, 0%, 90%);
   --color-track: #dddddd;
   --color-backdrop: hsla(0, 0%, 0%, 0.2);
+  /* Lighter hover, for rows in a list like the search suggestions */
+  --color-row-hover: hsl(0, 0%, 95%);
+  /* Grey hint text inside an empty text box */
+  --color-placeholder: #6b6b6b;
+  /* Thin scrollbars in lists and panels */
+  --color-scrollbar: hsl(6, 63%, 48%);
+  --color-scrollbar-track: hsl(0, 0%, 98%);
 
   /* Font */
   --font-family:
@@ -42,10 +49,14 @@
   --shadow-label: 0 2px 0.25rem rgba(0, 0, 0, 0.25);
   --shadow-panel: 0 2px 0.5rem 0 hsla(0, 0%, 0%, 0.2);
   --shadow-floating: 0 1rem 2.5rem rgba(0, 0, 0, 0.22);
+  /* The search box, its suggestions and the side panel */
+  --shadow-box: 0 2px 0.25rem 0 rgba(0, 0, 0, 0.25);
 
   /* Rounded corners */
   --radius-label: 0.5rem;
   --radius-panel: 1rem;
+  /* The search box and the side panel */
+  --radius-box: 0.8125rem;
   --radius-round: 50%;
   --radius-pill: 999px;
 
