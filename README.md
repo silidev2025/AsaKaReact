@@ -15,6 +15,11 @@ New to the code? Start with [docs/GUIDE.md](docs/GUIDE.md). It explains where ev
 - [x] RoomDetails: room panel with its building, directions, Contribute links and Open in Google Maps
 - [x] Schedule: classes held in a room, and a weekly timetable window
 - [x] Directory: every building A to Z with its rooms, opened from "Browse all buildings" in the search
+- [x] GetDirections: your location on the map, the My Location button, and a walking route to the picked building or room
+
+### Testing directions off campus
+
+Location only works on the CIT-U campus. To try directions from anywhere, add a pretend position to the address, for example `http://localhost:5173/?mockLocation=123.881021,10.29485`. The dot turns orange and can be dragged.
 
 ## Room data
 

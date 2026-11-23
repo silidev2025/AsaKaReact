@@ -13,9 +13,12 @@
 // It also opens the welcome window on a first visit.
 
 import { useEffect, type CSSProperties } from "react";
+import Toast from "../../components/Toast";
 import { LAYOUT } from "../../config/layout";
 import { STORAGE_KEYS } from "../../config/storageKeys";
+import { readMockLocation } from "../../lib/mockLocation";
 import { readStorage } from "../../lib/storage";
+import { useLocationStore } from "../../store/locationStore";
 import { useModalStore } from "../../store/modalStore";
 import Search from "../search/Search";
 import SidePanel from "../search-results/SidePanel";
@@ -32,12 +35,20 @@ const LAYOUT_STYLE = {
 export default function Home() {
   const openModal = useModalStore((state) => state.openModal);
 
-  // The empty list [] at the end means "run once, when Home first appears".
+  // The list at the end only holds openModal, which never changes, so this
+  // runs once, when Home first appears.
   useEffect(() => {
     if (readStorage(STORAGE_KEYS.hideWelcome) !== "true") {
       openModal("welcome");
     }
   }, [openModal]);
+
+  // For testing away from campus: a pretend position from the address
+  // (see src/lib/mockLocation.ts). Runs once.
+  useEffect(() => {
+    const mockLocation = readMockLocation();
+    if (mockLocation) useLocationStore.getState().startMockLocation(mockLocation);
+  }, []);
 
   return (
     <>
@@ -50,6 +61,7 @@ export default function Home() {
         <StatusBar />
       </div>
       <ModalHost />
+      <Toast />
     </>
   );
 }

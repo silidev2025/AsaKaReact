@@ -52,6 +52,13 @@
   --color-timetable-time: #333333;
   --color-timetable-grid: #dadada;
   --color-timetable-half-hour: #dfdfdf;
+  /* Pop-up messages: text and icon color for each kind */
+  --color-toast-info: #1e40af;
+  --color-toast-error: #b91c1c;
+  --color-toast-success: #065f46;
+  /* The "you are here" dot: blue for real GPS, orange for a test position */
+  --color-location: #4285f4;
+  --color-location-mock: #f59e0b;
   /* Thin scrollbars in lists and panels */
   --color-scrollbar: hsl(6, 63%, 48%);
   --color-scrollbar-track: hsl(0, 0%, 98%);
@@ -70,6 +77,9 @@
   --shadow-box: 0 2px 0.25rem 0 rgba(0, 0, 0, 0.25);
   /* The side panel on phones, where it rises from the bottom like a sheet */
   --shadow-sheet: 0 -0.5rem 1.25rem rgba(0, 0, 0, 0.16);
+  /* Pop-up messages, and the round "my location" button */
+  --shadow-toast: 0 4px 12px rgba(0, 0, 0, 0.15);
+  --shadow-round-button: 0 4px 6px rgba(0, 0, 0, 0.1);
 
   /* Rounded corners */
   --radius-label: 0.5rem;

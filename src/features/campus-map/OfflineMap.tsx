@@ -7,17 +7,21 @@
 // edge, x 100 the right edge, y 0 the top and y 100 the bottom.
 
 import type { MouseEvent } from "react";
-import { Building2, University } from "lucide-react";
+import { Building2, Route, University, UserRound } from "lucide-react";
 import { MAP_CONFIG } from "../../config/map";
 import sketch from "../../data/offline-sketch.json";
 import { BUILDINGS, CAMPUS, type CampusBuilding } from "../../lib/campus";
 import { cx } from "../../lib/cx";
 import type { LngLat } from "../../lib/geo";
+import { useLocationStore } from "../../store/locationStore";
+import type { WalkingRoute } from "../get-directions/useWalkingRoute";
 import s from "./OfflineMap.module.css";
 
 type OfflineMapProps = {
   activeBuildingName: string | null;
   onBuildingSelect: (building: CampusBuilding, event: MouseEvent) => void;
+  /** The walking route to draw, if "Get Directions" was pressed. */
+  route: WalkingRoute | null;
 };
 
 /** The area the sketch covers: the campus plus a margin around it. */
@@ -29,8 +33,8 @@ const SKETCH_AREA = {
   north: CAMPUS.locationBounds.north + marginLat,
 };
 
-/** Turns a coordinate into a percent position on the sketch. */
-function toSketchPosition([lng, lat]: LngLat) {
+/** Turns a coordinate into a point on the sketch, from 0 to 100 each way. */
+function toSketchPoint([lng, lat]: LngLat) {
   const x = ((lng - SKETCH_AREA.west) / (SKETCH_AREA.east - SKETCH_AREA.west)) * 100;
   // Screen y grows downward but latitude grows northward (up), so flip it.
   const y = (1 - (lat - SKETCH_AREA.south) / (SKETCH_AREA.north - SKETCH_AREA.south)) * 100;
@@ -38,15 +42,34 @@ function toSketchPosition([lng, lat]: LngLat) {
   const min = edgePaddingPercent;
   const max = 100 - edgePaddingPercent;
   return {
-    left: `${Math.min(max, Math.max(min, x))}%`,
-    top: `${Math.min(max, Math.max(min, y))}%`,
+    x: Math.min(max, Math.max(min, x)),
+    y: Math.min(max, Math.max(min, y)),
   };
+}
+
+/** The same point as CSS, to place a pin with style={...}. */
+function toSketchPosition(coords: LngLat) {
+  const { x, y } = toSketchPoint(coords);
+  return { left: `${x}%`, top: `${y}%` };
 }
 
 export default function OfflineMap({
   activeBuildingName,
   onBuildingSelect,
+  route,
 }: OfflineMapProps) {
+  const userCoords = useLocationStore((state) => state.coords);
+  const isMock = useLocationStore((state) => state.isMock);
+  const destination = useLocationStore((state) => state.destination);
+
+  // The route as SVG polyline points: "x1,y1 x2,y2 ...".
+  const routePoints = route?.points
+    .map((point) => {
+      const { x, y } = toSketchPoint(point);
+      return `${x},${y}`;
+    })
+    .join(" ");
+
   return (
     <div className={s.offlineMap} aria-label="Offline campus map">
       <div className={s.grid} />
@@ -76,6 +99,13 @@ export default function OfflineMap({
         {sketch.buildingShapes.map((shape) => (
           <rect key={`${shape.x},${shape.y}`} className={s.buildingShape} rx="1" {...shape} />
         ))}
+        {/* The walking route: a white line under a maroon one. */}
+        {routePoints && (
+          <>
+            <polyline className={s.routeCasing} points={routePoints} />
+            <polyline className={s.routeLine} points={routePoints} />
+          </>
+        )}
       </svg>
 
       <div className={s.campusLabel}>
@@ -83,6 +113,21 @@ export default function OfflineMap({
         <span>{CAMPUS.shortName}</span>
       </div>
       <div className={s.status}>Offline map</div>
+
+      {destination && (
+        <div className={s.destinationPin} style={toSketchPosition(destination)} title="Destination">
+          <Route size={16} />
+        </div>
+      )}
+      {userCoords && (
+        <div
+          className={cx(s.userPin, isMock && s.mock)}
+          style={toSketchPosition(userCoords)}
+          title={isMock ? "Demo position" : "Your location"}
+        >
+          <UserRound size={16} />
+        </div>
+      )}
 
       {BUILDINGS.map((building) => (
         <button

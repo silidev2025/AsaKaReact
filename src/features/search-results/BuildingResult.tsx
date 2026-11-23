@@ -1,4 +1,5 @@
-// The side panel for a picked building: its name, then the rooms inside it.
+// The side panel for a picked building: its name, a Get Directions button,
+// then the rooms inside it.
 //
 // The rooms come from src/data/campus-rooms.json (each room says which
 // building it's in).
@@ -8,6 +9,7 @@ import {
   getBuildingDisplayName,
   getRoomsInBuilding,
 } from "../../lib/campus";
+import GetDirectionsButton from "../get-directions/GetDirectionsButton";
 import RoomList from "./RoomList";
 import s from "./BuildingResult.module.css";
 
@@ -25,6 +27,10 @@ export default function BuildingResult({ value }: BuildingResultProps) {
       {building && (
         <header className={s.header}>
           <h2 className={s.title}>{getBuildingDisplayName(building)}</h2>
+          <GetDirectionsButton
+            destination={building.coords}
+            className={s.getDirectionsButton}
+          />
         </header>
       )}
 

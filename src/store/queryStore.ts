@@ -20,6 +20,7 @@ import {
   type SearchItem,
 } from "../lib/search";
 import { readStorage, writeStorage } from "../lib/storage";
+import { useLocationStore } from "./locationStore";
 
 type QueryState = {
   /** The text in the search box right now. */
@@ -76,6 +77,9 @@ export const useQueryStore = create<QueryState>()((set, get) => ({
   selectResult: (item) => {
     const recentSearches = addToRecent(get().recentSearches, item);
     writeStorage(STORAGE_KEYS.recentSearches, JSON.stringify(recentSearches));
+    // A walking route belongs to the result it was asked for, so picking
+    // something else removes it.
+    useLocationStore.getState().clearDestination();
     set({
       inputValue: item.value,
       type: "result",
@@ -85,6 +89,8 @@ export const useQueryStore = create<QueryState>()((set, get) => ({
     });
   },
 
-  clearQuery: () =>
-    set({ inputValue: "", type: "query", category: null, value: "" }),
+  clearQuery: () => {
+    useLocationStore.getState().clearDestination(); // the route goes too
+    set({ inputValue: "", type: "query", category: null, value: "" });
+  },
 }));

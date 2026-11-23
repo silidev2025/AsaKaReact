@@ -10,6 +10,7 @@
 import type { ComponentType } from "react";
 import type { SearchCategory } from "../../lib/search";
 import { useQueryStore } from "../../store/queryStore";
+import LocationButton from "../get-directions/LocationButton";
 import RoomDetails from "../room-details/RoomDetails";
 import BuildingResult from "./BuildingResult";
 import s from "./SidePanel.module.css";
@@ -34,9 +35,10 @@ export default function SidePanel() {
   const Panel = category ? RESULT_PANELS[category] : undefined;
 
   return (
-    // The controls row stays even without a panel: it keeps the layout and
-    // will also hold the "my location" button in a later feature.
+    // The controls row holds the "my location" button and, when a result is
+    // picked, the panel. See SidePanel.module.css for how they are placed.
     <div className={s.controls}>
+      <LocationButton />
       {Panel && (
         <section className={s.panel} aria-label="Search result">
           {/* A different "key" makes React build a fresh panel, so moving

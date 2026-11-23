@@ -17,14 +17,25 @@ type MapState = {
   /** Short name of the building label the user tapped last, like "GLE". */
   activeBuildingName: string | null;
 
+  /**
+   * Stops the slow circling around a building. The circling keeps turning
+   * the camera every frame, so anything else that moves the camera (like
+   * the "my location" button) must call this first, or the circling would
+   * cancel its move. CampusMap puts the real function here once it loads.
+   */
+  stopOrbit: () => void;
+
   setMap: (map: MapLibreMap | null) => void;
   setActiveBuildingName: (name: string | null) => void;
+  setStopOrbit: (stopOrbit: () => void) => void;
 };
 
 export const useMapStore = create<MapState>()((set) => ({
   map: null,
   activeBuildingName: null,
+  stopOrbit: () => {}, // does nothing until CampusMap sets the real one
 
   setMap: (map) => set({ map }),
   setActiveBuildingName: (name) => set({ activeBuildingName: name }),
+  setStopOrbit: (stopOrbit) => set({ stopOrbit }),
 }));

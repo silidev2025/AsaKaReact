@@ -186,3 +186,54 @@
     font-size: 0.68rem;
   }
 }
+
+/* ---------- Walking route (from the GetDirections feature) ---------- */
+
+.route-casing,
+.route-line {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.route-casing {
+  stroke: var(--color-surface);
+  stroke-width: 8;
+  opacity: 0.9;
+}
+
+.route-line {
+  stroke: var(--color-primary);
+  stroke-width: 4;
+  opacity: 0.95;
+}
+
+/* Round pins for the user and the destination. */
+.user-pin,
+.destination-pin {
+  position: absolute;
+  z-index: 5;
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  border: 3px solid var(--color-surface);
+  border-radius: var(--radius-round);
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.28);
+  color: var(--color-surface);
+  pointer-events: none;
+  translate: -50% -50%;
+}
+
+.user-pin {
+  background-color: var(--color-location);
+}
+
+.user-pin.mock {
+  background-color: var(--color-location-mock);
+}
+
+.destination-pin {
+  background-color: var(--color-primary);
+}

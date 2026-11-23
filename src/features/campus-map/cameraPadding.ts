@@ -14,7 +14,9 @@ function remToPixels(rem: number) {
   return rem * rootFontSize;
 }
 
-export function getCameraPadding(isMobile: boolean): PaddingOptions {
+// Required<...> promises that all four sides (top, right, bottom, left) are
+// always given, so other code can add to them without checking.
+export function getCameraPadding(isMobile: boolean): Required<PaddingOptions> {
   if (isMobile) {
     // The bottom sheet covers the lower part of a phone screen.
     const sheetHeight =

@@ -4,7 +4,7 @@
 //   [Gregorio L. Escario Building]           the building it's in
 //   directions inside the building           (or a Contribute link)
 //   ┃ How to get to the building             (or a Contribute link)
-//   [Open in Google Maps]
+//   [Get Directions] [Open in Google Maps]   (Get Directions: GetDirections feature)
 //   ──────────────
 //   Classes in this room      [Open schedule]   (from the Schedule feature)
 //
@@ -17,6 +17,7 @@
 
 import { findBuildingOfRoom, findRoom, getBuildingDisplayName } from "../../lib/campus";
 import { googleMapsUrl } from "../../lib/links";
+import GetDirectionsButton from "../get-directions/GetDirectionsButton";
 import ClassesSection from "../schedule/ClassesSection";
 import Directions from "./Directions";
 import s from "./RoomDetails.module.css";
@@ -58,6 +59,10 @@ export default function RoomDetails({ value }: RoomDetailsProps) {
           </div>
 
           <div className={s.mapLinks}>
+            <GetDirectionsButton
+              destination={building.coords}
+              className={s.getDirectionsButton}
+            />
             <a
               className={s.mapLink}
               href={googleMapsUrl(building.coords)}

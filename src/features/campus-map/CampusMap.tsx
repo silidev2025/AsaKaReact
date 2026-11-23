@@ -30,6 +30,10 @@ import { boundsToArray } from "../../lib/geo";
 import { withMapTilerKey } from "../../lib/mapTiler";
 import { preloadOfflineMapAssets } from "../../lib/offlineMapCache";
 import { useMapStore } from "../../store/mapStore";
+import RouteLine from "../get-directions/RouteLine";
+import UserLocationMarker from "../get-directions/UserLocationMarker";
+import { useFitToRoute } from "../get-directions/useFitToRoute";
+import { useWalkingRoute } from "../get-directions/useWalkingRoute";
 import { useFlyToResult } from "../search-results/useFlyToResult";
 import BuildingLabel from "./BuildingLabel";
 import OfflineMap from "./OfflineMap";
@@ -92,6 +96,16 @@ export default function CampusMap() {
   // Fly to whatever the user picks in the search (see that file).
   useFlyToResult({ flyToAndOrbit, flyToStartView, stopOrbit });
 
+  // Let other features (like the "my location" button) stop the circling.
+  const setStopOrbit = useMapStore((state) => state.setStopOrbit);
+  useEffect(() => {
+    setStopOrbit(stopOrbit);
+  }, [setStopOrbit, stopOrbit]);
+
+  // The walking route after "Get Directions", and zooming to show all of it.
+  const route = useWalkingRoute();
+  useFitToRoute(map, route, isMobile, stopOrbit);
+
   // Each time the app is online: save the campus map for offline use, and
   // clear an old error so the real map gets another try.
   useEffect(() => {
@@ -147,6 +161,9 @@ export default function CampusMap() {
       >
         <Layer {...BUILDING_BLOCKS_LAYER} />
 
+        {/* The walking route, drawn above the buildings. */}
+        {route && <RouteLine route={route} />}
+
         {/* The campus pin in the middle of the map. */}
         <Marker longitude={centerLng} latitude={centerLat}>
           <div className={cx(s.pin, s.active)} title={CAMPUS.name}>
@@ -167,12 +184,16 @@ export default function CampusMap() {
               onSelect={handleBuildingSelect}
             />
           ))}
+
+        {/* The user's position, on top of everything else. */}
+        <UserLocationMarker />
       </Map>
 
       {showOfflineMap && (
         <OfflineMap
           activeBuildingName={activeBuildingName}
           onBuildingSelect={handleBuildingSelect}
+          route={route}
         />
       )}
     </div>

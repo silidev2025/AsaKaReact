@@ -11,6 +11,11 @@ export const MODAL_ANIMATION = {
   windowSlidePx: 50,
 };
 
+export const TOAST = {
+  /** A message at the bottom of the screen closes by itself after this long. */
+  durationMs: 5000,
+};
+
 export const INSTALL_PROMPT = {
   /**
    * The install prompt only appears on these sites (the testing tunnels),

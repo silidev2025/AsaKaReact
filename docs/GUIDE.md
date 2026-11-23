@@ -62,6 +62,11 @@ The rule: **no hardcoded values inside components.** A number, color, text or ad
 | Change the timetable's hours, days or class colors | `src/config/schedule.ts` |
 | Change the timetable's header, time column or line colors | `--color-timetable-...` in `src/styles/theme.css` |
 | Add a building or room to the Directory | nothing extra: it lists everything in `src/data/buildings.json` and `src/data/campus-rooms.json` |
+| Use a different walking-route service | `routingUrl` and `routingProfile` in `src/config/directions.ts` |
+| Change the area where location works | `locationBounds` in `src/data/campus.json` |
+| Test directions away from campus | add `?mockLocation=123.881021,10.29485` (longitude, latitude) to the address; the orange dot can be dragged |
+| Change how long pop-up messages stay | `TOAST.durationMs` in `src/config/ui.ts` |
+| Change the route, dot or message colors | `--color-primary`, `--color-location...`, `--color-toast-...` in `src/styles/theme.css` |
 | Change the trending searches | `trending` in `src/data/search.json` |
 | Change the search box hint text | `placeholder` in `src/data/search.json` |
 | Show more or fewer suggestions or recent searches | `src/config/search.ts` |
@@ -111,6 +116,11 @@ Each one is explained in a comment where it first appears in the code.
 | Inline style from data | `style={{ top: ..., height: ... }}` worked out per item | `Timetable.tsx` |
 | State that belongs to one component | The filter text lives in `useState` in the window, not in a store | `DirectoryWindow.tsx` |
 | Passing a function down | The window hands `onPick` to each card; the card calls it when tapped | `BuildingCard.tsx` |
+| Browser APIs in a store | The Geolocation API (`watchPosition`) started from a store action | `src/store/locationStore.ts` |
+| `fetch` | Asking a web service for data and reading its JSON answer | `src/lib/routing.ts` |
+| Stores working together | One store calling another with `getState()` (clearing the search also clears the route) | `src/store/queryStore.ts` |
+| Map layers from React | `<Source>` holds a shape, `<Layer>` says how to paint it | `RouteLine.tsx` |
+| Reading theme colors in code | `getComputedStyle` for places CSS can't reach, like the map canvas | `src/lib/theme.ts` |
 
 ## Features
 
@@ -245,6 +255,39 @@ Not in the original app. A window listing every CIT-U building, A to Z, with its
 | `Directory.module.css` | Styles |
 
 `src/lib/directory.ts` sorts the buildings and does the filtering, as plain functions. Picking something calls the same `selectResult` as the search, so the side panel and the map react exactly as they do for a search. The window is the "directory" entry in `src/store/modalStore.ts` and `src/features/home/ModalHost.tsx`.
+
+### GetDirections (`src/features/get-directions/`)
+
+The user's position, the "My Location" button, and the walking route after "Get Directions".
+
+| File | Job |
+| --- | --- |
+| `GetDirectionsButton.tsx` | The button on the building and room panels: switches the GPS on and sets the destination |
+| `LocationButton.tsx` | The round button beside the panel: switches the GPS on, then flies the map to the user |
+| `UserLocationMarker.tsx` | The blue "you are here" dot (orange and draggable in test mode) |
+| `useWalkingRoute.ts` | Asks for the route once both ends are known; falls back to a dashed straight line |
+| `RouteLine.tsx` | Draws the route on the map |
+| `useFitToRoute.ts` | Zooms the map so the whole route shows, clear of the panel |
+| `GetDirections.module.css` | Styles for the button and the dot |
+
+Shared pieces it uses:
+
+| File | Job |
+| --- | --- |
+| `src/store/locationStore.ts` | The GPS: position, destination, where the route starts, and every location message |
+| `src/lib/routing.ts` | The request to the walking-route service, and checking its answer |
+| `src/lib/mockLocation.ts` | Reads a pretend position from the address, for testing off campus |
+| `src/store/toastStore.ts` and `src/components/Toast.tsx` | Pop-up messages like "Location found!" |
+| `src/config/directions.ts` | The route service, GPS settings, zoom and speeds |
+
+How it flows:
+
+1. "Get Directions" calls `requestLocation()` (the browser asks for permission the first time) and `setDestination(building position)`.
+2. When the first position arrives, the store checks it is on campus and saves it as `routeOrigin`.
+3. `useWalkingRoute` sees both ends and fetches the path. `RouteLine` draws it, and `useFitToRoute` zooms to it.
+4. Picking another result or clearing the search removes the route.
+
+The offline sketch (`OfflineMap.tsx`) draws the same route with the user and destination pins.
 
 ### App prompts (`src/features/pwa/`)
 

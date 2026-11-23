@@ -1,11 +1,12 @@
-/* The area under the search box. On computers the panel sits on the left
-   and anything after it (like a map button) is pushed to the right edge;
-   on phones everything stacks at the bottom.
+/* The area under the search box: the "my location" button, then the panel.
+   On computers, row-reverse lays them out from the right, so the button
+   sits at the bottom right and the panel on the left. On phones they stack
+   at the bottom: the button above the sheet, on the right.
    --side-panel-width comes from src/config/layout.ts through Home.tsx. */
 .controls {
   display: flex;
   flex: 1;
-  flex-direction: row;
+  flex-direction: row-reverse;
   align-items: flex-end;
   justify-content: space-between;
   gap: 1rem;
