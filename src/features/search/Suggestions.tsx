@@ -5,9 +5,11 @@
 //   text typed, something matches ........ the matching buildings and rooms
 //   text typed, nothing matches .......... "No CIT-U match found for ..."
 //
-// When the box is empty the dropdown is always visible. Otherwise it only
+// When the box is empty the dropdown is always visible, and ends with
+// "Browse all buildings" (from the Directory feature). Otherwise it only
 // shows while the search box has focus (see Search.module.css).
 
+import OpenDirectoryButton from "../directory/OpenDirectoryButton";
 import { CAMPUS } from "../../lib/campus";
 import { cx } from "../../lib/cx";
 import {
@@ -80,6 +82,7 @@ export default function Suggestions() {
   return (
     <div className={cx(s.suggestions, isEmpty && s.alwaysVisible)}>
       {renderContent()}
+      {isEmpty && <OpenDirectoryButton />}
     </div>
   );
 }

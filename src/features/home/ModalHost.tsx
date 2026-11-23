@@ -6,6 +6,7 @@
 import type { ReactNode } from "react";
 import Modal from "../../components/Modal";
 import { useModalStore, type ModalType } from "../../store/modalStore";
+import DirectoryWindow from "../directory/DirectoryWindow";
 import ScheduleWindow from "../schedule/ScheduleWindow";
 import WelcomeModal from "./WelcomeModal";
 
@@ -19,6 +20,11 @@ const CONTENT: Record<
     label: "Room schedule",
     variant: "standard",
     render: () => <ScheduleWindow />,
+  },
+  directory: {
+    label: "Directory",
+    variant: "standard",
+    render: () => <DirectoryWindow />,
   },
 };
 

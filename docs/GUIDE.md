@@ -61,6 +61,7 @@ The rule: **no hardcoded values inside components.** A number, color, text or ad
 | Change the Contribute form link | `contributeUrl` in `src/data/app-info.json` |
 | Change the timetable's hours, days or class colors | `src/config/schedule.ts` |
 | Change the timetable's header, time column or line colors | `--color-timetable-...` in `src/styles/theme.css` |
+| Add a building or room to the Directory | nothing extra: it lists everything in `src/data/buildings.json` and `src/data/campus-rooms.json` |
 | Change the trending searches | `trending` in `src/data/search.json` |
 | Change the search box hint text | `placeholder` in `src/data/search.json` |
 | Show more or fewer suggestions or recent searches | `src/config/search.ts` |
@@ -108,6 +109,8 @@ Each one is explained in a comment where it first appears in the code.
 | Rules of hooks | Hooks run on every render in the same order, never inside an `if` | `ScheduleWindow.tsx` |
 | `disabled` button | A button that is greyed out and ignores clicks | `ClassesSection.tsx` |
 | Inline style from data | `style={{ top: ..., height: ... }}` worked out per item | `Timetable.tsx` |
+| State that belongs to one component | The filter text lives in `useState` in the window, not in a store | `DirectoryWindow.tsx` |
+| Passing a function down | The window hands `onPick` to each card; the card calls it when tapped | `BuildingCard.tsx` |
 
 ## Features
 
@@ -229,6 +232,19 @@ How the timetable places a block: hours are numbers on a 24-hour clock (1:30 PM 
 Why the classes load separately: the classes file is about 730 KB. Rooms without classes never download it, and the app opens faster without it.
 
 The window is the "schedule" entry in `src/store/modalStore.ts` and `src/features/home/ModalHost.tsx`.
+
+### Directory (`src/features/directory/`)
+
+Not in the original app. A window listing every CIT-U building, A to Z, with its rooms. It opens from "Browse all buildings" at the bottom of the search dropdown (shown when the search box is empty).
+
+| File | Job |
+| --- | --- |
+| `OpenDirectoryButton.tsx` | The "Browse all buildings" row in the search dropdown |
+| `DirectoryWindow.tsx` | The window: title, counts, filter box, and the building cards |
+| `BuildingCard.tsx` | One building (tap to pick it) and a button per room (tap to pick the room) |
+| `Directory.module.css` | Styles |
+
+`src/lib/directory.ts` sorts the buildings and does the filtering, as plain functions. Picking something calls the same `selectResult` as the search, so the side panel and the map react exactly as they do for a search. The window is the "directory" entry in `src/store/modalStore.ts` and `src/features/home/ModalHost.tsx`.
 
 ### App prompts (`src/features/pwa/`)
 

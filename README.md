@@ -14,6 +14,7 @@ New to the code? Start with [docs/GUIDE.md](docs/GUIDE.md). It explains where ev
 - [x] SearchResults: side panel for the picked building with its rooms, and the map flying to the result
 - [x] RoomDetails: room panel with its building, directions, Contribute links and Open in Google Maps
 - [x] Schedule: classes held in a room, and a weekly timetable window
+- [x] Directory: every building A to Z with its rooms, opened from "Browse all buildings" in the search
 
 ## Room data
 

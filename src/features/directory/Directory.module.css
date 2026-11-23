@@ -1,0 +1,206 @@
+/* Styles for DirectoryWindow.tsx, BuildingCard.tsx and
+   OpenDirectoryButton.tsx. */
+
+.directory {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* Room on the right for the window's X button. */
+.header {
+  padding-right: 2.5rem;
+}
+
+.title {
+  margin: 0;
+  color: var(--color-text);
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.subtitle {
+  margin: 0.25rem 0 0;
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+}
+
+/* ---------- Filter box ---------- */
+
+.filter {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 2.75rem;
+  padding: 0.5rem 0.875rem;
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-box);
+  color: var(--color-text);
+  cursor: text;
+}
+
+/* A maroon border while the box has the cursor. */
+.filter:focus-within {
+  border-color: var(--color-primary);
+}
+
+.filter-input {
+  flex: 1;
+  min-width: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: var(--color-text);
+  font: inherit;
+  /* 16px stops iPhones from zooming in when the box is tapped. */
+  font-size: 1rem;
+}
+
+.filter-input::placeholder {
+  color: var(--color-placeholder);
+}
+
+.empty {
+  margin: 0;
+  padding: 0.5rem 0;
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+}
+
+/* ---------- Building cards ---------- */
+
+/* As many columns as fit, each at least 16rem wide: one on phones, three
+   or four on a computer. */
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-box);
+}
+
+.building-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  /* global.css resets buttons with "all: unset", so border-box has to be
+     set again for width: 100% to include the padding. */
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.375rem 0.5rem;
+  border-radius: var(--radius-label);
+  color: var(--color-text);
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.building-button:hover {
+  background-color: var(--color-row-hover);
+}
+
+.icon {
+  flex-shrink: 0;
+}
+
+/* margin-left: auto pushes the arrow to the far right. */
+.arrow {
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+.building-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.building-name {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.short-name {
+  color: var(--color-text-muted);
+  font-size: 0.75rem;
+}
+
+/* The rooms line up under the building name: 0.5rem button padding +
+   20px icon + 0.5rem gap = 2.25rem. */
+.rooms,
+.no-rooms {
+  padding: 0 0.5rem 0.25rem 2.25rem;
+}
+
+.rooms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+}
+
+.room-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.25rem 0.625rem;
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-pill);
+  color: var(--color-text);
+  font-size: 0.8125rem;
+  cursor: pointer;
+  transition: all 0.125s;
+}
+
+.room-button:hover,
+.room-button:focus-visible {
+  background-color: var(--color-primary-faint);
+  border-color: var(--color-primary);
+}
+
+.no-rooms {
+  margin: 0;
+  color: var(--color-text-faint);
+  font-size: 0.8125rem;
+}
+
+/* ---------- "Browse all buildings" in the search dropdown ---------- */
+
+.open-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 2.75rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-top: 1px solid var(--color-divider);
+  border-radius: 0 0 0.75rem 0.75rem;
+  color: var(--color-primary);
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.open-button:hover {
+  background-color: var(--color-row-hover);
+}
+
+@media (max-width: 425px) {
+  .open-button {
+    padding: 0.5rem;
+  }
+}
